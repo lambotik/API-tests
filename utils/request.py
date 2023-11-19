@@ -13,6 +13,7 @@ password = os.getenv('PASSWORD')
 MY_EMAIL = os.getenv('EMAIL')
 MY_PASSWORD = os.getenv('PASSWORD')
 
+
 class API:
     @staticmethod
     def get_tos():
@@ -80,9 +81,6 @@ class API:
             print('Response body: ', result_post.text)
         return result_post
 
-
-
-
     @staticmethod
     def post_login(body: dict):
         post_resource = '/login'  # Resource for method GET
@@ -116,14 +114,8 @@ class API:
         post_resource = '/db_create'  # Resource for method
         post_url = base_url + post_resource
         print(post_url)
-        body = {
-            "dbname": "(string)",
-            "dbtype": "(int)",
-            "dbversion": "(int)",
-            "env": "(int)",
-            "region": "(int)"
-        }
-        result_post = HttpMethods.post_set_cookie_without_body(post_url, sid)
+        body = {"dbtype": 3, "dbversion": 5, "env": 3, "region": 3}
+        result_post = HttpMethods.post_set_cookie_without_body(post_url, sid, body)
         with allure.step(f'Body: {result_post.text}'):
             print('Response: ', result_post.text)
         return result_post

@@ -36,9 +36,9 @@ class HttpMethods:
 
     @staticmethod
     @allure.step('Method POST')
-    def post_set_cookie_without_body(url: str, cookie: dict):
+    def post_set_cookie_without_body(url: str, cookie: dict, body: dict):
         Logger.add_request(url, method='POST')
-        result = requests.post(url, cookies=cookie)
+        result = requests.post(url, cookies=cookie, json=body)
         Logger.add_response(result)
         return result
 
