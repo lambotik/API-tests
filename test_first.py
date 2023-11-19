@@ -17,19 +17,11 @@ password = os.getenv('PASSWORD')
 body = {"email": f'{email}', "password": f'{password}'}
 
 result = requests.post('https://dbend.areso.pro/login', json=body)
-# print(result)
-#
-# print(result.text)
-# print(result.cookies)
+
 sid = dict(result.cookies)
 
 
-# result_post = requests.post('https://dbend.areso.pro/db_list', cookies=dict(result.cookies))
-# print(result_post.text)
-# print(result_post.status_code)
-
 @allure.epic('GET REQUESTS')
-# @allure.feature('Some feature')
 @allure.suite('REQUESTS GET')
 class TestGET:
     @allure.sub_suite('GET')
@@ -66,7 +58,6 @@ class TestGET:
 @allure.epic('POST REQUESTS')
 @allure.suite('REQUESTS POST')
 class TestPOST:
-    @pytest.mark.xfail
     @allure.sub_suite('POST')
     @allure.title('Post login')
     def test_post_login(self):
@@ -74,14 +65,14 @@ class TestPOST:
         result_post = API.post_login(body)
         status_code, sid = result_post
         Checking.check_status_code(status_code, 200)
-    @pytest.mark.xfail
+
     @allure.sub_suite('POST')
     @allure.title('Post db list')
     def test_post_db_list(self):
         print('\n\nMethod POST: db_list')
         result_post_db_list = API.post_db_list(sid)
         Checking.check_status_code(result_post_db_list, 200)
-    @pytest.mark.xfail
+
     @allure.sub_suite('POST')
     @allure.title('Post db create')
     def test_post_db_create(self):
