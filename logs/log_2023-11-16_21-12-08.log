@@ -1,0 +1,159 @@
+
+------
+Test: test_first.py::TestHoster::test_tos (call)
+Time: 2023-11-16 21:12:09.407086
+Request method: GET
+Request URL: https://dbend.areso.pro/tos
+
+Response code: 200
+Response text: 
+English:
+Hello. This pet-project (later Project) works AS IS, no warranty at all.
+Using Project, you agree to that.
+You MUST create backups of your databases for sake reasons.
+Because I do run project on my own pocket money, 
+I limit total size of the databases per 1 user as 100 MBs.
+Any account don't used more than 6 monts is subject for deletion with all databases.
+
+Privacy:
+Project doesn't collect and don't save any data. There is even no Google Analytics or any analogue of that.  
+Project doesn't ask your name, phone, nationality or credit card.
+Project isn't compatible with GDPR or analogs, so, please, don't store any sensitive personal data.
+If you do, you do this at your own risk.
+If you do, I urge you to hash any sensitive data before submitting to your database in Project.
+
+Español.
+Hola. Este proyecto favorito (proyecto posterior) funciona TAL CUAL, sin garantía alguna.
+Al usar Project, usted acepta eso.
+DEBE crear copias de seguridad de sus bases de datos por razones de seguridad.
+Porque dirijo el proyecto con mi propio dinero de bolsillo,
+Limito el tamaño total de las bases de datos por 1 usuario a 100 MB.
+Cualquier cuenta que no haya usado más de 6 meses está sujeta a eliminación con todas las bases de datos.
+
+Privacidad:
+El proyecto no recopila ni guarda ningún dato. Ni siquiera hay Google Analytics o cualquier análogo de eso.
+Project no pregunta tu nombre, teléfono, nacionalidad o tarjeta de crédito.
+El proyecto no es compatible con GDPR o análogos, así que, por favor, no almacene ningún dato personal confidencial.
+Si lo hace, lo hace bajo su propio riesgo.
+Si lo hace, le insto a que elimine los datos confidenciales antes de enviarlos a su base de datos en Project.
+
+Русский:
+Привет, это пет-проект (Проект) работает "КАК ЕСТЬ", без каких-либо гарантий.
+Пользуюясь Проектом, вы соглашаетесь с этим.
+Вы ДОЛЖНЫ создавать бэкапы ваших баз данных с целью их сохранности.
+Поскольку я плачу за проект из своих карманных денег,
+я лимитирую суммарный объем баз данных на одного пользователя 100 МБ.
+Любой аккаунт, не используемый более 6 месяцев, может быть удалён.
+
+Политика персональных данных:
+Проект не собирает никаких данных о вас. На проекте нет Гугл Аналитики или Яндекс метрики.
+Проект не требует имени, телефона, гражданства, привязки или использования дебетовой карты.
+Проект не совместим с ФЗ-152 или аналогами, пожалуйста, не храните никаких персональных данных.
+Если всё-таки храните - это ваш риск и ваша ответственность.
+Если всё-таки храните, прошу хэшировать все персональные данные перед отправкой в вашу БД в проекте.
+
+Response headers: {'Server': 'nginx/1.18.0 (Ubuntu)', 'Date': 'Thu, 16 Nov 2023 18:12:06 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Content-Encoding': 'gzip'}
+Response cookies: {}
+
+------
+
+------
+Test: test_first.py::TestHoster::test_list_dbtypes (call)
+Time: 2023-11-16 21:12:10.016628
+Request method: GET
+Request URL: https://dbend.areso.pro/list_dbtypes
+
+Response code: 200
+Response text: {"3":"mysql8"}
+
+Response headers: {'Server': 'nginx/1.18.0 (Ubuntu)', 'Date': 'Thu, 16 Nov 2023 18:12:07 GMT', 'Content-Type': 'application/json', 'Content-Length': '15', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET'}
+Response cookies: {}
+
+------
+
+------
+Test: test_first.py::TestHoster::test_list_dbversions (call)
+Time: 2023-11-16 21:12:10.594926
+Request method: GET
+Request URL: https://dbend.areso.pro/list_dbversions
+
+Response code: 200
+Response text: {"3":"14"}
+
+Response headers: {'Server': 'nginx/1.18.0 (Ubuntu)', 'Date': 'Thu, 16 Nov 2023 18:12:07 GMT', 'Content-Type': 'application/json', 'Content-Length': '11', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET'}
+Response cookies: {}
+
+------
+
+------
+Test: test_first.py::TestHoster::test_list_envs (call)
+Time: 2023-11-16 21:12:11.239373
+Request method: GET
+Request URL: https://dbend.areso.pro/list_envs
+
+Response code: 200
+Response text: {"3":"vm_communal"}
+
+Response headers: {'Server': 'nginx/1.18.0 (Ubuntu)', 'Date': 'Thu, 16 Nov 2023 18:12:08 GMT', 'Content-Type': 'application/json', 'Content-Length': '20', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET'}
+Response cookies: {}
+
+------
+
+------
+Test: test_first.py::TestHoster::test_list_regions (call)
+Time: 2023-11-16 21:12:11.860494
+Request method: GET
+Request URL: https://dbend.areso.pro/list_regions
+
+Response code: 200
+Response text: {"3":"CIS"}
+
+Response headers: {'Server': 'nginx/1.18.0 (Ubuntu)', 'Date': 'Thu, 16 Nov 2023 18:12:09 GMT', 'Content-Type': 'application/json', 'Content-Length': '12', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET'}
+Response cookies: {}
+
+------
+
+------
+Test: test_first.py::TestHoster::test_post_login (call)
+Time: 2023-11-16 21:12:12.517273
+Request method: POST
+Request URL: https://dbend.areso.pro/login
+
+Response code: 200
+Response text: login successful
+Response headers: {'Server': 'nginx/1.18.0 (Ubuntu)', 'Date': 'Thu, 16 Nov 2023 18:12:09 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '16', 'Connection': 'keep-alive', 'Set-Cookie': 'sid=82975006-b653-4219-8e67-7c269cc908f9; HttpOnly; Path=/', 'Access-Control-Allow-Origin': '*'}
+Response cookies: {'sid': '82975006-b653-4219-8e67-7c269cc908f9'}
+
+------
+
+------
+Test: test_first.py::TestHoster::test_post_db_list (call)
+Time: 2023-11-16 21:12:13.131671
+Request method: POST
+Request URL: https://dbend.areso.pro/db_list
+
+Response code: 200
+Response text: {"content":{}}
+
+Response headers: {'Server': 'nginx/1.18.0 (Ubuntu)', 'Date': 'Thu, 16 Nov 2023 18:12:10 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '15', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'POST'}
+Response cookies: {}
+
+------
+
+------
+Test: test_first.py::TestHoster::test_post_db_create (call)
+Time: 2023-11-16 21:12:13.818277
+Request method: POST
+Request URL: https://dbend.areso.pro/db_create
+
+Response code: 500
+Response text: <!doctype html>
+<html lang=en>
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+
+Response headers: {'Server': 'nginx/1.18.0 (Ubuntu)', 'Date': 'Thu, 16 Nov 2023 18:12:10 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Content-Length': '265', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*'}
+Response cookies: {}
+
+------
