@@ -1,6 +1,6 @@
 name: TEST_API
 
-on: push
+on: workflow_dispatch
 
 
 permissions:
