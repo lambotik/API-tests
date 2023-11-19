@@ -4,11 +4,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "32b1496a2efa09f3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1700405272924,
+        "stop" : 1700405273463,
+        "duration" : 539
+      }
+    }, {
       "uid" : "1ceece0e2ec78670",
       "status" : "broken",
       "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'logs/log_2023-11-19_14-46-06.log'",
@@ -24,11 +32,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "160c168fe91fa932",
+      "status" : "passed",
+      "time" : {
+        "start" : 1700405273999,
+        "stop" : 1700405274685,
+        "duration" : 686
+      }
+    }, {
       "uid" : "74bc65107c9b0bb5",
       "status" : "broken",
       "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'logs/log_2023-11-19_14-46-06.log'",
@@ -43,12 +59,21 @@
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 1,
+      "skipped" : 2,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "ed7895604f3ad20e",
+      "status" : "skipped",
+      "statusDetails" : "XFAIL\n\nAssertionError: Incorrect status code",
+      "time" : {
+        "start" : 1700405275867,
+        "stop" : 1700405276407,
+        "duration" : 540
+      }
+    }, {
       "uid" : "442ae901971fa25",
       "status" : "skipped",
       "statusDetails" : "XFAIL\n\nFileNotFoundError: [Errno 2] No such file or directory: 'logs/log_2023-11-19_14-46-06.log'",
@@ -64,11 +89,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 1,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "d40a786b47d65a77",
+      "status" : "passed",
+      "statusDetails" : "XPASS",
+      "time" : {
+        "start" : 1700405275323,
+        "stop" : 1700405275866,
+        "duration" : 543
+      }
+    }, {
       "uid" : "72da8c78dbd105f0",
       "status" : "skipped",
       "statusDetails" : "XFAIL\n\nFileNotFoundError: [Errno 2] No such file or directory: 'logs/log_2023-11-19_14-46-06.log'",
@@ -84,11 +118,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "5aee94d64da8bf51",
+      "status" : "passed",
+      "time" : {
+        "start" : 1700405271829,
+        "stop" : 1700405272371,
+        "duration" : 542
+      }
+    }, {
       "uid" : "9fa40171d7d697be",
       "status" : "broken",
       "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'logs/log_2023-11-19_14-46-06.log'",
@@ -104,11 +146,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "bb10cb4dc6a3d909",
+      "status" : "passed",
+      "time" : {
+        "start" : 1700405272373,
+        "stop" : 1700405272922,
+        "duration" : 549
+      }
+    }, {
       "uid" : "75a29a9c0dfbf01a",
       "status" : "broken",
       "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'logs/log_2023-11-19_14-46-06.log'",
@@ -124,11 +174,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "1728ecbb0b8dbcc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1700405273465,
+        "stop" : 1700405273997,
+        "duration" : 532
+      }
+    }, {
       "uid" : "ad96da88eea967ef",
       "status" : "broken",
       "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'logs/log_2023-11-19_14-46-06.log'",
@@ -144,11 +202,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 1,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "3240b2007c8102c1",
+      "status" : "passed",
+      "statusDetails" : "XPASS",
+      "time" : {
+        "start" : 1700405274686,
+        "stop" : 1700405275321,
+        "duration" : 635
+      }
+    }, {
       "uid" : "f5476102a51d99f",
       "status" : "skipped",
       "statusDetails" : "XFAIL\n\nFileNotFoundError: [Errno 2] No such file or directory: 'logs/log_2023-11-19_14-46-06.log'",

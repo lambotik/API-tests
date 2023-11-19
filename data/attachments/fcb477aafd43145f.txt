@@ -2,3 +2,6 @@
 
 Method POST: db_list
 https://dbend.areso.pro/db_list
+Response:  {"content":{}}
+
+Status code is: 200

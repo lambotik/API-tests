@@ -4,104 +4,104 @@
     "name" : "test_first",
     "children" : [ {
       "name" : "test tos",
-      "uid" : "9fa40171d7d697be",
+      "uid" : "5aee94d64da8bf51",
       "parentUid" : "95a9fd7eaca78ad31c048866b144bdda",
-      "status" : "broken",
+      "status" : "passed",
       "time" : {
-        "start" : 1700405167454,
-        "stop" : 1700405167454,
-        "duration" : 0
+        "start" : 1700405271829,
+        "stop" : 1700405272371,
+        "duration" : 542
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "List dbtypes",
-      "uid" : "75a29a9c0dfbf01a",
+      "uid" : "bb10cb4dc6a3d909",
       "parentUid" : "95a9fd7eaca78ad31c048866b144bdda",
-      "status" : "broken",
+      "status" : "passed",
       "time" : {
-        "start" : 1700405167487,
-        "stop" : 1700405167487,
-        "duration" : 0
+        "start" : 1700405272373,
+        "stop" : 1700405272922,
+        "duration" : 549
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "List dbversions",
-      "uid" : "1ceece0e2ec78670",
+      "uid" : "32b1496a2efa09f3",
       "parentUid" : "95a9fd7eaca78ad31c048866b144bdda",
-      "status" : "broken",
+      "status" : "passed",
       "time" : {
-        "start" : 1700405167495,
-        "stop" : 1700405167495,
-        "duration" : 0
+        "start" : 1700405272924,
+        "stop" : 1700405273463,
+        "duration" : 539
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "List envs",
-      "uid" : "ad96da88eea967ef",
+      "uid" : "1728ecbb0b8dbcc",
       "parentUid" : "95a9fd7eaca78ad31c048866b144bdda",
-      "status" : "broken",
+      "status" : "passed",
       "time" : {
-        "start" : 1700405167503,
-        "stop" : 1700405167503,
-        "duration" : 0
+        "start" : 1700405273465,
+        "stop" : 1700405273997,
+        "duration" : 532
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "List regions",
-      "uid" : "74bc65107c9b0bb5",
+      "uid" : "160c168fe91fa932",
       "parentUid" : "95a9fd7eaca78ad31c048866b144bdda",
-      "status" : "broken",
+      "status" : "passed",
       "time" : {
-        "start" : 1700405167517,
-        "stop" : 1700405167518,
-        "duration" : 1
+        "start" : 1700405273999,
+        "stop" : 1700405274685,
+        "duration" : 686
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Post login",
-      "uid" : "f5476102a51d99f",
+      "uid" : "3240b2007c8102c1",
       "parentUid" : "95a9fd7eaca78ad31c048866b144bdda",
-      "status" : "skipped",
+      "status" : "passed",
       "time" : {
-        "start" : 1700405167525,
-        "stop" : 1700405167525,
-        "duration" : 0
+        "start" : 1700405274686,
+        "stop" : 1700405275321,
+        "duration" : 635
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Post db list",
-      "uid" : "72da8c78dbd105f0",
+      "uid" : "d40a786b47d65a77",
       "parentUid" : "95a9fd7eaca78ad31c048866b144bdda",
-      "status" : "skipped",
+      "status" : "passed",
       "time" : {
-        "start" : 1700405167533,
-        "stop" : 1700405167533,
-        "duration" : 0
+        "start" : 1700405275323,
+        "stop" : 1700405275866,
+        "duration" : 543
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Post db create",
-      "uid" : "442ae901971fa25",
+      "uid" : "ed7895604f3ad20e",
       "parentUid" : "95a9fd7eaca78ad31c048866b144bdda",
       "status" : "skipped",
       "time" : {
-        "start" : 1700405167541,
-        "stop" : 1700405167542,
-        "duration" : 1
+        "start" : 1700405275867,
+        "stop" : 1700405276407,
+        "duration" : 540
       },
       "flaky" : false,
       "newFailed" : false,

@@ -2,7 +2,7 @@
   "values" : [ "master" ],
   "name" : "GIT_BRANCH"
 }, {
-  "values" : [ "8b68289cb1f5e04d540675488967cc19ba637293" ],
+  "values" : [ "451abd4c629c6dc32f6f13e1e13cc5cebee70ef7" ],
   "name" : "GIT_COMMIT_ID"
 }, {
   "values" : [ "added: workflows" ],
@@ -11,9 +11,9 @@
   "values" : [ "lambotik1988@gmail.com" ],
   "name" : "GIT_COMMIT_AUTHOR_NAME"
 }, {
-  "values" : [ "2023-11-19 17:42:49 +0300" ],
+  "values" : [ "2023-11-19 17:47:27 +0300" ],
   "name" : "GIT_COMMIT_TIME"
 }, {
-  "values" : [ "119.0.6045.159" ],
+  "values" : [ "118.0.5993.117" ],
   "name" : "CHROME_VERSION"
 } ]

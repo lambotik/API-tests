@@ -1,0 +1,48 @@
+https://dbend.areso.pro/tos
+
+English:
+Hello. This pet-project (later Project) works AS IS, no warranty at all.
+Using Project, you agree to that.
+You MUST create backups of your databases for sake reasons.
+Because I do run project on my own pocket money, 
+I limit total size of the databases per 1 user as 100 MBs.
+Any account don't used more than 6 monts is subject for deletion with all databases.
+
+Privacy:
+Project doesn't collect and don't save any data. There is even no Google Analytics or any analogue of that.  
+Project doesn't ask your name, phone, nationality or credit card.
+Project isn't compatible with GDPR or analogs, so, please, don't store any sensitive personal data.
+If you do, you do this at your own risk.
+If you do, I urge you to hash any sensitive data before submitting to your database in Project.
+
+Español.
+Hola. Este proyecto favorito (proyecto posterior) funciona TAL CUAL, sin garantía alguna.
+Al usar Project, usted acepta eso.
+DEBE crear copias de seguridad de sus bases de datos por razones de seguridad.
+Porque dirijo el proyecto con mi propio dinero de bolsillo,
+Limito el tamaño total de las bases de datos por 1 usuario a 100 MB.
+Cualquier cuenta que no haya usado más de 6 meses está sujeta a eliminación con todas las bases de datos.
+
+Privacidad:
+El proyecto no recopila ni guarda ningún dato. Ni siquiera hay Google Analytics o cualquier análogo de eso.
+Project no pregunta tu nombre, teléfono, nacionalidad o tarjeta de crédito.
+El proyecto no es compatible con GDPR o análogos, así que, por favor, no almacene ningún dato personal confidencial.
+Si lo hace, lo hace bajo su propio riesgo.
+Si lo hace, le insto a que elimine los datos confidenciales antes de enviarlos a su base de datos en Project.
+
+Русский:
+Привет, это пет-проект (Проект) работает "КАК ЕСТЬ", без каких-либо гарантий.
+Пользуюясь Проектом, вы соглашаетесь с этим.
+Вы ДОЛЖНЫ создавать бэкапы ваших баз данных с целью их сохранности.
+Поскольку я плачу за проект из своих карманных денег,
+я лимитирую суммарный объем баз данных на одного пользователя 100 МБ.
+Любой аккаунт, не используемый более 6 месяцев, может быть удалён.
+
+Политика персональных данных:
+Проект не собирает никаких данных о вас. На проекте нет Гугл Аналитики или Яндекс метрики.
+Проект не требует имени, телефона, гражданства, привязки или использования дебетовой карты.
+Проект не совместим с ФЗ-152 или аналогами, пожалуйста, не храните никаких персональных данных.
+Если всё-таки храните - это ваш риск и ваша ответственность.
+Если всё-таки храните, прошу хэшировать все персональные данные перед отправкой в вашу БД в проекте.
+
+Status code is: 200
