@@ -4,11 +4,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
+      "uid" : "680533ee3df7233e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1700405904246,
+        "stop" : 1700405904580,
+        "duration" : 334
+      }
+    }, {
       "uid" : "32b1496a2efa09f3",
       "status" : "passed",
       "time" : {
@@ -32,11 +40,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
+      "uid" : "95f25946f152358",
+      "status" : "passed",
+      "time" : {
+        "start" : 1700405904941,
+        "stop" : 1700405905272,
+        "duration" : 331
+      }
+    }, {
       "uid" : "160c168fe91fa932",
       "status" : "passed",
       "time" : {
@@ -57,14 +73,23 @@
   },
   "1aec0f14b932a152b799443dcd6b951a" : {
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 0,
       "skipped" : 2,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
+      "uid" : "cb3a19533c885825",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: Incorrect status code",
+      "time" : {
+        "start" : 1700405905977,
+        "stop" : 1700405906331,
+        "duration" : 354
+      }
+    }, {
       "uid" : "ed7895604f3ad20e",
       "status" : "skipped",
       "statusDetails" : "XFAIL\n\nAssertionError: Incorrect status code",
@@ -89,11 +114,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 1,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
+      "uid" : "f900592838b27a52",
+      "status" : "passed",
+      "time" : {
+        "start" : 1700405905625,
+        "stop" : 1700405905975,
+        "duration" : 350
+      }
+    }, {
       "uid" : "d40a786b47d65a77",
       "status" : "passed",
       "statusDetails" : "XPASS",
@@ -118,11 +151,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
+      "uid" : "a7e5cae9bfa0686a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1700405903560,
+        "stop" : 1700405903903,
+        "duration" : 343
+      }
+    }, {
       "uid" : "5aee94d64da8bf51",
       "status" : "passed",
       "time" : {
@@ -146,11 +187,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
+      "uid" : "a5874e990eb38711",
+      "status" : "passed",
+      "time" : {
+        "start" : 1700405903905,
+        "stop" : 1700405904244,
+        "duration" : 339
+      }
+    }, {
       "uid" : "bb10cb4dc6a3d909",
       "status" : "passed",
       "time" : {
@@ -174,11 +223,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
+      "uid" : "ec309ee933e22b1d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1700405904581,
+        "stop" : 1700405904939,
+        "duration" : 358
+      }
+    }, {
       "uid" : "1728ecbb0b8dbcc",
       "status" : "passed",
       "time" : {
@@ -202,11 +259,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 1,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
+      "uid" : "66e9b710fe14d159",
+      "status" : "passed",
+      "time" : {
+        "start" : 1700405905274,
+        "stop" : 1700405905623,
+        "duration" : 349
+      }
+    }, {
       "uid" : "3240b2007c8102c1",
       "status" : "passed",
       "statusDetails" : "XPASS",

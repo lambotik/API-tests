@@ -1,12 +1,12 @@
 {
-  "uid" : "32b1496a2efa09f3",
+  "uid" : "680533ee3df7233e",
   "name" : "List dbversions",
   "fullName" : "test_first.TestGET#test_list_dbversions",
   "historyId" : "04756a126933bacb3bb026bcdfd56b27",
   "time" : {
-    "start" : 1700405272924,
-    "stop" : 1700405273463,
-    "duration" : 539
+    "start" : 1700405904246,
+    "stop" : 1700405904580,
+    "duration" : 334
   },
   "status" : "passed",
   "flaky" : false,
@@ -17,16 +17,16 @@
     "steps" : [ {
       "name" : "Method GET",
       "time" : {
-        "start" : 1700405272924,
-        "stop" : 1700405273462,
-        "duration" : 538
+        "start" : 1700405904246,
+        "stop" : 1700405904578,
+        "duration" : 332
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Add request",
         "time" : {
-          "start" : 1700405272924,
-          "stop" : 1700405272924,
+          "start" : 1700405904246,
+          "stop" : 1700405904246,
           "duration" : 0
         },
         "status" : "passed",
@@ -40,14 +40,14 @@
           "value" : "'GET'"
         } ],
         "attachmentsCount" : 0,
-        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
         "hasContent" : true,
-        "shouldDisplayMessage" : false
+        "stepsCount" : 0
       }, {
         "name" : "Add response",
         "time" : {
-          "start" : 1700405273462,
-          "stop" : 1700405273462,
+          "start" : 1700405904578,
+          "stop" : 1700405904578,
           "duration" : 0
         },
         "status" : "passed",
@@ -58,9 +58,9 @@
           "value" : "<Response [200]>"
         } ],
         "attachmentsCount" : 0,
-        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
         "hasContent" : true,
-        "shouldDisplayMessage" : false
+        "stepsCount" : 0
       } ],
       "attachments" : [ ],
       "parameters" : [ {
@@ -68,14 +68,14 @@
         "value" : "'https://dbend.areso.pro/list_dbversions'"
       } ],
       "attachmentsCount" : 0,
-      "stepsCount" : 2,
+      "shouldDisplayMessage" : false,
       "hasContent" : true,
-      "shouldDisplayMessage" : false
+      "stepsCount" : 2
     }, {
       "name" : "Body: {\"3\":\"14\"}\n",
       "time" : {
-        "start" : 1700405273462,
-        "stop" : 1700405273462,
+        "start" : 1700405904578,
+        "stop" : 1700405904578,
         "duration" : 0
       },
       "status" : "passed",
@@ -83,39 +83,39 @@
       "attachments" : [ ],
       "parameters" : [ ],
       "attachmentsCount" : 0,
-      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
       "hasContent" : false,
-      "shouldDisplayMessage" : false
+      "stepsCount" : 0
     } ],
     "attachments" : [ {
-      "uid" : "e369cc9c4297853b",
+      "uid" : "364fa74dfac651e9",
       "name" : "stdout",
-      "source" : "e369cc9c4297853b.txt",
+      "source" : "364fa74dfac651e9.txt",
       "type" : "text/plain",
       "size" : 72
     } ],
     "parameters" : [ ],
     "attachmentsCount" : 1,
-    "stepsCount" : 4,
+    "shouldDisplayMessage" : false,
     "hasContent" : true,
-    "shouldDisplayMessage" : false
+    "stepsCount" : 4
   },
   "afterStages" : [ ],
   "labels" : [ {
-    "name" : "epic",
-    "value" : "GET REQUESTS"
+    "name" : "suite",
+    "value" : "REQUESTS GET"
   }, {
     "name" : "subSuite",
     "value" : "GET"
   }, {
-    "name" : "suite",
-    "value" : "REQUESTS GET"
+    "name" : "epic",
+    "value" : "GET REQUESTS"
   }, {
     "name" : "host",
-    "value" : "fv-az1149-966"
+    "value" : "fv-az888-640"
   }, {
     "name" : "thread",
-    "value" : "1894-MainThread"
+    "value" : "1904-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -142,11 +142,19 @@
         "failed" : 0,
         "broken" : 1,
         "skipped" : 0,
-        "passed" : 1,
+        "passed" : 2,
         "unknown" : 0,
-        "total" : 2
+        "total" : 3
       },
       "items" : [ {
+        "uid" : "32b1496a2efa09f3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700405272924,
+          "stop" : 1700405273463,
+          "duration" : 539
+        }
+      }, {
         "uid" : "1ceece0e2ec78670",
         "status" : "broken",
         "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'logs/log_2023-11-19_14-46-06.log'",
@@ -159,6 +167,6 @@
     },
     "tags" : [ ]
   },
-  "source" : "32b1496a2efa09f3.json",
+  "source" : "680533ee3df7233e.json",
   "parameterValues" : [ ]
 }
