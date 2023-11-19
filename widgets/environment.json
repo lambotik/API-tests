@@ -1,0 +1,19 @@
+[ {
+  "values" : [ "master" ],
+  "name" : "GIT_BRANCH"
+}, {
+  "values" : [ "8b68289cb1f5e04d540675488967cc19ba637293" ],
+  "name" : "GIT_COMMIT_ID"
+}, {
+  "values" : [ "added: workflows" ],
+  "name" : "GIT_COMMIT_MESSAGE"
+}, {
+  "values" : [ "lambotik1988@gmail.com" ],
+  "name" : "GIT_COMMIT_AUTHOR_NAME"
+}, {
+  "values" : [ "2023-11-19 17:42:49 +0300" ],
+  "name" : "GIT_COMMIT_TIME"
+}, {
+  "values" : [ "119.0.6045.159" ],
+  "name" : "CHROME_VERSION"
+} ]
