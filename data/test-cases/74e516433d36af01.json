@@ -1,12 +1,12 @@
 {
-  "uid" : "680533ee3df7233e",
-  "name" : "List dbversions",
-  "fullName" : "test_first.TestGET#test_list_dbversions",
-  "historyId" : "04756a126933bacb3bb026bcdfd56b27",
+  "uid" : "74e516433d36af01",
+  "name" : "List dbtypes",
+  "fullName" : "test_first.TestGET#test_list_dbtypes",
+  "historyId" : "c1ddb0ad2a5283a85532f93dc1c7d028",
   "time" : {
-    "start" : 1700405904246,
-    "stop" : 1700405904580,
-    "duration" : 334
+    "start" : 1700513081865,
+    "stop" : 1700513082428,
+    "duration" : 563
   },
   "status" : "passed",
   "flaky" : false,
@@ -17,16 +17,16 @@
     "steps" : [ {
       "name" : "Method GET",
       "time" : {
-        "start" : 1700405904246,
-        "stop" : 1700405904578,
-        "duration" : 332
+        "start" : 1700513081865,
+        "stop" : 1700513082428,
+        "duration" : 563
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Add request",
         "time" : {
-          "start" : 1700405904246,
-          "stop" : 1700405904246,
+          "start" : 1700513081865,
+          "stop" : 1700513081865,
           "duration" : 0
         },
         "status" : "passed",
@@ -34,21 +34,21 @@
         "attachments" : [ ],
         "parameters" : [ {
           "name" : "url",
-          "value" : "'https://dbend.areso.pro/list_dbversions'"
+          "value" : "'https://dbend.areso.pro/list_dbtypes'"
         }, {
           "name" : "method",
           "value" : "'GET'"
         } ],
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
-        "hasContent" : true,
-        "stepsCount" : 0
+        "stepsCount" : 0,
+        "hasContent" : true
       }, {
         "name" : "Add response",
         "time" : {
-          "start" : 1700405904578,
-          "stop" : 1700405904578,
-          "duration" : 0
+          "start" : 1700513082427,
+          "stop" : 1700513082428,
+          "duration" : 1
         },
         "status" : "passed",
         "steps" : [ ],
@@ -59,23 +59,23 @@
         } ],
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
-        "hasContent" : true,
-        "stepsCount" : 0
+        "stepsCount" : 0,
+        "hasContent" : true
       } ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "url",
-        "value" : "'https://dbend.areso.pro/list_dbversions'"
+        "value" : "'https://dbend.areso.pro/list_dbtypes'"
       } ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : true,
-      "stepsCount" : 2
+      "stepsCount" : 2,
+      "hasContent" : true
     }, {
-      "name" : "Body: {\"3\":\"14\"}\n",
+      "name" : "Body: {\"3\":\"mysql8\"}\n",
       "time" : {
-        "start" : 1700405904578,
-        "stop" : 1700405904578,
+        "start" : 1700513082428,
+        "stop" : 1700513082428,
         "duration" : 0
       },
       "status" : "passed",
@@ -84,38 +84,38 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "364fa74dfac651e9",
+      "uid" : "fdb9655fa5de38be",
       "name" : "stdout",
-      "source" : "364fa74dfac651e9.txt",
+      "source" : "fdb9655fa5de38be.txt",
       "type" : "text/plain",
-      "size" : 72
+      "size" : 73
     } ],
     "parameters" : [ ],
     "attachmentsCount" : 1,
     "shouldDisplayMessage" : false,
-    "hasContent" : true,
-    "stepsCount" : 4
+    "stepsCount" : 4,
+    "hasContent" : true
   },
   "afterStages" : [ ],
   "labels" : [ {
-    "name" : "suite",
-    "value" : "REQUESTS GET"
-  }, {
     "name" : "subSuite",
     "value" : "GET"
+  }, {
+    "name" : "suite",
+    "value" : "REQUESTS GET"
   }, {
     "name" : "epic",
     "value" : "GET REQUESTS"
   }, {
     "name" : "host",
-    "value" : "fv-az888-640"
+    "value" : "fv-az841-995"
   }, {
     "name" : "thread",
-    "value" : "1904-MainThread"
+    "value" : "1906-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -142,31 +142,39 @@
         "failed" : 0,
         "broken" : 1,
         "skipped" : 0,
-        "passed" : 2,
+        "passed" : 3,
         "unknown" : 0,
-        "total" : 3
+        "total" : 4
       },
       "items" : [ {
-        "uid" : "32b1496a2efa09f3",
+        "uid" : "a5874e990eb38711",
         "status" : "passed",
         "time" : {
-          "start" : 1700405272924,
-          "stop" : 1700405273463,
-          "duration" : 539
+          "start" : 1700405903905,
+          "stop" : 1700405904244,
+          "duration" : 339
         }
       }, {
-        "uid" : "1ceece0e2ec78670",
+        "uid" : "bb10cb4dc6a3d909",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700405272373,
+          "stop" : 1700405272922,
+          "duration" : 549
+        }
+      }, {
+        "uid" : "75a29a9c0dfbf01a",
         "status" : "broken",
         "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'logs/log_2023-11-19_14-46-06.log'",
         "time" : {
-          "start" : 1700405167495,
-          "stop" : 1700405167495,
+          "start" : 1700405167487,
+          "stop" : 1700405167487,
           "duration" : 0
         }
       } ]
     },
     "tags" : [ ]
   },
-  "source" : "680533ee3df7233e.json",
+  "source" : "74e516433d36af01.json",
   "parameterValues" : [ ]
 }

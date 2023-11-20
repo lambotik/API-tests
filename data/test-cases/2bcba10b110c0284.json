@@ -1,12 +1,12 @@
 {
-  "uid" : "a7e5cae9bfa0686a",
+  "uid" : "2bcba10b110c0284",
   "name" : "test tos",
   "fullName" : "test_first.TestGET#test_tos",
   "historyId" : "e9af5566d9a7836038f64e3006a6767b",
   "time" : {
-    "start" : 1700405903560,
-    "stop" : 1700405903903,
-    "duration" : 343
+    "start" : 1700513081191,
+    "stop" : 1700513081863,
+    "duration" : 672
   },
   "status" : "passed",
   "flaky" : false,
@@ -17,16 +17,16 @@
     "steps" : [ {
       "name" : "Method GET",
       "time" : {
-        "start" : 1700405903560,
-        "stop" : 1700405903902,
-        "duration" : 342
+        "start" : 1700513081191,
+        "stop" : 1700513081862,
+        "duration" : 671
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Add request",
         "time" : {
-          "start" : 1700405903560,
-          "stop" : 1700405903560,
+          "start" : 1700513081191,
+          "stop" : 1700513081191,
           "duration" : 0
         },
         "status" : "passed",
@@ -41,13 +41,13 @@
         } ],
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
-        "hasContent" : true,
-        "stepsCount" : 0
+        "stepsCount" : 0,
+        "hasContent" : true
       }, {
         "name" : "Add response",
         "time" : {
-          "start" : 1700405903902,
-          "stop" : 1700405903902,
+          "start" : 1700513081862,
+          "stop" : 1700513081862,
           "duration" : 0
         },
         "status" : "passed",
@@ -59,8 +59,8 @@
         } ],
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
-        "hasContent" : true,
-        "stepsCount" : 0
+        "stepsCount" : 0,
+        "hasContent" : true
       } ],
       "attachments" : [ ],
       "parameters" : [ {
@@ -69,13 +69,13 @@
       } ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : true,
-      "stepsCount" : 2
+      "stepsCount" : 2,
+      "hasContent" : true
     }, {
       "name" : "Body: \nEnglish:\nHello. This pet-project (later Project) works AS IS, no warranty at all.\nUsing Project, you agree to that.\nYou MUST create backups of your databases for sake reasons.\nBecause I do run project on my own pocket money, \nI limit total size of the databases per 1 user as 100 MBs.\nAny account don't used more than 6 monts is subject for deletion with all databases.\n\nPrivacy:\nProject doesn't collect and don't save any data. There is even no Google Analytics or any analogue of that.  \nProject doesn't ask your name, phone, nationality or credit card.\nProject isn't compatible with GDPR or analogs, so, please, don't store any sensitive personal data.\nIf you do, you do this at your own risk.\nIf you do, I urge you to hash any sensitive data before submitting to your database in Project.\n\nEspañol.\nHola. Este proyecto favorito (proyecto posterior) funciona TAL CUAL, sin garantía alguna.\nAl usar Project, usted acepta eso.\nDEBE crear copias de seguridad de sus bases de datos por razones de seguridad.\nPorque dirijo el proyecto con mi propio dinero de bolsillo,\nLimito el tamaño total de las bases de datos por 1 usuario a 100 MB.\nCualquier cuenta que no haya usado más de 6 meses está sujeta a eliminación con todas las bases de datos.\n\nPrivacidad:\nEl proyecto no recopila ni guarda ningún dato. Ni siquiera hay Google Analytics o cualquier análogo de eso.\nProject no pregunta tu nombre, teléfono, nacionalidad o tarjeta de crédito.\nEl proyecto no es compatible con GDPR o análogos, así que, por favor, no almacene ningún dato personal confidencial.\nSi lo hace, lo hace bajo su propio riesgo.\nSi lo hace, le insto a que elimine los datos confidenciales antes de enviarlos a su base de datos en Project.\n\nРусский:\nПривет, это пет-проект (Проект) работает \"КАК ЕСТЬ\", без каких-либо гарантий.\nПользуюясь Проектом, вы соглашаетесь с этим.\nВы ДОЛЖНЫ создавать бэкапы ваших баз данных с целью их сохранности.\nПоскольку я плачу за проект из своих карманных денег,\nя лимитирую суммарный объем баз данных на одного пользователя 100 МБ.\nЛюбой аккаунт, не используемый более 6 месяцев, может быть удалён.\n\nПолитика персональных данных:\nПроект не собирает никаких данных о вас. На проекте нет Гугл Аналитики или Яндекс метрики.\nПроект не требует имени, телефона, гражданства, привязки или использования дебетовой карты.\nПроект не совместим с ФЗ-152 или аналогами, пожалуйста, не храните никаких персональных данных.\nЕсли всё-таки храните - это ваш риск и ваша ответственность.\nЕсли всё-таки храните, прошу хэшировать все персональные данные перед отправкой в вашу БД в проекте.\n",
       "time" : {
-        "start" : 1700405903902,
-        "stop" : 1700405903902,
+        "start" : 1700513081862,
+        "stop" : 1700513081862,
         "duration" : 0
       },
       "status" : "passed",
@@ -84,38 +84,38 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "73f1bf66ee522d80",
+      "uid" : "62c804f984fcd1c6",
       "name" : "stdout",
-      "source" : "73f1bf66ee522d80.txt",
+      "source" : "62c804f984fcd1c6.txt",
       "type" : "text/plain",
       "size" : 3331
     } ],
     "parameters" : [ ],
     "attachmentsCount" : 1,
     "shouldDisplayMessage" : false,
-    "hasContent" : true,
-    "stepsCount" : 4
+    "stepsCount" : 4,
+    "hasContent" : true
   },
   "afterStages" : [ ],
   "labels" : [ {
-    "name" : "suite",
-    "value" : "REQUESTS GET"
-  }, {
     "name" : "subSuite",
     "value" : "GET"
+  }, {
+    "name" : "suite",
+    "value" : "REQUESTS GET"
   }, {
     "name" : "epic",
     "value" : "GET REQUESTS"
   }, {
     "name" : "host",
-    "value" : "fv-az888-640"
+    "value" : "fv-az841-995"
   }, {
     "name" : "thread",
-    "value" : "1904-MainThread"
+    "value" : "1906-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -142,11 +142,19 @@
         "failed" : 0,
         "broken" : 1,
         "skipped" : 0,
-        "passed" : 2,
+        "passed" : 3,
         "unknown" : 0,
-        "total" : 3
+        "total" : 4
       },
       "items" : [ {
+        "uid" : "a7e5cae9bfa0686a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700405903560,
+          "stop" : 1700405903903,
+          "duration" : 343
+        }
+      }, {
         "uid" : "5aee94d64da8bf51",
         "status" : "passed",
         "time" : {
@@ -167,6 +175,6 @@
     },
     "tags" : [ ]
   },
-  "source" : "a7e5cae9bfa0686a.json",
+  "source" : "2bcba10b110c0284.json",
   "parameterValues" : [ ]
 }

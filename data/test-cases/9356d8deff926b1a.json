@@ -1,12 +1,12 @@
 {
-  "uid" : "f900592838b27a52",
-  "name" : "Post db list",
-  "fullName" : "test_first.TestPOST#test_post_db_list",
-  "historyId" : "8ec80f35f7e1b6a85681795adb5e6dd2",
+  "uid" : "9356d8deff926b1a",
+  "name" : "Post db create",
+  "fullName" : "test_first.TestPOST#test_post_db_create",
+  "historyId" : "1aec0f14b932a152b799443dcd6b951a",
   "time" : {
-    "start" : 1700405905625,
-    "stop" : 1700405905975,
-    "duration" : 350
+    "start" : 1700513085258,
+    "stop" : 1700513086063,
+    "duration" : 805
   },
   "status" : "passed",
   "flaky" : false,
@@ -17,16 +17,16 @@
     "steps" : [ {
       "name" : "Method POST",
       "time" : {
-        "start" : 1700405905625,
-        "stop" : 1700405905974,
-        "duration" : 349
+        "start" : 1700513085259,
+        "stop" : 1700513086062,
+        "duration" : 803
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Add request",
         "time" : {
-          "start" : 1700405905625,
-          "stop" : 1700405905625,
+          "start" : 1700513085259,
+          "stop" : 1700513085259,
           "duration" : 0
         },
         "status" : "passed",
@@ -34,20 +34,20 @@
         "attachments" : [ ],
         "parameters" : [ {
           "name" : "url",
-          "value" : "'https://dbend.areso.pro/db_list'"
+          "value" : "'https://dbend.areso.pro/db_create'"
         }, {
           "name" : "method",
           "value" : "'POST'"
         } ],
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
-        "hasContent" : true,
-        "stepsCount" : 0
+        "stepsCount" : 0,
+        "hasContent" : true
       }, {
         "name" : "Add response",
         "time" : {
-          "start" : 1700405905974,
-          "stop" : 1700405905974,
+          "start" : 1700513086062,
+          "stop" : 1700513086062,
           "duration" : 0
         },
         "status" : "passed",
@@ -55,34 +55,34 @@
         "attachments" : [ ],
         "parameters" : [ {
           "name" : "result",
-          "value" : "<Response [200]>"
+          "value" : "<Response [201]>"
         } ],
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
-        "hasContent" : true,
-        "stepsCount" : 0
+        "stepsCount" : 0,
+        "hasContent" : true
       } ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "url",
-        "value" : "'https://dbend.areso.pro/db_list'"
-      }, {
-        "name" : "body",
-        "value" : "{}"
+        "value" : "'https://dbend.areso.pro/db_create'"
       }, {
         "name" : "cookie",
-        "value" : "{'sid': 'c599084b-bfea-42d9-8566-2c74221a6f3a'}"
+        "value" : "{'sid': 'dabf9188-2b16-4f33-a857-e4e5289cb88b'}"
+      }, {
+        "name" : "body",
+        "value" : "{'dbtype': 3, 'dbversion': 5, 'env': 3, 'region': 3}"
       } ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : true,
-      "stepsCount" : 2
+      "stepsCount" : 2,
+      "hasContent" : true
     }, {
-      "name" : "Body: {\"content\":{}}\n",
+      "name" : "Body: your query for new database created successfully",
       "time" : {
-        "start" : 1700405905974,
-        "stop" : 1700405905974,
-        "duration" : 0
+        "start" : 1700513086062,
+        "stop" : 1700513086063,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
@@ -90,38 +90,38 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "1abbb8eef4a3c038",
+      "uid" : "b250dfd9eae4ae0d",
       "name" : "stdout",
-      "source" : "1abbb8eef4a3c038.txt",
+      "source" : "b250dfd9eae4ae0d.txt",
       "type" : "text/plain",
-      "size" : 102
+      "size" : 139
     } ],
     "parameters" : [ ],
     "attachmentsCount" : 1,
     "shouldDisplayMessage" : false,
-    "hasContent" : true,
-    "stepsCount" : 4
+    "stepsCount" : 4,
+    "hasContent" : true
   },
   "afterStages" : [ ],
   "labels" : [ {
+    "name" : "suite",
+    "value" : "REQUESTS POST"
+  }, {
     "name" : "epic",
     "value" : "POST REQUESTS"
   }, {
     "name" : "subSuite",
     "value" : "POST"
   }, {
-    "name" : "suite",
-    "value" : "REQUESTS POST"
-  }, {
     "name" : "host",
-    "value" : "fv-az888-640"
+    "value" : "fv-az841-995"
   }, {
     "name" : "thread",
-    "value" : "1904-MainThread"
+    "value" : "1906-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -145,35 +145,44 @@
     "categories" : [ ],
     "history" : {
       "statistic" : {
-        "failed" : 0,
+        "failed" : 1,
         "broken" : 0,
-        "skipped" : 1,
-        "passed" : 2,
+        "skipped" : 2,
+        "passed" : 1,
         "unknown" : 0,
-        "total" : 3
+        "total" : 4
       },
       "items" : [ {
-        "uid" : "d40a786b47d65a77",
-        "status" : "passed",
-        "statusDetails" : "XPASS",
+        "uid" : "cb3a19533c885825",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Incorrect status code",
         "time" : {
-          "start" : 1700405275323,
-          "stop" : 1700405275866,
-          "duration" : 543
+          "start" : 1700405905977,
+          "stop" : 1700405906331,
+          "duration" : 354
         }
       }, {
-        "uid" : "72da8c78dbd105f0",
+        "uid" : "ed7895604f3ad20e",
+        "status" : "skipped",
+        "statusDetails" : "XFAIL\n\nAssertionError: Incorrect status code",
+        "time" : {
+          "start" : 1700405275867,
+          "stop" : 1700405276407,
+          "duration" : 540
+        }
+      }, {
+        "uid" : "442ae901971fa25",
         "status" : "skipped",
         "statusDetails" : "XFAIL\n\nFileNotFoundError: [Errno 2] No such file or directory: 'logs/log_2023-11-19_14-46-06.log'",
         "time" : {
-          "start" : 1700405167533,
-          "stop" : 1700405167533,
-          "duration" : 0
+          "start" : 1700405167541,
+          "stop" : 1700405167542,
+          "duration" : 1
         }
       } ]
     },
     "tags" : [ ]
   },
-  "source" : "f900592838b27a52.json",
+  "source" : "9356d8deff926b1a.json",
   "parameterValues" : [ ]
 }

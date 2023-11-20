@@ -1,0 +1,6 @@
+
+
+Method POST: db_create
+https://dbend.areso.pro/db_create
+Response:  your query for new database created successfully
+Status code is: 201
