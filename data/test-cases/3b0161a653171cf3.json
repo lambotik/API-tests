@@ -1,12 +1,12 @@
 {
-  "uid" : "46985f594ade37f1",
-  "name" : "Post db list",
-  "fullName" : "test_first.TestPOST#test_post_db_list",
-  "historyId" : "8ec80f35f7e1b6a85681795adb5e6dd2",
+  "uid" : "3b0161a653171cf3",
+  "name" : "delete db",
+  "fullName" : "test_first.TestPOST#test_delete_db",
+  "historyId" : "f2f3cba4290fc70b0b6b7aaf6737862e",
   "time" : {
-    "start" : 1700513084724,
-    "stop" : 1700513085257,
-    "duration" : 533
+    "start" : 1700766861218,
+    "stop" : 1700766861596,
+    "duration" : 378
   },
   "status" : "passed",
   "flaky" : false,
@@ -17,16 +17,16 @@
     "steps" : [ {
       "name" : "Method POST",
       "time" : {
-        "start" : 1700513084724,
-        "stop" : 1700513085256,
-        "duration" : 532
+        "start" : 1700766861218,
+        "stop" : 1700766861595,
+        "duration" : 377
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Add request",
         "time" : {
-          "start" : 1700513084724,
-          "stop" : 1700513084724,
+          "start" : 1700766861218,
+          "stop" : 1700766861218,
           "duration" : 0
         },
         "status" : "passed",
@@ -34,7 +34,7 @@
         "attachments" : [ ],
         "parameters" : [ {
           "name" : "url",
-          "value" : "'https://dbend.areso.pro/db_list'"
+          "value" : "'https://dbend.areso.pro/db_delete'"
         }, {
           "name" : "method",
           "value" : "'POST'"
@@ -46,8 +46,8 @@
       }, {
         "name" : "Add response",
         "time" : {
-          "start" : 1700513085256,
-          "stop" : 1700513085256,
+          "start" : 1700766861595,
+          "stop" : 1700766861595,
           "duration" : 0
         },
         "status" : "passed",
@@ -65,23 +65,23 @@
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "url",
-        "value" : "'https://dbend.areso.pro/db_list'"
+        "value" : "'https://dbend.areso.pro/db_delete'"
       }, {
-        "name" : "body",
-        "value" : "{}"
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0655bc53-db5b-7762-8000-4fe80aae1b4f\"}'"
       }, {
-        "name" : "cookie",
-        "value" : "{'sid': 'dabf9188-2b16-4f33-a857-e4e5289cb88b'}"
+        "name" : "sid",
+        "value" : "{'sid': 'c4fb47ed-a9b4-41a1-b08e-62fcaa676270'}"
       } ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
       "stepsCount" : 2,
       "hasContent" : true
     }, {
-      "name" : "Body: {\"content\":{\"0655a7a1-ab83-7419-8000-c8a3a844007f\":[\"db_kldlh93h\",\"CIS\",\"db_created\",\"mysql://user_jkh1ln5h:pwPW01__BktsnnxPzEyHOQ@ru1.areso.pro:3306/db_kldlh93h\",\"Sun, 19 Nov 2023 21:12:07 GMT\"]}}\n",
+      "name" : "Response body: {\"content\":\"successfully accepted request for deletion\"}\n",
       "time" : {
-        "start" : 1700513085256,
-        "stop" : 1700513085256,
+        "start" : 1700766861595,
+        "stop" : 1700766861595,
         "duration" : 0
       },
       "status" : "passed",
@@ -94,11 +94,11 @@
       "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "89170cbdfcc383a5",
+      "uid" : "f64dc0a7fbeea752",
       "name" : "stdout",
-      "source" : "89170cbdfcc383a5.txt",
+      "source" : "f64dc0a7fbeea752.txt",
       "type" : "text/plain",
-      "size" : 285
+      "size" : 178
     } ],
     "parameters" : [ ],
     "attachmentsCount" : 1,
@@ -108,20 +108,20 @@
   },
   "afterStages" : [ ],
   "labels" : [ {
-    "name" : "suite",
-    "value" : "REQUESTS POST"
+    "name" : "subSuite",
+    "value" : "DELETE"
   }, {
     "name" : "epic",
     "value" : "POST REQUESTS"
   }, {
-    "name" : "subSuite",
-    "value" : "POST"
+    "name" : "suite",
+    "value" : "REQUESTS POST"
   }, {
     "name" : "host",
-    "value" : "fv-az841-995"
+    "value" : "fv-az661-209"
   }, {
     "name" : "thread",
-    "value" : "1906-MainThread"
+    "value" : "1936-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -143,45 +143,8 @@
     "severity" : "normal",
     "retries" : [ ],
     "categories" : [ ],
-    "history" : {
-      "statistic" : {
-        "failed" : 0,
-        "broken" : 0,
-        "skipped" : 1,
-        "passed" : 3,
-        "unknown" : 0,
-        "total" : 4
-      },
-      "items" : [ {
-        "uid" : "f900592838b27a52",
-        "status" : "passed",
-        "time" : {
-          "start" : 1700405905625,
-          "stop" : 1700405905975,
-          "duration" : 350
-        }
-      }, {
-        "uid" : "d40a786b47d65a77",
-        "status" : "passed",
-        "statusDetails" : "XPASS",
-        "time" : {
-          "start" : 1700405275323,
-          "stop" : 1700405275866,
-          "duration" : 543
-        }
-      }, {
-        "uid" : "72da8c78dbd105f0",
-        "status" : "skipped",
-        "statusDetails" : "XFAIL\n\nFileNotFoundError: [Errno 2] No such file or directory: 'logs/log_2023-11-19_14-46-06.log'",
-        "time" : {
-          "start" : 1700405167533,
-          "stop" : 1700405167533,
-          "duration" : 0
-        }
-      } ]
-    },
     "tags" : [ ]
   },
-  "source" : "46985f594ade37f1.json",
+  "source" : "3b0161a653171cf3.json",
   "parameterValues" : [ ]
 }

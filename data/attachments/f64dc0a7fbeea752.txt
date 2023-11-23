@@ -1,0 +1,8 @@
+
+
+Method DELETE: delete_db
+Url:  https://dbend.areso.pro/db_delete
+Status code: 200
+Response body:  {"content":"successfully accepted request for deletion"}
+
+Status code is: 200

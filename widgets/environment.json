@@ -2,16 +2,16 @@
   "values" : [ "master" ],
   "name" : "GIT_BRANCH"
 }, {
-  "values" : [ "4332a1dab9dfe7c3f0eb6b22cf19134289c38211" ],
+  "values" : [ "47ca4b926ced2f9a79f2a5934e58a8caf6a80fb3" ],
   "name" : "GIT_COMMIT_ID"
 }, {
-  "values" : [ "added: fix db_create" ],
+  "values" : [ "Added: delete db" ],
   "name" : "GIT_COMMIT_MESSAGE"
 }, {
   "values" : [ "lambotik1988@gmail.com" ],
   "name" : "GIT_COMMIT_AUTHOR_NAME"
 }, {
-  "values" : [ "2023-11-20 00:14:20 +0300" ],
+  "values" : [ "2023-11-23 22:13:19 +0300" ],
   "name" : "GIT_COMMIT_TIME"
 }, {
   "values" : [ "119.0.6045.159" ],

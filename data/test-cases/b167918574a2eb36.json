@@ -1,12 +1,12 @@
 {
-  "uid" : "b6df16a111432815",
+  "uid" : "b167918574a2eb36",
   "name" : "Post login",
   "fullName" : "test_first.TestPOST#test_post_login",
   "historyId" : "1fd6fb68fa1472ef9c72aabb3bafa2fc",
   "time" : {
-    "start" : 1700513084046,
-    "stop" : 1700513084722,
-    "duration" : 676
+    "start" : 1700766860124,
+    "stop" : 1700766860466,
+    "duration" : 342
   },
   "status" : "passed",
   "flaky" : false,
@@ -17,8 +17,8 @@
     "steps" : [ {
       "name" : "Add request",
       "time" : {
-        "start" : 1700513084046,
-        "stop" : 1700513084046,
+        "start" : 1700766860124,
+        "stop" : 1700766860124,
         "duration" : 0
       },
       "status" : "passed",
@@ -38,8 +38,8 @@
     }, {
       "name" : "Add response",
       "time" : {
-        "start" : 1700513084721,
-        "stop" : 1700513084722,
+        "start" : 1700766860464,
+        "stop" : 1700766860465,
         "duration" : 1
       },
       "status" : "passed",
@@ -56,8 +56,8 @@
     }, {
       "name" : "Body: {\"email\":\"your_email\",\"password\":\"your_password\"}",
       "time" : {
-        "start" : 1700513084722,
-        "stop" : 1700513084722,
+        "start" : 1700766860465,
+        "stop" : 1700766860465,
         "duration" : 0
       },
       "status" : "passed",
@@ -70,9 +70,9 @@
       "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "bb8f4263d844fc07",
+      "uid" : "816464f82b8d1a8d",
       "name" : "stdout",
-      "source" : "bb8f4263d844fc07.txt",
+      "source" : "816464f82b8d1a8d.txt",
       "type" : "text/plain",
       "size" : 284
     } ],
@@ -94,10 +94,10 @@
     "value" : "POST"
   }, {
     "name" : "host",
-    "value" : "fv-az841-995"
+    "value" : "fv-az661-209"
   }, {
     "name" : "thread",
-    "value" : "1906-MainThread"
+    "value" : "1936-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -124,11 +124,19 @@
         "failed" : 0,
         "broken" : 0,
         "skipped" : 1,
-        "passed" : 3,
+        "passed" : 4,
         "unknown" : 0,
-        "total" : 4
+        "total" : 5
       },
       "items" : [ {
+        "uid" : "b6df16a111432815",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700513084046,
+          "stop" : 1700513084722,
+          "duration" : 676
+        }
+      }, {
         "uid" : "66e9b710fe14d159",
         "status" : "passed",
         "time" : {
@@ -158,6 +166,6 @@
     },
     "tags" : [ ]
   },
-  "source" : "b6df16a111432815.json",
+  "source" : "b167918574a2eb36.json",
   "parameterValues" : [ ]
 }

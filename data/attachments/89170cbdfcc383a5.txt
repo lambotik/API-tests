@@ -1,7 +1,0 @@
-
-
-Method POST: db_list
-https://dbend.areso.pro/db_list
-Response:  {"content":{"0655a7a1-ab83-7419-8000-c8a3a844007f":["db_kldlh93h","CIS","db_created","mysql://user_jkh1ln5h:pwPW01__BktsnnxPzEyHOQ@ru1.areso.pro:3306/db_kldlh93h","Sun, 19 Nov 2023 21:12:07 GMT"]}}
-
-Status code is: 200

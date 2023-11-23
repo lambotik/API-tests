@@ -1,12 +1,12 @@
 {
-  "uid" : "9356d8deff926b1a",
+  "uid" : "895fee82e8e5cbc9",
   "name" : "Post db create",
   "fullName" : "test_first.TestPOST#test_post_db_create",
   "historyId" : "1aec0f14b932a152b799443dcd6b951a",
   "time" : {
-    "start" : 1700513085258,
-    "stop" : 1700513086063,
-    "duration" : 805
+    "start" : 1700766860821,
+    "stop" : 1700766861217,
+    "duration" : 396
   },
   "status" : "passed",
   "flaky" : false,
@@ -17,16 +17,16 @@
     "steps" : [ {
       "name" : "Method POST",
       "time" : {
-        "start" : 1700513085259,
-        "stop" : 1700513086062,
-        "duration" : 803
+        "start" : 1700766860821,
+        "stop" : 1700766861216,
+        "duration" : 395
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Add request",
         "time" : {
-          "start" : 1700513085259,
-          "stop" : 1700513085259,
+          "start" : 1700766860821,
+          "stop" : 1700766860821,
           "duration" : 0
         },
         "status" : "passed",
@@ -46,8 +46,8 @@
       }, {
         "name" : "Add response",
         "time" : {
-          "start" : 1700513086062,
-          "stop" : 1700513086062,
+          "start" : 1700766861216,
+          "stop" : 1700766861216,
           "duration" : 0
         },
         "status" : "passed",
@@ -68,7 +68,7 @@
         "value" : "'https://dbend.areso.pro/db_create'"
       }, {
         "name" : "cookie",
-        "value" : "{'sid': 'dabf9188-2b16-4f33-a857-e4e5289cb88b'}"
+        "value" : "{'sid': 'c4fb47ed-a9b4-41a1-b08e-62fcaa676270'}"
       }, {
         "name" : "body",
         "value" : "{'dbtype': 3, 'dbversion': 5, 'env': 3, 'region': 3}"
@@ -80,9 +80,9 @@
     }, {
       "name" : "Body: your query for new database created successfully",
       "time" : {
-        "start" : 1700513086062,
-        "stop" : 1700513086063,
-        "duration" : 1
+        "start" : 1700766861216,
+        "stop" : 1700766861216,
+        "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
@@ -94,9 +94,9 @@
       "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "b250dfd9eae4ae0d",
+      "uid" : "c28b35d067515a7b",
       "name" : "stdout",
-      "source" : "b250dfd9eae4ae0d.txt",
+      "source" : "c28b35d067515a7b.txt",
       "type" : "text/plain",
       "size" : 139
     } ],
@@ -118,10 +118,10 @@
     "value" : "POST"
   }, {
     "name" : "host",
-    "value" : "fv-az841-995"
+    "value" : "fv-az661-209"
   }, {
     "name" : "thread",
-    "value" : "1906-MainThread"
+    "value" : "1936-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -148,11 +148,19 @@
         "failed" : 1,
         "broken" : 0,
         "skipped" : 2,
-        "passed" : 1,
+        "passed" : 2,
         "unknown" : 0,
-        "total" : 4
+        "total" : 5
       },
       "items" : [ {
+        "uid" : "9356d8deff926b1a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700513085258,
+          "stop" : 1700513086063,
+          "duration" : 805
+        }
+      }, {
         "uid" : "cb3a19533c885825",
         "status" : "failed",
         "statusDetails" : "AssertionError: Incorrect status code",
@@ -183,6 +191,6 @@
     },
     "tags" : [ ]
   },
-  "source" : "9356d8deff926b1a.json",
+  "source" : "895fee82e8e5cbc9.json",
   "parameterValues" : [ ]
 }
