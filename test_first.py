@@ -17,8 +17,17 @@ password = os.getenv('PASSWORD')
 body = {"email": f'{email}', "password": f'{password}'}
 
 result = requests.post('https://dbend.areso.pro/login', json=body)
+db_uuid = {"db_uuid": "0655bc53-db5b-7762-8000-4fe80aae1b4f"}
+json_db_uuid = json.dumps(db_uuid)
 
 sid = dict(result.cookies)
+print(sid)
+del_db = requests.post('https://dbend.areso.pro/db_delete', data=json_db_uuid, cookies=sid)
+print(del_db.text)
+
+
+# sid_del = result.cookies.get('sid')
+# print(sid_del)
 
 
 @allure.epic('GET REQUESTS')
@@ -80,6 +89,16 @@ class TestPOST:
         result_post_db_list = API.post_db_create(sid)
         Checking.check_status_code(result_post_db_list, 201)
 
+    @allure.sub_suite('DELETE')
+    @allure.title('delete db')
+    def test_delete_db(self):
+        print('\n\nMethod DELETE: delete_db')
+        result_post_db_list = API.delete_db('0655bc53-db5b-7762-8000-4fe80aae1b4f', sid)
+        Checking.check_status_code(result_post_db_list, 200)
 
-result = requests.post('https://dbend.areso.pro/db_create', sid)
-print(result.text)
+# body3 = {"dbtype": 3, "dbversion": 5, "env": 3, "region": 3}
+# x = json.dumps(body3)
+# print(sid)
+# print(type(sid))
+# result3 = requests.post('https://dbend.areso.pro/db_create', data=x, cookies=sid)
+# print(result3.text)

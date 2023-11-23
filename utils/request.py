@@ -1,5 +1,6 @@
 import json
 import os
+from pprint import pprint
 
 import allure
 
@@ -106,7 +107,8 @@ class API:
         print(post_url)
         result_post = HttpMethods.post_set_cookie(post_url, {}, sid)
         with allure.step(f'Body: {result_post.text}'):
-            print('Response: ', result_post.text)
+            print('Response: ')
+            pprint(result_post.text)
         return result_post
 
     @staticmethod
@@ -140,18 +142,15 @@ class API:
         return result_put
 
     @staticmethod
-    def delete_new_user(user_id):
-        """
-        Method delete user
-        :param user_id:
-        :return: JSON Response
-        """
-        delete_resource = 'api/users/'  # Resource for method DELETE
-        delete_url = base_url + delete_resource + user_id
+    def delete_db(uuid, sid):
+        delete_resource = '/db_delete'  # Resource for method DELETE
+        delete_url = base_url + delete_resource
         print('Url: ', delete_url)
-        json_for_delete_new_user = {"id": user_id}
-        result_delete = HttpMethods.delete(delete_url, json_for_delete_new_user)
-        with allure.step('Response body:'):
+        db_uuid = {"db_uuid": f"{uuid}"}
+        json_db_uuid = json.dumps(db_uuid)
+        result_delete = HttpMethods.post_for_delete_db(delete_url, json_db_uuid, sid)
+        with allure.step(f'Response body: {result_delete.text}'):
+            print(f'Status code: {result_delete.status_code}')
             print('Response body: ', result_delete.text)
         return result_delete
 
