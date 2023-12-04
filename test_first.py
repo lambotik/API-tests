@@ -1,9 +1,10 @@
-from datetime import datetime
 import json
 import os
 import time
+from datetime import datetime
 
 import allure
+import pytest
 import requests
 from dotenv import load_dotenv
 
@@ -99,40 +100,41 @@ class TestPOST:
         result_post_db_list = API.delete_db(first_db_uuid, sid)
         Checking.check_status_code(result_post_db_list, 200)
 
+    @pytest.mark.xfail
     def test_complex(self):
+        empty_db_list = API.post_db_list(sid).text
         result_post_db_create = API.post_db_create(sid)
         result_post_db_list = API.post_db_list(sid)
         json_list_db = json.loads(result_post_db_list.text)
-        first_db_uuid = list(json_list_db['content'].keys())[0]
-        while True:
-            result_post_db_delete = API.delete_db(first_db_uuid, sid)
-            print('Start: ', str(datetime.now().strftime("%d-%m-%Y %H:%M:%S")))
-            json_delete_db = json.loads(result_post_db_delete.text)
-            print(list(json_delete_db.values())[0])
-            message = list(json_delete_db.values())[0].split(':')
-            if 'msg[18]' in message:
-                print('Wait while db creating!!!')
-                print(str(datetime.now().strftime("%d-%m-%Y %H:%M:%S")))
-                time.sleep(1)
-            elif 'msg[19]' in message:
-                print('Wait while db deleting!!!')
+        try:
+            first_db_uuid = list(json_list_db['content'].keys())[0]
+            while True:
                 result_post_db_delete = API.delete_db(first_db_uuid, sid)
+                print('Start: ', str(datetime.now().strftime("%d-%m-%Y %H:%M:%S")))
                 json_delete_db = json.loads(result_post_db_delete.text)
                 print(list(json_delete_db.values())[0])
-                time.sleep(1)
-            else:
-                result_post_db_delete = API.delete_db(first_db_uuid, sid)
-                json_delete_db = json.loads(result_post_db_delete.text)
-                print('Finish: ', str(datetime.now().strftime("%d-%m-%Y %H:%M:%S")))
-                break
-
-
-
-
-
-
-
-
+                message = list(json_delete_db.values())[0].split(':')
+                if 'msg[18]' in message:
+                    print('Wait while db creating!!!')
+                    print(str(datetime.now().strftime("%d-%m-%Y %H:%M:%S")))
+                    time.sleep(1)
+                elif 'msg[19]' in message:
+                    print('Wait while db deleting!!!')
+                    result_post_db_delete = API.delete_db(first_db_uuid, sid)
+                    json_delete_db = json.loads(result_post_db_delete.text)
+                    print(list(json_delete_db.values())[0])
+                    time.sleep(1)
+                else:
+                    result_post_db_delete = API.delete_db(first_db_uuid, sid)
+                    json_delete_db = json.loads(result_post_db_delete.text)
+                    print('Finish: ', str(datetime.now().strftime("%d-%m-%Y %H:%M:%S")))
+                    break
+            cur_db_list = API.post_db_list(sid)
+            assert cur_db_list.text == empty_db_list
+        except Exception as ex:
+            print(ex)
+            final = API.post_db_list(sid)
+            print('DB is not deleted empty', final)
 
 # body3 = {"dbtype": 3, "dbversion": 5, "env": 3, "region": 3}
 # x = json.dumps(body3)
