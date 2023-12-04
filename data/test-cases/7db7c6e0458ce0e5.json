@@ -1,12 +1,12 @@
 {
-  "uid" : "588a110b327007a9",
-  "name" : "List dbtypes",
-  "fullName" : "test_first.TestGET#test_list_dbtypes",
-  "historyId" : "c1ddb0ad2a5283a85532f93dc1c7d028",
+  "uid" : "7db7c6e0458ce0e5",
+  "name" : "Post db list",
+  "fullName" : "test_first.TestPOST#test_post_db_list",
+  "historyId" : "8ec80f35f7e1b6a85681795adb5e6dd2",
   "time" : {
-    "start" : 1700766858700,
-    "stop" : 1700766859039,
-    "duration" : 339
+    "start" : 1701725996981,
+    "stop" : 1701725997325,
+    "duration" : 344
   },
   "status" : "passed",
   "flaky" : false,
@@ -15,18 +15,18 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "Method GET",
+      "name" : "Method POST",
       "time" : {
-        "start" : 1700766858700,
-        "stop" : 1700766859038,
-        "duration" : 338
+        "start" : 1701725996981,
+        "stop" : 1701725997324,
+        "duration" : 343
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Add request",
         "time" : {
-          "start" : 1700766858700,
-          "stop" : 1700766858700,
+          "start" : 1701725996982,
+          "stop" : 1701725996982,
           "duration" : 0
         },
         "status" : "passed",
@@ -34,10 +34,10 @@
         "attachments" : [ ],
         "parameters" : [ {
           "name" : "url",
-          "value" : "'https://dbend.areso.pro/list_dbtypes'"
+          "value" : "'https://dbend.areso.pro/db_list'"
         }, {
           "name" : "method",
-          "value" : "'GET'"
+          "value" : "'POST'"
         } ],
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
@@ -46,8 +46,8 @@
       }, {
         "name" : "Add response",
         "time" : {
-          "start" : 1700766859038,
-          "stop" : 1700766859038,
+          "start" : 1701725997324,
+          "stop" : 1701725997324,
           "duration" : 0
         },
         "status" : "passed",
@@ -65,17 +65,23 @@
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "url",
-        "value" : "'https://dbend.areso.pro/list_dbtypes'"
+        "value" : "'https://dbend.areso.pro/db_list'"
+      }, {
+        "name" : "body",
+        "value" : "{}"
+      }, {
+        "name" : "cookie",
+        "value" : "{'sid': '9fefbb8e-e985-46d5-9cc0-462a29b53691'}"
       } ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
       "stepsCount" : 2,
       "hasContent" : true
     }, {
-      "name" : "Body: {\"3\":\"mysql8\"}\n",
+      "name" : "Body: {\"content\":{\"0656e472-ce07-7de6-8000-e5ea91ab3141\":[\"\",\"CIS\",\"db_creating\",null,null]}}\n",
       "time" : {
-        "start" : 1700766859038,
-        "stop" : 1700766859038,
+        "start" : 1701725997324,
+        "stop" : 1701725997324,
         "duration" : 0
       },
       "status" : "passed",
@@ -88,11 +94,11 @@
       "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "4d23a3b0a5698456",
+      "uid" : "6e7893def6755b72",
       "name" : "stdout",
-      "source" : "4d23a3b0a5698456.txt",
+      "source" : "6e7893def6755b72.txt",
       "type" : "text/plain",
-      "size" : 73
+      "size" : 178
     } ],
     "parameters" : [ ],
     "attachmentsCount" : 1,
@@ -102,20 +108,20 @@
   },
   "afterStages" : [ ],
   "labels" : [ {
-    "name" : "suite",
-    "value" : "REQUESTS GET"
-  }, {
     "name" : "epic",
-    "value" : "GET REQUESTS"
+    "value" : "POST REQUESTS"
   }, {
     "name" : "subSuite",
-    "value" : "GET"
+    "value" : "POST"
+  }, {
+    "name" : "suite",
+    "value" : "REQUESTS POST"
   }, {
     "name" : "host",
-    "value" : "fv-az661-209"
+    "value" : "fv-az736-612"
   }, {
     "name" : "thread",
-    "value" : "1936-MainThread"
+    "value" : "2078-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -140,49 +146,58 @@
     "history" : {
       "statistic" : {
         "failed" : 0,
-        "broken" : 1,
-        "skipped" : 0,
-        "passed" : 4,
+        "broken" : 0,
+        "skipped" : 1,
+        "passed" : 5,
         "unknown" : 0,
-        "total" : 5
+        "total" : 6
       },
       "items" : [ {
-        "uid" : "74e516433d36af01",
+        "uid" : "47d83e599d4f26eb",
         "status" : "passed",
         "time" : {
-          "start" : 1700513081865,
-          "stop" : 1700513082428,
-          "duration" : 563
+          "start" : 1700766860467,
+          "stop" : 1700766860819,
+          "duration" : 352
         }
       }, {
-        "uid" : "a5874e990eb38711",
+        "uid" : "46985f594ade37f1",
         "status" : "passed",
         "time" : {
-          "start" : 1700405903905,
-          "stop" : 1700405904244,
-          "duration" : 339
+          "start" : 1700513084724,
+          "stop" : 1700513085257,
+          "duration" : 533
         }
       }, {
-        "uid" : "bb10cb4dc6a3d909",
+        "uid" : "f900592838b27a52",
         "status" : "passed",
         "time" : {
-          "start" : 1700405272373,
-          "stop" : 1700405272922,
-          "duration" : 549
+          "start" : 1700405905625,
+          "stop" : 1700405905975,
+          "duration" : 350
         }
       }, {
-        "uid" : "75a29a9c0dfbf01a",
-        "status" : "broken",
-        "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'logs/log_2023-11-19_14-46-06.log'",
+        "uid" : "d40a786b47d65a77",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
         "time" : {
-          "start" : 1700405167487,
-          "stop" : 1700405167487,
+          "start" : 1700405275323,
+          "stop" : 1700405275866,
+          "duration" : 543
+        }
+      }, {
+        "uid" : "72da8c78dbd105f0",
+        "status" : "skipped",
+        "statusDetails" : "XFAIL\n\nFileNotFoundError: [Errno 2] No such file or directory: 'logs/log_2023-11-19_14-46-06.log'",
+        "time" : {
+          "start" : 1700405167533,
+          "stop" : 1700405167533,
           "duration" : 0
         }
       } ]
     },
     "tags" : [ ]
   },
-  "source" : "588a110b327007a9.json",
+  "source" : "7db7c6e0458ce0e5.json",
   "parameterValues" : [ ]
 }

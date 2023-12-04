@@ -1,12 +1,12 @@
 {
-  "uid" : "b167918574a2eb36",
+  "uid" : "219baf26c509cfc7",
   "name" : "Post login",
   "fullName" : "test_first.TestPOST#test_post_login",
   "historyId" : "1fd6fb68fa1472ef9c72aabb3bafa2fc",
   "time" : {
-    "start" : 1700766860124,
-    "stop" : 1700766860466,
-    "duration" : 342
+    "start" : 1701725996126,
+    "stop" : 1701725996469,
+    "duration" : 343
   },
   "status" : "passed",
   "flaky" : false,
@@ -17,8 +17,8 @@
     "steps" : [ {
       "name" : "Add request",
       "time" : {
-        "start" : 1700766860124,
-        "stop" : 1700766860124,
+        "start" : 1701725996126,
+        "stop" : 1701725996126,
         "duration" : 0
       },
       "status" : "passed",
@@ -38,9 +38,9 @@
     }, {
       "name" : "Add response",
       "time" : {
-        "start" : 1700766860464,
-        "stop" : 1700766860465,
-        "duration" : 1
+        "start" : 1701725996468,
+        "stop" : 1701725996468,
+        "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
@@ -56,8 +56,8 @@
     }, {
       "name" : "Body: {\"email\":\"your_email\",\"password\":\"your_password\"}",
       "time" : {
-        "start" : 1700766860465,
-        "stop" : 1700766860465,
+        "start" : 1701725996468,
+        "stop" : 1701725996468,
         "duration" : 0
       },
       "status" : "passed",
@@ -70,9 +70,9 @@
       "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "816464f82b8d1a8d",
+      "uid" : "f2ecb6239f66323b",
       "name" : "stdout",
-      "source" : "816464f82b8d1a8d.txt",
+      "source" : "f2ecb6239f66323b.txt",
       "type" : "text/plain",
       "size" : 284
     } ],
@@ -84,20 +84,20 @@
   },
   "afterStages" : [ ],
   "labels" : [ {
-    "name" : "suite",
-    "value" : "REQUESTS POST"
-  }, {
     "name" : "epic",
     "value" : "POST REQUESTS"
   }, {
     "name" : "subSuite",
     "value" : "POST"
   }, {
+    "name" : "suite",
+    "value" : "REQUESTS POST"
+  }, {
     "name" : "host",
-    "value" : "fv-az661-209"
+    "value" : "fv-az736-612"
   }, {
     "name" : "thread",
-    "value" : "1936-MainThread"
+    "value" : "2078-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -124,11 +124,19 @@
         "failed" : 0,
         "broken" : 0,
         "skipped" : 1,
-        "passed" : 4,
+        "passed" : 5,
         "unknown" : 0,
-        "total" : 5
+        "total" : 6
       },
       "items" : [ {
+        "uid" : "b167918574a2eb36",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700766860124,
+          "stop" : 1700766860466,
+          "duration" : 342
+        }
+      }, {
         "uid" : "b6df16a111432815",
         "status" : "passed",
         "time" : {
@@ -166,6 +174,6 @@
     },
     "tags" : [ ]
   },
-  "source" : "b167918574a2eb36.json",
+  "source" : "219baf26c509cfc7.json",
   "parameterValues" : [ ]
 }

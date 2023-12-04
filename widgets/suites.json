@@ -1,6 +1,17 @@
 {
   "total" : 2,
   "items" : [ {
+    "uid" : "661f9a2e47460ee06bb527bba1363315",
+    "name" : "REQUESTS POST",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 5
+    }
+  }, {
     "uid" : "90e75bd36db8dbf20ccb9075691be50b",
     "name" : "REQUESTS GET",
     "statistic" : {
@@ -10,17 +21,6 @@
       "passed" : 5,
       "unknown" : 0,
       "total" : 5
-    }
-  }, {
-    "uid" : "661f9a2e47460ee06bb527bba1363315",
-    "name" : "REQUESTS POST",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 4,
-      "unknown" : 0,
-      "total" : 4
     }
   } ]
 }

@@ -6,65 +6,65 @@
       "name" : "GET",
       "children" : [ {
         "name" : "test tos",
-        "uid" : "1fd4409d5d5b13d9",
+        "uid" : "244c4e11606153",
         "parentUid" : "158f830b3e550b68b17ed831e521257c",
         "status" : "passed",
         "time" : {
-          "start" : 1700766858362,
-          "stop" : 1700766858698,
-          "duration" : 336
+          "start" : 1701725994133,
+          "stop" : 1701725994633,
+          "duration" : 500
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "List dbtypes",
-        "uid" : "588a110b327007a9",
+        "uid" : "74cf5a6d89bba958",
         "parentUid" : "158f830b3e550b68b17ed831e521257c",
         "status" : "passed",
         "time" : {
-          "start" : 1700766858700,
-          "stop" : 1700766859039,
-          "duration" : 339
+          "start" : 1701725994635,
+          "stop" : 1701725994964,
+          "duration" : 329
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "List dbversions",
-        "uid" : "3d102d03020c1b17",
+        "uid" : "f8e201654fb7fcc0",
         "parentUid" : "158f830b3e550b68b17ed831e521257c",
         "status" : "passed",
         "time" : {
-          "start" : 1700766859040,
-          "stop" : 1700766859440,
-          "duration" : 400
+          "start" : 1701725994966,
+          "stop" : 1701725995309,
+          "duration" : 343
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "List envs",
-        "uid" : "61f4fe7f8910255a",
+        "uid" : "3d292a112fd403e6",
         "parentUid" : "158f830b3e550b68b17ed831e521257c",
         "status" : "passed",
         "time" : {
-          "start" : 1700766859442,
-          "stop" : 1700766859779,
-          "duration" : 337
+          "start" : 1701725995311,
+          "stop" : 1701725995670,
+          "duration" : 359
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "List regions",
-        "uid" : "c0e30a9be5bb0cf1",
+        "uid" : "75f5f7964d3ee547",
         "parentUid" : "158f830b3e550b68b17ed831e521257c",
         "status" : "passed",
         "time" : {
-          "start" : 1700766859781,
-          "stop" : 1700766860123,
-          "duration" : 342
+          "start" : 1701725995671,
+          "stop" : 1701725996124,
+          "duration" : 453
         },
         "flaky" : false,
         "newFailed" : false,
@@ -79,39 +79,39 @@
       "name" : "POST",
       "children" : [ {
         "name" : "Post login",
-        "uid" : "b167918574a2eb36",
+        "uid" : "219baf26c509cfc7",
         "parentUid" : "8294f5a2ecad4a0dd3180b6bebbfbf6b",
         "status" : "passed",
         "time" : {
-          "start" : 1700766860124,
-          "stop" : 1700766860466,
-          "duration" : 342
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Post db list",
-        "uid" : "47d83e599d4f26eb",
-        "parentUid" : "8294f5a2ecad4a0dd3180b6bebbfbf6b",
-        "status" : "passed",
-        "time" : {
-          "start" : 1700766860467,
-          "stop" : 1700766860819,
-          "duration" : 352
+          "start" : 1701725996126,
+          "stop" : 1701725996469,
+          "duration" : 343
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Post db create",
-        "uid" : "895fee82e8e5cbc9",
+        "uid" : "e48e3ee1058009e4",
         "parentUid" : "8294f5a2ecad4a0dd3180b6bebbfbf6b",
         "status" : "passed",
         "time" : {
-          "start" : 1700766860821,
-          "stop" : 1700766861217,
-          "duration" : 396
+          "start" : 1701725996470,
+          "stop" : 1701725996980,
+          "duration" : 510
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Post db list",
+        "uid" : "7db7c6e0458ce0e5",
+        "parentUid" : "8294f5a2ecad4a0dd3180b6bebbfbf6b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1701725996981,
+          "stop" : 1701725997325,
+          "duration" : 344
         },
         "flaky" : false,
         "newFailed" : false,
@@ -122,19 +122,36 @@
       "name" : "DELETE",
       "children" : [ {
         "name" : "delete db",
-        "uid" : "3b0161a653171cf3",
+        "uid" : "c21f1e540c907cae",
         "parentUid" : "ebdcde8f705fde47b27f7a2299f43ddf",
+        "status" : "failed",
+        "time" : {
+          "start" : 1701725997327,
+          "stop" : 1701725998038,
+          "duration" : 711
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ebdcde8f705fde47b27f7a2299f43ddf"
+    }, {
+      "name" : "TestPOST",
+      "children" : [ {
+        "name" : "test_complex",
+        "uid" : "1256e1534219f340",
+        "parentUid" : "8063c42a7f745f5b5619b15d7321ae65",
         "status" : "passed",
         "time" : {
-          "start" : 1700766861218,
-          "stop" : 1700766861596,
-          "duration" : 378
+          "start" : 1701725998069,
+          "stop" : 1701726010016,
+          "duration" : 11947
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "ebdcde8f705fde47b27f7a2299f43ddf"
+      "uid" : "8063c42a7f745f5b5619b15d7321ae65"
     } ],
     "uid" : "661f9a2e47460ee06bb527bba1363315"
   } ],

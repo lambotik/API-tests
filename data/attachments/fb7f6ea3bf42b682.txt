@@ -1,0 +1,91 @@
+https://dbend.areso.pro/db_list
+Response: 
+'{"content":{"0656e472-ce07-7de6-8000-e5ea91ab3141":["","CIS","db_creating",null,null]}}\n'
+https://dbend.areso.pro/db_create
+Response:  {"db_uuid":"0656e472-eb3a-7def-8000-07ab16651297","msg":"your order for a new database created successfully"}
+
+https://dbend.areso.pro/db_list
+Response: 
+'{"content":{"0656e472-ce07-7de6-8000-e5ea91ab3141":["","CIS","db_creating",null,null],"0656e472-eb3a-7def-8000-07ab16651297":["","CIS","db_creating",null,null]}}\n'
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[18]: error: can't delete a db while it's creating"}
+
+Start:  04-12-2023 21:39:59
+msg[18]: error: can't delete a db while it's creating
+Wait while db creating!!!
+04-12-2023 21:39:59
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[18]: error: can't delete a db while it's creating"}
+
+Start:  04-12-2023 21:40:00
+msg[18]: error: can't delete a db while it's creating
+Wait while db creating!!!
+04-12-2023 21:40:00
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[18]: error: can't delete a db while it's creating"}
+
+Start:  04-12-2023 21:40:02
+msg[18]: error: can't delete a db while it's creating
+Wait while db creating!!!
+04-12-2023 21:40:02
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[18]: error: can't delete a db while it's creating"}
+
+Start:  04-12-2023 21:40:03
+msg[18]: error: can't delete a db while it's creating
+Wait while db creating!!!
+04-12-2023 21:40:03
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[18]: error: can't delete a db while it's creating"}
+
+Start:  04-12-2023 21:40:04
+msg[18]: error: can't delete a db while it's creating
+Wait while db creating!!!
+04-12-2023 21:40:04
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[18]: error: can't delete a db while it's creating"}
+
+Start:  04-12-2023 21:40:06
+msg[18]: error: can't delete a db while it's creating
+Wait while db creating!!!
+04-12-2023 21:40:06
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[18]: error: can't delete a db while it's creating"}
+
+Start:  04-12-2023 21:40:07
+msg[18]: error: can't delete a db while it's creating
+Wait while db creating!!!
+04-12-2023 21:40:07
+Url:  https://dbend.areso.pro/db_delete
+Status code: 200
+Response body:  {"content":"msg[13]: successfully accepted request for deletion"}
+
+Start:  04-12-2023 21:40:09
+msg[13]: successfully accepted request for deletion
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[19]: error: can't delete a db while it's deleting"}
+
+Finish:  04-12-2023 21:40:09
+https://dbend.areso.pro/db_list
+Response: 
+('{"content":{"0656e472-ce07-7de6-8000-e5ea91ab3141":["db_x77hx4x2","CIS","deleting","mysql://user_q2rcibuo:pwPW01__siFi38MAC6PbuG@cisdb1.areso.pro:3306/db_x77hx4x2","Mon, '
+ '04 Dec 2023 21:40:09 '
+ 'GMT"],"0656e472-eb3a-7def-8000-07ab16651297":["","CIS","db_creating",null,null]}}\n')
+assert '{"content":{...ull,null]}}\n' == '{"content":{...ull,null]}}\n'
+  Skipping 43 identical leading characters in diff, use -v to show
+  - ab3141":["","CIS","db_creating",null,null]}}
+  + ab3141":["db_x77hx4x2","CIS","deleting","mysql://user_q2rcibuo:pwPW01__siFi38MAC6PbuG@cisdb1.areso.pro:3306/db_x77hx4x2","Mon, 04 Dec 2023 21:40:09 GMT"],"0656e472-eb3a-7def-8000-07ab16651297":["","CIS","db_creating",null,null]}}
+https://dbend.areso.pro/db_list
+Response: 
+('{"content":{"0656e472-ce07-7de6-8000-e5ea91ab3141":["db_x77hx4x2","CIS","deleting","mysql://user_q2rcibuo:pwPW01__siFi38MAC6PbuG@cisdb1.areso.pro:3306/db_x77hx4x2","Mon, '
+ '04 Dec 2023 21:40:09 '
+ 'GMT"],"0656e472-eb3a-7def-8000-07ab16651297":["","CIS","db_creating",null,null]}}\n')
+DB is not deleted empty <Response [200]>

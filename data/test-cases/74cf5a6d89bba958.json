@@ -1,12 +1,12 @@
 {
-  "uid" : "3b0161a653171cf3",
-  "name" : "delete db",
-  "fullName" : "test_first.TestPOST#test_delete_db",
-  "historyId" : "f2f3cba4290fc70b0b6b7aaf6737862e",
+  "uid" : "74cf5a6d89bba958",
+  "name" : "List dbtypes",
+  "fullName" : "test_first.TestGET#test_list_dbtypes",
+  "historyId" : "c1ddb0ad2a5283a85532f93dc1c7d028",
   "time" : {
-    "start" : 1700766861218,
-    "stop" : 1700766861596,
-    "duration" : 378
+    "start" : 1701725994635,
+    "stop" : 1701725994964,
+    "duration" : 329
   },
   "status" : "passed",
   "flaky" : false,
@@ -15,18 +15,18 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "Method POST",
+      "name" : "Method GET",
       "time" : {
-        "start" : 1700766861218,
-        "stop" : 1700766861595,
-        "duration" : 377
+        "start" : 1701725994635,
+        "stop" : 1701725994963,
+        "duration" : 328
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Add request",
         "time" : {
-          "start" : 1700766861218,
-          "stop" : 1700766861218,
+          "start" : 1701725994635,
+          "stop" : 1701725994635,
           "duration" : 0
         },
         "status" : "passed",
@@ -34,10 +34,10 @@
         "attachments" : [ ],
         "parameters" : [ {
           "name" : "url",
-          "value" : "'https://dbend.areso.pro/db_delete'"
+          "value" : "'https://dbend.areso.pro/list_dbtypes'"
         }, {
           "name" : "method",
-          "value" : "'POST'"
+          "value" : "'GET'"
         } ],
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
@@ -46,8 +46,8 @@
       }, {
         "name" : "Add response",
         "time" : {
-          "start" : 1700766861595,
-          "stop" : 1700766861595,
+          "start" : 1701725994963,
+          "stop" : 1701725994963,
           "duration" : 0
         },
         "status" : "passed",
@@ -65,23 +65,17 @@
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "url",
-        "value" : "'https://dbend.areso.pro/db_delete'"
-      }, {
-        "name" : "db_uuid",
-        "value" : "'{\"db_uuid\": \"0655bc53-db5b-7762-8000-4fe80aae1b4f\"}'"
-      }, {
-        "name" : "sid",
-        "value" : "{'sid': 'c4fb47ed-a9b4-41a1-b08e-62fcaa676270'}"
+        "value" : "'https://dbend.areso.pro/list_dbtypes'"
       } ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
       "stepsCount" : 2,
       "hasContent" : true
     }, {
-      "name" : "Response body: {\"content\":\"successfully accepted request for deletion\"}\n",
+      "name" : "Body: {\"3\":\"mysql8\"}\n",
       "time" : {
-        "start" : 1700766861595,
-        "stop" : 1700766861595,
+        "start" : 1701725994963,
+        "stop" : 1701725994963,
         "duration" : 0
       },
       "status" : "passed",
@@ -94,11 +88,11 @@
       "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "f64dc0a7fbeea752",
+      "uid" : "c821aa407dda30ba",
       "name" : "stdout",
-      "source" : "f64dc0a7fbeea752.txt",
+      "source" : "c821aa407dda30ba.txt",
       "type" : "text/plain",
-      "size" : 178
+      "size" : 73
     } ],
     "parameters" : [ ],
     "attachmentsCount" : 1,
@@ -109,19 +103,19 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "subSuite",
-    "value" : "DELETE"
+    "value" : "GET"
   }, {
     "name" : "epic",
-    "value" : "POST REQUESTS"
+    "value" : "GET REQUESTS"
   }, {
     "name" : "suite",
-    "value" : "REQUESTS POST"
+    "value" : "REQUESTS GET"
   }, {
     "name" : "host",
-    "value" : "fv-az661-209"
+    "value" : "fv-az736-612"
   }, {
     "name" : "thread",
-    "value" : "1936-MainThread"
+    "value" : "2078-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -143,8 +137,60 @@
     "severity" : "normal",
     "retries" : [ ],
     "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "588a110b327007a9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700766858700,
+          "stop" : 1700766859039,
+          "duration" : 339
+        }
+      }, {
+        "uid" : "74e516433d36af01",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700513081865,
+          "stop" : 1700513082428,
+          "duration" : 563
+        }
+      }, {
+        "uid" : "a5874e990eb38711",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700405903905,
+          "stop" : 1700405904244,
+          "duration" : 339
+        }
+      }, {
+        "uid" : "bb10cb4dc6a3d909",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700405272373,
+          "stop" : 1700405272922,
+          "duration" : 549
+        }
+      }, {
+        "uid" : "75a29a9c0dfbf01a",
+        "status" : "broken",
+        "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'logs/log_2023-11-19_14-46-06.log'",
+        "time" : {
+          "start" : 1700405167487,
+          "stop" : 1700405167487,
+          "duration" : 0
+        }
+      } ]
+    },
     "tags" : [ ]
   },
-  "source" : "3b0161a653171cf3.json",
+  "source" : "74cf5a6d89bba958.json",
   "parameterValues" : [ ]
 }
