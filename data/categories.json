@@ -1,26 +1,26 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "children" : [ {
-    "name" : "Product defects",
+    "name" : "Test defects",
     "children" : [ {
-      "name" : "AssertionError: Incorrect status code",
+      "name" : "IndexError: list index out of range",
       "children" : [ {
         "name" : "delete db",
-        "uid" : "c21f1e540c907cae",
-        "parentUid" : "e07dd4ab999b15027ae5a060e6c5c14d",
-        "status" : "failed",
+        "uid" : "145e74b19aad7de8",
+        "parentUid" : "cbf21ee610ffd376e0ce643a364ade80",
+        "status" : "broken",
         "time" : {
-          "start" : 1701725997327,
-          "stop" : 1701725998038,
-          "duration" : 711
+          "start" : 1701728823984,
+          "stop" : 1701728824519,
+          "duration" : 535
         },
         "flaky" : false,
-        "newFailed" : true,
+        "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "e07dd4ab999b15027ae5a060e6c5c14d"
+      "uid" : "cbf21ee610ffd376e0ce643a364ade80"
     } ],
-    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ],
   "name" : "categories"
 }

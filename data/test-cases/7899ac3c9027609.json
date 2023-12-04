@@ -1,12 +1,12 @@
 {
-  "uid" : "3d292a112fd403e6",
-  "name" : "List envs",
-  "fullName" : "test_first.TestGET#test_list_envs",
-  "historyId" : "ef10d88a050f4055844725987e4aa81f",
+  "uid" : "7899ac3c9027609",
+  "name" : "List dbtypes",
+  "fullName" : "test_first.TestGET#test_list_dbtypes",
+  "historyId" : "c1ddb0ad2a5283a85532f93dc1c7d028",
   "time" : {
-    "start" : 1701725995311,
-    "stop" : 1701725995670,
-    "duration" : 359
+    "start" : 1701728820689,
+    "stop" : 1701728821208,
+    "duration" : 519
   },
   "status" : "passed",
   "flaky" : false,
@@ -17,16 +17,16 @@
     "steps" : [ {
       "name" : "Method GET",
       "time" : {
-        "start" : 1701725995311,
-        "stop" : 1701725995669,
-        "duration" : 358
+        "start" : 1701728820689,
+        "stop" : 1701728821207,
+        "duration" : 518
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Add request",
         "time" : {
-          "start" : 1701725995311,
-          "stop" : 1701725995311,
+          "start" : 1701728820689,
+          "stop" : 1701728820689,
           "duration" : 0
         },
         "status" : "passed",
@@ -34,7 +34,7 @@
         "attachments" : [ ],
         "parameters" : [ {
           "name" : "url",
-          "value" : "'https://dbend.areso.pro/list_envs'"
+          "value" : "'https://dbend.areso.pro/list_dbtypes'"
         }, {
           "name" : "method",
           "value" : "'GET'"
@@ -46,9 +46,9 @@
       }, {
         "name" : "Add response",
         "time" : {
-          "start" : 1701725995668,
-          "stop" : 1701725995669,
-          "duration" : 1
+          "start" : 1701728821207,
+          "stop" : 1701728821207,
+          "duration" : 0
         },
         "status" : "passed",
         "steps" : [ ],
@@ -65,17 +65,17 @@
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "url",
-        "value" : "'https://dbend.areso.pro/list_envs'"
+        "value" : "'https://dbend.areso.pro/list_dbtypes'"
       } ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
       "stepsCount" : 2,
       "hasContent" : true
     }, {
-      "name" : "Body: {\"3\":\"vm_communal\"}\n",
+      "name" : "Body: {\"3\":\"mysql8\"}\n",
       "time" : {
-        "start" : 1701725995669,
-        "stop" : 1701725995669,
+        "start" : 1701728821207,
+        "stop" : 1701728821207,
         "duration" : 0
       },
       "status" : "passed",
@@ -88,11 +88,11 @@
       "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "567ea6f1a6d8b5c6",
+      "uid" : "32cf733bd56c28d5",
       "name" : "stdout",
-      "source" : "567ea6f1a6d8b5c6.txt",
+      "source" : "32cf733bd56c28d5.txt",
       "type" : "text/plain",
-      "size" : 75
+      "size" : 73
     } ],
     "parameters" : [ ],
     "attachmentsCount" : 1,
@@ -105,17 +105,17 @@
     "name" : "subSuite",
     "value" : "GET"
   }, {
-    "name" : "epic",
-    "value" : "GET REQUESTS"
-  }, {
     "name" : "suite",
     "value" : "REQUESTS GET"
   }, {
+    "name" : "epic",
+    "value" : "GET REQUESTS"
+  }, {
     "name" : "host",
-    "value" : "fv-az736-612"
+    "value" : "fv-az1022-254"
   }, {
     "name" : "thread",
-    "value" : "2078-MainThread"
+    "value" : "1893-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -142,55 +142,63 @@
         "failed" : 0,
         "broken" : 1,
         "skipped" : 0,
-        "passed" : 5,
+        "passed" : 6,
         "unknown" : 0,
-        "total" : 6
+        "total" : 7
       },
       "items" : [ {
-        "uid" : "61f4fe7f8910255a",
+        "uid" : "74cf5a6d89bba958",
         "status" : "passed",
         "time" : {
-          "start" : 1700766859442,
-          "stop" : 1700766859779,
-          "duration" : 337
+          "start" : 1701725994635,
+          "stop" : 1701725994964,
+          "duration" : 329
         }
       }, {
-        "uid" : "98e2bc26aa623541",
+        "uid" : "588a110b327007a9",
         "status" : "passed",
         "time" : {
-          "start" : 1700513082976,
-          "stop" : 1700513083513,
-          "duration" : 537
+          "start" : 1700766858700,
+          "stop" : 1700766859039,
+          "duration" : 339
         }
       }, {
-        "uid" : "ec309ee933e22b1d",
+        "uid" : "74e516433d36af01",
         "status" : "passed",
         "time" : {
-          "start" : 1700405904581,
-          "stop" : 1700405904939,
-          "duration" : 358
+          "start" : 1700513081865,
+          "stop" : 1700513082428,
+          "duration" : 563
         }
       }, {
-        "uid" : "1728ecbb0b8dbcc",
+        "uid" : "a5874e990eb38711",
         "status" : "passed",
         "time" : {
-          "start" : 1700405273465,
-          "stop" : 1700405273997,
-          "duration" : 532
+          "start" : 1700405903905,
+          "stop" : 1700405904244,
+          "duration" : 339
         }
       }, {
-        "uid" : "ad96da88eea967ef",
+        "uid" : "bb10cb4dc6a3d909",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700405272373,
+          "stop" : 1700405272922,
+          "duration" : 549
+        }
+      }, {
+        "uid" : "75a29a9c0dfbf01a",
         "status" : "broken",
         "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'logs/log_2023-11-19_14-46-06.log'",
         "time" : {
-          "start" : 1700405167503,
-          "stop" : 1700405167503,
+          "start" : 1700405167487,
+          "stop" : 1700405167487,
           "duration" : 0
         }
       } ]
     },
     "tags" : [ ]
   },
-  "source" : "3d292a112fd403e6.json",
+  "source" : "7899ac3c9027609.json",
   "parameterValues" : [ ]
 }

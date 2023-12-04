@@ -4,12 +4,12 @@
     "uid" : "661f9a2e47460ee06bb527bba1363315",
     "name" : "REQUESTS POST",
     "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
+      "failed" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 4,
+      "passed" : 3,
       "unknown" : 0,
-      "total" : 5
+      "total" : 4
     }
   }, {
     "uid" : "90e75bd36db8dbf20ccb9075691be50b",

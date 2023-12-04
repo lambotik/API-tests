@@ -1,0 +1,156 @@
+https://dbend.areso.pro/db_list
+Response: 
+'{"content":{}}\n'
+https://dbend.areso.pro/db_create
+Response:  {"db_uuid":"0656e523-989b-74ee-8000-369cecebcc8e","msg":"your order for a new database created successfully"}
+
+https://dbend.areso.pro/db_list
+Response: 
+'{"content":{"0656e523-989b-74ee-8000-369cecebcc8e":["","CIS","db_creating",null,null]}}\n'
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[18]: error: can't delete a db while it's creating"}
+
+
+Check Time:  04-12-2023 22:27:06
+msg[18]: error: can't delete a db while it's creating
+04-12-2023 22:27:06
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[18]: error: can't delete a db while it's creating"}
+
+
+Check Time:  04-12-2023 22:27:08
+msg[18]: error: can't delete a db while it's creating
+04-12-2023 22:27:08
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[18]: error: can't delete a db while it's creating"}
+
+
+Check Time:  04-12-2023 22:27:09
+msg[18]: error: can't delete a db while it's creating
+04-12-2023 22:27:09
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[18]: error: can't delete a db while it's creating"}
+
+
+Check Time:  04-12-2023 22:27:11
+msg[18]: error: can't delete a db while it's creating
+04-12-2023 22:27:11
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[18]: error: can't delete a db while it's creating"}
+
+
+Check Time:  04-12-2023 22:27:12
+msg[18]: error: can't delete a db while it's creating
+04-12-2023 22:27:12
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[18]: error: can't delete a db while it's creating"}
+
+
+Check Time:  04-12-2023 22:27:14
+msg[18]: error: can't delete a db while it's creating
+04-12-2023 22:27:14
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[18]: error: can't delete a db while it's creating"}
+
+
+Check Time:  04-12-2023 22:27:15
+msg[18]: error: can't delete a db while it's creating
+04-12-2023 22:27:15
+Url:  https://dbend.areso.pro/db_delete
+Status code: 200
+Response body:  {"content":"msg[13]: successfully accepted request for deletion"}
+
+
+Check Time:  04-12-2023 22:27:17
+msg[13]: successfully accepted request for deletion
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[19]: error: can't delete a db while it's deleting"}
+
+json_delete_db {'content': "msg[19]: error: can't delete a db while it's deleting"}
+Finish:  04-12-2023 22:27:18
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[19]: error: can't delete a db while it's deleting"}
+
+
+Check Time:  04-12-2023 22:27:18
+msg[19]: error: can't delete a db while it's deleting
+04-12-2023 22:27:18
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[19]: error: can't delete a db while it's deleting"}
+
+msg[19]: error: can't delete a db while it's deleting
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[19]: error: can't delete a db while it's deleting"}
+
+
+Check Time:  04-12-2023 22:27:20
+msg[19]: error: can't delete a db while it's deleting
+04-12-2023 22:27:20
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[19]: error: can't delete a db while it's deleting"}
+
+msg[19]: error: can't delete a db while it's deleting
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[19]: error: can't delete a db while it's deleting"}
+
+
+Check Time:  04-12-2023 22:27:22
+msg[19]: error: can't delete a db while it's deleting
+04-12-2023 22:27:22
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[19]: error: can't delete a db while it's deleting"}
+
+msg[19]: error: can't delete a db while it's deleting
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[19]: error: can't delete a db while it's deleting"}
+
+
+Check Time:  04-12-2023 22:27:24
+msg[19]: error: can't delete a db while it's deleting
+04-12-2023 22:27:24
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[19]: error: can't delete a db while it's deleting"}
+
+msg[19]: error: can't delete a db while it's deleting
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[19]: error: can't delete a db while it's deleting"}
+
+
+Check Time:  04-12-2023 22:27:26
+msg[19]: error: can't delete a db while it's deleting
+04-12-2023 22:27:26
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[16]: requested database is not found"}
+
+msg[16]: requested database is not found
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[16]: requested database is not found"}
+
+
+Check Time:  04-12-2023 22:27:28
+msg[16]: requested database is not found
+Finish:  04-12-2023 22:27:28
+https://dbend.areso.pro/db_list
+Response: 
+'{"content":{}}\n'
+{"content":{}}
+

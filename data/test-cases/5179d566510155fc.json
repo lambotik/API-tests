@@ -1,12 +1,12 @@
 {
-  "uid" : "74cf5a6d89bba958",
-  "name" : "List dbtypes",
-  "fullName" : "test_first.TestGET#test_list_dbtypes",
-  "historyId" : "c1ddb0ad2a5283a85532f93dc1c7d028",
+  "uid" : "5179d566510155fc",
+  "name" : "Post db list",
+  "fullName" : "test_first.TestPOST#test_post_db_list",
+  "historyId" : "8ec80f35f7e1b6a85681795adb5e6dd2",
   "time" : {
-    "start" : 1701725994635,
-    "stop" : 1701725994964,
-    "duration" : 329
+    "start" : 1701728823461,
+    "stop" : 1701728823982,
+    "duration" : 521
   },
   "status" : "passed",
   "flaky" : false,
@@ -15,18 +15,18 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "Method GET",
+      "name" : "Method POST",
       "time" : {
-        "start" : 1701725994635,
-        "stop" : 1701725994963,
-        "duration" : 328
+        "start" : 1701728823462,
+        "stop" : 1701728823981,
+        "duration" : 519
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Add request",
         "time" : {
-          "start" : 1701725994635,
-          "stop" : 1701725994635,
+          "start" : 1701728823462,
+          "stop" : 1701728823462,
           "duration" : 0
         },
         "status" : "passed",
@@ -34,10 +34,10 @@
         "attachments" : [ ],
         "parameters" : [ {
           "name" : "url",
-          "value" : "'https://dbend.areso.pro/list_dbtypes'"
+          "value" : "'https://dbend.areso.pro/db_list'"
         }, {
           "name" : "method",
-          "value" : "'GET'"
+          "value" : "'POST'"
         } ],
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
@@ -46,8 +46,8 @@
       }, {
         "name" : "Add response",
         "time" : {
-          "start" : 1701725994963,
-          "stop" : 1701725994963,
+          "start" : 1701728823981,
+          "stop" : 1701728823981,
           "duration" : 0
         },
         "status" : "passed",
@@ -65,17 +65,23 @@
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "url",
-        "value" : "'https://dbend.areso.pro/list_dbtypes'"
+        "value" : "'https://dbend.areso.pro/db_list'"
+      }, {
+        "name" : "body",
+        "value" : "{}"
+      }, {
+        "name" : "cookie",
+        "value" : "{'sid': '96e9f897-1058-428f-b598-4ff11b7cbdf1'}"
       } ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
       "stepsCount" : 2,
       "hasContent" : true
     }, {
-      "name" : "Body: {\"3\":\"mysql8\"}\n",
+      "name" : "Body: {\"content\":{}}\n",
       "time" : {
-        "start" : 1701725994963,
-        "stop" : 1701725994963,
+        "start" : 1701728823981,
+        "stop" : 1701728823981,
         "duration" : 0
       },
       "status" : "passed",
@@ -88,11 +94,11 @@
       "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "c821aa407dda30ba",
+      "uid" : "ff06c380bb60d65d",
       "name" : "stdout",
-      "source" : "c821aa407dda30ba.txt",
+      "source" : "ff06c380bb60d65d.txt",
       "type" : "text/plain",
-      "size" : 73
+      "size" : 105
     } ],
     "parameters" : [ ],
     "attachmentsCount" : 1,
@@ -102,20 +108,20 @@
   },
   "afterStages" : [ ],
   "labels" : [ {
-    "name" : "subSuite",
-    "value" : "GET"
-  }, {
     "name" : "epic",
-    "value" : "GET REQUESTS"
+    "value" : "POST REQUESTS"
   }, {
     "name" : "suite",
-    "value" : "REQUESTS GET"
+    "value" : "REQUESTS POST"
+  }, {
+    "name" : "subSuite",
+    "value" : "POST"
   }, {
     "name" : "host",
-    "value" : "fv-az736-612"
+    "value" : "fv-az1022-254"
   }, {
     "name" : "thread",
-    "value" : "2078-MainThread"
+    "value" : "1893-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -140,57 +146,66 @@
     "history" : {
       "statistic" : {
         "failed" : 0,
-        "broken" : 1,
-        "skipped" : 0,
-        "passed" : 5,
+        "broken" : 0,
+        "skipped" : 1,
+        "passed" : 6,
         "unknown" : 0,
-        "total" : 6
+        "total" : 7
       },
       "items" : [ {
-        "uid" : "588a110b327007a9",
+        "uid" : "7db7c6e0458ce0e5",
         "status" : "passed",
         "time" : {
-          "start" : 1700766858700,
-          "stop" : 1700766859039,
-          "duration" : 339
+          "start" : 1701725996981,
+          "stop" : 1701725997325,
+          "duration" : 344
         }
       }, {
-        "uid" : "74e516433d36af01",
+        "uid" : "47d83e599d4f26eb",
         "status" : "passed",
         "time" : {
-          "start" : 1700513081865,
-          "stop" : 1700513082428,
-          "duration" : 563
+          "start" : 1700766860467,
+          "stop" : 1700766860819,
+          "duration" : 352
         }
       }, {
-        "uid" : "a5874e990eb38711",
+        "uid" : "46985f594ade37f1",
         "status" : "passed",
         "time" : {
-          "start" : 1700405903905,
-          "stop" : 1700405904244,
-          "duration" : 339
+          "start" : 1700513084724,
+          "stop" : 1700513085257,
+          "duration" : 533
         }
       }, {
-        "uid" : "bb10cb4dc6a3d909",
+        "uid" : "f900592838b27a52",
         "status" : "passed",
         "time" : {
-          "start" : 1700405272373,
-          "stop" : 1700405272922,
-          "duration" : 549
+          "start" : 1700405905625,
+          "stop" : 1700405905975,
+          "duration" : 350
         }
       }, {
-        "uid" : "75a29a9c0dfbf01a",
-        "status" : "broken",
-        "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'logs/log_2023-11-19_14-46-06.log'",
+        "uid" : "d40a786b47d65a77",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
         "time" : {
-          "start" : 1700405167487,
-          "stop" : 1700405167487,
+          "start" : 1700405275323,
+          "stop" : 1700405275866,
+          "duration" : 543
+        }
+      }, {
+        "uid" : "72da8c78dbd105f0",
+        "status" : "skipped",
+        "statusDetails" : "XFAIL\n\nFileNotFoundError: [Errno 2] No such file or directory: 'logs/log_2023-11-19_14-46-06.log'",
+        "time" : {
+          "start" : 1700405167533,
+          "stop" : 1700405167533,
           "duration" : 0
         }
       } ]
     },
     "tags" : [ ]
   },
-  "source" : "74cf5a6d89bba958.json",
+  "source" : "5179d566510155fc.json",
   "parameterValues" : [ ]
 }

@@ -1,100 +1,90 @@
 [ {
-  "uid" : "7db7c6e0458ce0e5",
+  "uid" : "5179d566510155fc",
   "name" : "Post db list",
   "time" : {
-    "start" : 1701725996981,
-    "stop" : 1701725997325,
-    "duration" : 344
+    "start" : 1701728823461,
+    "stop" : 1701728823982,
+    "duration" : 521
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "75f5f7964d3ee547",
-  "name" : "List regions",
-  "time" : {
-    "start" : 1701725995671,
-    "stop" : 1701725996124,
-    "duration" : 453
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "244c4e11606153",
-  "name" : "test tos",
-  "time" : {
-    "start" : 1701725994133,
-    "stop" : 1701725994633,
-    "duration" : 500
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "3d292a112fd403e6",
-  "name" : "List envs",
-  "time" : {
-    "start" : 1701725995311,
-    "stop" : 1701725995670,
-    "duration" : 359
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "219baf26c509cfc7",
-  "name" : "Post login",
-  "time" : {
-    "start" : 1701725996126,
-    "stop" : 1701725996469,
-    "duration" : 343
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "c21f1e540c907cae",
-  "name" : "delete db",
-  "time" : {
-    "start" : 1701725997327,
-    "stop" : 1701725998038,
-    "duration" : 711
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "1256e1534219f340",
+  "uid" : "f81bb57d231f7f48",
   "name" : "test_complex",
   "time" : {
-    "start" : 1701725998069,
-    "stop" : 1701726010016,
-    "duration" : 11947
+    "start" : 1701728824545,
+    "stop" : 1701728849465,
+    "duration" : 24920
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "74cf5a6d89bba958",
-  "name" : "List dbtypes",
-  "time" : {
-    "start" : 1701725994635,
-    "stop" : 1701725994964,
-    "duration" : 329
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "f8e201654fb7fcc0",
+  "uid" : "fe28f62bada5675b",
   "name" : "List dbversions",
   "time" : {
-    "start" : 1701725994966,
-    "stop" : 1701725995309,
-    "duration" : 343
+    "start" : 1701728821209,
+    "stop" : 1701728821741,
+    "duration" : 532
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "e48e3ee1058009e4",
-  "name" : "Post db create",
+  "uid" : "7899ac3c9027609",
+  "name" : "List dbtypes",
   "time" : {
-    "start" : 1701725996470,
-    "stop" : 1701725996980,
-    "duration" : 510
+    "start" : 1701728820689,
+    "stop" : 1701728821208,
+    "duration" : 519
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "145e74b19aad7de8",
+  "name" : "delete db",
+  "time" : {
+    "start" : 1701728823984,
+    "stop" : 1701728824519,
+    "duration" : 535
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "d927926bc9adbdac",
+  "name" : "List regions",
+  "time" : {
+    "start" : 1701728822288,
+    "stop" : 1701728822931,
+    "duration" : 643
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a3dffec432ecf777",
+  "name" : "Post login",
+  "time" : {
+    "start" : 1701728822932,
+    "stop" : 1701728823460,
+    "duration" : 528
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "af4ae8d8889ebc0a",
+  "name" : "test tos",
+  "time" : {
+    "start" : 1701728820155,
+    "stop" : 1701728820687,
+    "duration" : 532
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d5f37e24ad85974c",
+  "name" : "List envs",
+  "time" : {
+    "start" : 1701728821743,
+    "stop" : 1701728822286,
+    "duration" : 543
   },
   "status" : "passed",
   "severity" : "normal"
