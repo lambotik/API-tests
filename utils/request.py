@@ -1,11 +1,12 @@
 import json
 import os
+from datetime import datetime
 from pprint import pprint
 
 import allure
+from dotenv import load_dotenv
 
 from utils.http_methods import HttpMethods
-from dotenv import load_dotenv
 
 base_url = 'https://dbend.areso.pro'  # Base url
 load_dotenv()
@@ -153,6 +154,38 @@ class API:
             print(f'Status code: {result_delete.status_code}')
             print('Response body: ', result_delete.text)
         return result_delete
+
+    @staticmethod
+    def check_full_cycle(sid):
+        empty_db_list = API.post_db_list(sid).text
+        result_post_db_create = API.post_db_create(sid)
+        result_post_db_list = API.post_db_list(sid)
+        json_list_db = json.loads(result_post_db_list.text)
+        first_db_uuid = list(json_list_db['content'].keys())[0]
+        while True:
+            result_post_db_delete = API.delete_db(first_db_uuid, sid)
+            print('\nCheck Time: ', str(datetime.now().strftime("%d-%m-%Y %H:%M:%S")))
+            json_delete_db = json.loads(result_post_db_delete.text)
+            print(list(json_delete_db.values())[0])
+            message = list(json_delete_db.values())[0].split(':')
+            if 'msg[18]' in message:
+                print(str(datetime.now().strftime("%d-%m-%Y %H:%M:%S")))
+            elif 'msg[19]' in message:
+                print(str(datetime.now().strftime("%d-%m-%Y %H:%M:%S")))
+                result_post_db_delete = API.delete_db(first_db_uuid, sid)
+                json_delete_db = json.loads(result_post_db_delete.text)
+                print(list(json_delete_db.values())[0])
+            elif 'msg[13]' in message:
+                result_post_db_delete = API.delete_db(first_db_uuid, sid)
+                json_delete_db = json.loads(result_post_db_delete.text)
+                print('json_delete_db', json_delete_db)
+                print('Finish: ', str(datetime.now().strftime("%d-%m-%Y %H:%M:%S")))
+            else:
+                print('Finish: ', str(datetime.now().strftime("%d-%m-%Y %H:%M:%S")))
+                break
+        cur_db_list = API.post_db_list(sid)
+        print(cur_db_list.text)
+        assert cur_db_list.text == empty_db_list, f'DB is not deleted. {cur_db_list.text}'
 
     @staticmethod
     def checking_unknown_user(user_id):
