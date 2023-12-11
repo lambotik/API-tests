@@ -1,6 +1,0 @@
-
-
-Method DELETE: delete_db
-https://dbend.areso.pro/db_list
-Response: 
-'{"content":{}}\n'

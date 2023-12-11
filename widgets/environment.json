@@ -2,18 +2,18 @@
   "values" : [ "master" ],
   "name" : "GIT_BRANCH"
 }, {
-  "values" : [ "c3a73863555a1ec11821451c401963b38cfb9ffd" ],
+  "values" : [ "786f71f2fae1b3ea8ab95d0cd80d49c7b72f8d90" ],
   "name" : "GIT_COMMIT_ID"
 }, {
-  "values" : [ "added: complex_test passed" ],
+  "values" : [ "added: test connect to created database" ],
   "name" : "GIT_COMMIT_MESSAGE"
 }, {
   "values" : [ "lambotik1988@gmail.com" ],
   "name" : "GIT_COMMIT_AUTHOR_NAME"
 }, {
-  "values" : [ "2023-12-05 01:26:21 +0300" ],
+  "values" : [ "2023-12-12 00:06:14 +0300" ],
   "name" : "GIT_COMMIT_TIME"
 }, {
-  "values" : [ "119.0.6045.159" ],
+  "values" : [ "119.0.6045.199" ],
   "name" : "CHROME_VERSION"
 } ]

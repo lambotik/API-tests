@@ -1,90 +1,110 @@
 [ {
-  "uid" : "af4ae8d8889ebc0a",
-  "name" : "test tos",
-  "time" : {
-    "start" : 1701728820155,
-    "stop" : 1701728820687,
-    "duration" : 532
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "7899ac3c9027609",
-  "name" : "List dbtypes",
-  "time" : {
-    "start" : 1701728820689,
-    "stop" : 1701728821208,
-    "duration" : 519
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "d5f37e24ad85974c",
-  "name" : "List envs",
-  "time" : {
-    "start" : 1701728821743,
-    "stop" : 1701728822286,
-    "duration" : 543
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "a3dffec432ecf777",
+  "uid" : "7998527a9c2e4080",
   "name" : "Post login",
   "time" : {
-    "start" : 1701728822932,
-    "stop" : 1701728823460,
-    "duration" : 528
+    "start" : 1702328880242,
+    "stop" : 1702328880782,
+    "duration" : 540
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "5179d566510155fc",
-  "name" : "Post db list",
-  "time" : {
-    "start" : 1701728823461,
-    "stop" : 1701728823982,
-    "duration" : 521
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "d927926bc9adbdac",
-  "name" : "List regions",
-  "time" : {
-    "start" : 1701728822288,
-    "stop" : 1701728822931,
-    "duration" : 643
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "f81bb57d231f7f48",
+  "uid" : "b72b0e84e61b6d1c",
   "name" : "test_complex",
   "time" : {
-    "start" : 1701728824545,
-    "stop" : 1701728849465,
-    "duration" : 24920
+    "start" : 1702328882996,
+    "stop" : 1702328904173,
+    "duration" : 21177
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "baddffa3dbb1474a",
+  "name" : "Post db list",
+  "time" : {
+    "start" : 1702328881381,
+    "stop" : 1702328881913,
+    "duration" : 532
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "145e74b19aad7de8",
-  "name" : "delete db",
+  "uid" : "581bf2bb767cd10d",
+  "name" : "List dbtypes",
   "time" : {
-    "start" : 1701728823984,
-    "stop" : 1701728824519,
-    "duration" : 535
+    "start" : 1702328878084,
+    "stop" : 1702328878617,
+    "duration" : 533
   },
-  "status" : "broken",
+  "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "fe28f62bada5675b",
+  "uid" : "d79faa036b6c32d5",
+  "name" : "Post db create",
+  "time" : {
+    "start" : 1702328880784,
+    "stop" : 1702328881379,
+    "duration" : 595
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4717809aa5b771f1",
+  "name" : "delete db",
+  "time" : {
+    "start" : 1702328881915,
+    "stop" : 1702328882965,
+    "duration" : 1050
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "c8004bcf8b88c1a9",
+  "name" : "test_connect_my_sql",
+  "time" : {
+    "start" : 1702328904193,
+    "stop" : 1702328908160,
+    "duration" : 3967
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "85a4e45fdbe7b853",
+  "name" : "List envs",
+  "time" : {
+    "start" : 1702328879155,
+    "stop" : 1702328879675,
+    "duration" : 520
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "da7e52059f318e",
   "name" : "List dbversions",
   "time" : {
-    "start" : 1701728821209,
-    "stop" : 1701728821741,
-    "duration" : 532
+    "start" : 1702328878619,
+    "stop" : 1702328879153,
+    "duration" : 534
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "60dd157d897ca082",
+  "name" : "test tos",
+  "time" : {
+    "start" : 1702328877553,
+    "stop" : 1702328878082,
+    "duration" : 529
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7fcab3399ecaa6ba",
+  "name" : "List regions",
+  "time" : {
+    "start" : 1702328879676,
+    "stop" : 1702328880240,
+    "duration" : 564
   },
   "status" : "passed",
   "severity" : "normal"

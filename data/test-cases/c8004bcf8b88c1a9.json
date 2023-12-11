@@ -1,0 +1,384 @@
+{
+  "uid" : "c8004bcf8b88c1a9",
+  "name" : "test_connect_my_sql",
+  "fullName" : "test_first.TestPOST#test_connect_my_sql",
+  "historyId" : "424328a5e4e2892c68817c82296148f2",
+  "time" : {
+    "start" : 1702328904193,
+    "stop" : 1702328908160,
+    "duration" : 3967
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702328904193,
+        "stop" : 1702328904712,
+        "duration" : 519
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702328904193,
+          "stop" : 1702328904193,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_list'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702328904712,
+          "stop" : 1702328904712,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [200]>"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_list'"
+      }, {
+        "name" : "body",
+        "value" : "{}"
+      }, {
+        "name" : "cookie",
+        "value" : "{'sid': '1d81c869-b52b-4a7f-a749-15229589e52e'}"
+      } ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Body: {\"content\":{\"065777a3-3f87-7526-8000-bf7f6ea9bb07\":[\"db_g0vtr07h\",\"CIS\",\"db_created\",\"mysql://user_ygcsgvwy:pwPW01__olbGHXLul5Bgnw@cisdb1.areso.pro:3306/db_g0vtr07h\",\"Mon, 11 Dec 2023 21:08:24 GMT\"]}}\n",
+      "time" : {
+        "start" : 1702328904712,
+        "stop" : 1702328904712,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702328904713,
+        "stop" : 1702328905222,
+        "duration" : 509
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702328904713,
+          "stop" : 1702328904714,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_list'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702328905222,
+          "stop" : 1702328905222,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [200]>"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_list'"
+      }, {
+        "name" : "body",
+        "value" : "{}"
+      }, {
+        "name" : "cookie",
+        "value" : "{'sid': '1d81c869-b52b-4a7f-a749-15229589e52e'}"
+      } ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Body: {\"content\":{\"065777a3-3f87-7526-8000-bf7f6ea9bb07\":[\"db_g0vtr07h\",\"CIS\",\"db_created\",\"mysql://user_ygcsgvwy:pwPW01__olbGHXLul5Bgnw@cisdb1.areso.pro:3306/db_g0vtr07h\",\"Mon, 11 Dec 2023 21:08:24 GMT\"]}}\n",
+      "time" : {
+        "start" : 1702328905222,
+        "stop" : 1702328905223,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702328905223,
+        "stop" : 1702328905755,
+        "duration" : 532
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702328905223,
+          "stop" : 1702328905224,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_list'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702328905755,
+          "stop" : 1702328905755,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [200]>"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_list'"
+      }, {
+        "name" : "body",
+        "value" : "{}"
+      }, {
+        "name" : "cookie",
+        "value" : "{'sid': '1d81c869-b52b-4a7f-a749-15229589e52e'}"
+      } ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Body: {\"content\":{\"065777a3-3f87-7526-8000-bf7f6ea9bb07\":[\"db_g0vtr07h\",\"CIS\",\"db_created\",\"mysql://user_ygcsgvwy:pwPW01__olbGHXLul5Bgnw@cisdb1.areso.pro:3306/db_g0vtr07h\",\"Mon, 11 Dec 2023 21:08:24 GMT\"]}}\n",
+      "time" : {
+        "start" : 1702328905755,
+        "stop" : 1702328905755,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702328905756,
+        "stop" : 1702328906280,
+        "duration" : 524
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702328905756,
+          "stop" : 1702328905756,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_list'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702328906280,
+          "stop" : 1702328906280,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [200]>"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_list'"
+      }, {
+        "name" : "body",
+        "value" : "{}"
+      }, {
+        "name" : "cookie",
+        "value" : "{'sid': '1d81c869-b52b-4a7f-a749-15229589e52e'}"
+      } ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Body: {\"content\":{\"065777a3-3f87-7526-8000-bf7f6ea9bb07\":[\"db_g0vtr07h\",\"CIS\",\"db_created\",\"mysql://user_ygcsgvwy:pwPW01__olbGHXLul5Bgnw@cisdb1.areso.pro:3306/db_g0vtr07h\",\"Mon, 11 Dec 2023 21:08:24 GMT\"]}}\n",
+      "time" : {
+        "start" : 1702328906280,
+        "stop" : 1702328906280,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "5fa8bfc03cb56110",
+      "name" : "stdout",
+      "source" : "5fa8bfc03cb56110.txt",
+      "type" : "text/plain",
+      "size" : 1681
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 16,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "POST REQUESTS"
+  }, {
+    "name" : "suite",
+    "value" : "REQUESTS POST"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestPOST"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1198-109"
+  }, {
+    "name" : "thread",
+    "value" : "1890-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_first"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c8004bcf8b88c1a9.json",
+  "parameterValues" : [ ]
+}

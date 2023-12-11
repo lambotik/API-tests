@@ -1,26 +1,43 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "children" : [ {
-    "name" : "Test defects",
+    "name" : "Product defects",
     "children" : [ {
-      "name" : "IndexError: list index out of range",
+      "name" : "AssertionError: Incorrect status code",
       "children" : [ {
         "name" : "delete db",
-        "uid" : "145e74b19aad7de8",
-        "parentUid" : "cbf21ee610ffd376e0ce643a364ade80",
-        "status" : "broken",
+        "uid" : "4717809aa5b771f1",
+        "parentUid" : "e07dd4ab999b15027ae5a060e6c5c14d",
+        "status" : "failed",
         "time" : {
-          "start" : 1701728823984,
-          "stop" : 1701728824519,
-          "duration" : 535
+          "start" : 1702328881915,
+          "stop" : 1702328882965,
+          "duration" : 1050
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "cbf21ee610ffd376e0ce643a364ade80"
+      "uid" : "e07dd4ab999b15027ae5a060e6c5c14d"
+    }, {
+      "name" : "AssertionError: DB is not deleted. {\"content\":{\"065777a3-3f87-7526-8000-bf7f6ea9bb07\":[\"db_g0vtr07h\",\"CIS\",\"db_created\",\"mysql://user_ygcsgvwy:pwPW01__olbGHXLul5Bgnw@cisdb1.areso.pro:3306/db_g0vtr07h\",\"Mon, 11 Dec 2023 21:08:24 GMT\"]}}",
+      "children" : [ {
+        "name" : "test_complex",
+        "uid" : "b72b0e84e61b6d1c",
+        "parentUid" : "8c1c0b5930bce36b7858c79cbb668e04",
+        "status" : "failed",
+        "time" : {
+          "start" : 1702328882996,
+          "stop" : 1702328904173,
+          "duration" : 21177
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8c1c0b5930bce36b7858c79cbb668e04"
     } ],
-    "uid" : "bdbf199525818fae7a8651db9eafe741"
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ],
   "name" : "categories"
 }

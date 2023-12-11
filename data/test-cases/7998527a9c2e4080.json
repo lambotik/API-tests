@@ -1,12 +1,12 @@
 {
-  "uid" : "a3dffec432ecf777",
+  "uid" : "7998527a9c2e4080",
   "name" : "Post login",
   "fullName" : "test_first.TestPOST#test_post_login",
   "historyId" : "1fd6fb68fa1472ef9c72aabb3bafa2fc",
   "time" : {
-    "start" : 1701728822932,
-    "stop" : 1701728823460,
-    "duration" : 528
+    "start" : 1702328880242,
+    "stop" : 1702328880782,
+    "duration" : 540
   },
   "status" : "passed",
   "flaky" : false,
@@ -17,8 +17,8 @@
     "steps" : [ {
       "name" : "Add request",
       "time" : {
-        "start" : 1701728822933,
-        "stop" : 1701728822933,
+        "start" : 1702328880242,
+        "stop" : 1702328880242,
         "duration" : 0
       },
       "status" : "passed",
@@ -31,15 +31,15 @@
         "name" : "method",
         "value" : "'POST'"
       } ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : true
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Add response",
       "time" : {
-        "start" : 1701728823459,
-        "stop" : 1701728823459,
+        "start" : 1702328880781,
+        "stop" : 1702328880781,
         "duration" : 0
       },
       "status" : "passed",
@@ -49,55 +49,55 @@
         "name" : "result",
         "value" : "<Response [200]>"
       } ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : true
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Body: {\"email\":\"your_email\",\"password\":\"your_password\"}",
       "time" : {
-        "start" : 1701728823459,
-        "stop" : 1701728823459,
+        "start" : 1702328880781,
+        "stop" : 1702328880781,
         "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     } ],
     "attachments" : [ {
-      "uid" : "106db6a7f61c6aa8",
+      "uid" : "4ad0fcfee1593207",
       "name" : "stdout",
-      "source" : "106db6a7f61c6aa8.txt",
+      "source" : "4ad0fcfee1593207.txt",
       "type" : "text/plain",
       "size" : 284
     } ],
     "parameters" : [ ],
-    "attachmentsCount" : 1,
-    "shouldDisplayMessage" : false,
     "stepsCount" : 3,
-    "hasContent" : true
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
   },
   "afterStages" : [ ],
   "labels" : [ {
+    "name" : "subSuite",
+    "value" : "POST"
+  }, {
     "name" : "epic",
     "value" : "POST REQUESTS"
   }, {
     "name" : "suite",
     "value" : "REQUESTS POST"
   }, {
-    "name" : "subSuite",
-    "value" : "POST"
-  }, {
     "name" : "host",
-    "value" : "fv-az1022-254"
+    "value" : "fv-az1198-109"
   }, {
     "name" : "thread",
-    "value" : "1893-MainThread"
+    "value" : "1890-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -124,11 +124,19 @@
         "failed" : 0,
         "broken" : 0,
         "skipped" : 1,
-        "passed" : 6,
+        "passed" : 7,
         "unknown" : 0,
-        "total" : 7
+        "total" : 8
       },
       "items" : [ {
+        "uid" : "a3dffec432ecf777",
+        "status" : "passed",
+        "time" : {
+          "start" : 1701728822932,
+          "stop" : 1701728823460,
+          "duration" : 528
+        }
+      }, {
         "uid" : "219baf26c509cfc7",
         "status" : "passed",
         "time" : {
@@ -182,6 +190,6 @@
     },
     "tags" : [ ]
   },
-  "source" : "a3dffec432ecf777.json",
+  "source" : "7998527a9c2e4080.json",
   "parameterValues" : [ ]
 }
