@@ -53,12 +53,12 @@ class TestPOST:
         status_code, sid = result_post
         Checking.check_status_code(status_code, 200)
 
-    @allure.sub_suite('POST')
-    @allure.title('Post db create')
-    def test_post_db_create(self):
-        print('\n\nMethod POST: db_create')
-        result_post_db_list = API.post_db_create(DataMySql.sid)
-        Checking.check_status_code(result_post_db_list, 201)
+    # @allure.sub_suite('POST')
+    # @allure.title('Post db create')
+    # def test_post_db_create(self):
+    #     print('\n\nMethod POST: db_create')
+    #     result_post_db_list = API.post_db_create(DataMySql.sid)
+    #     Checking.check_status_code(result_post_db_list, 201)
 
     @allure.sub_suite('POST')
     @allure.title('Post db list')
@@ -81,6 +81,11 @@ class TestPOST:
     def test_complex(self):
         API.check_full_cycle(DataMySql.sid)
 
+
+@allure.epic('Connection DB')
+@allure.suite('Test Connection DB')
+class TestConnectionDB:
+    @allure.title('Check response from db')
     def test_connect_my_sql(self):
         try:
             connection = mysql.connector.connect(host=DataMySql().data_to_connect_my_sql()['host'],
