@@ -1,0 +1,38 @@
+https://dbend.areso.pro/db_list
+Response: 
+('{"content":{"0657a2ab-d978-732f-8000-9fe9182b4fc1":["db_bcml2fx6","CIS","db_created","mysql://user_2pjytmva:pwPW01__fM4BcdpMhhod8e@cisdb1.areso.pro:3306/db_bcml2fx6","Wed, '
+ '13 Dec 2023 22:06:17 GMT"]}}\n')
+['mysql', '//user_2pjytmva', 'pwPW01__fM4BcdpMhhod8e@cisdb1.areso.pro', '3306/db_bcml2fx6']
+db_bcml2fx6
+user_2pjytmva
+cisdb1.areso.pro
+pwPW01__fM4BcdpMhhod8e
+https://dbend.areso.pro/db_list
+Response: 
+('{"content":{"0657a2ab-d978-732f-8000-9fe9182b4fc1":["db_bcml2fx6","CIS","db_created","mysql://user_2pjytmva:pwPW01__fM4BcdpMhhod8e@cisdb1.areso.pro:3306/db_bcml2fx6","Wed, '
+ '13 Dec 2023 22:06:17 GMT"]}}\n')
+['mysql', '//user_2pjytmva', 'pwPW01__fM4BcdpMhhod8e@cisdb1.areso.pro', '3306/db_bcml2fx6']
+db_bcml2fx6
+user_2pjytmva
+cisdb1.areso.pro
+pwPW01__fM4BcdpMhhod8e
+https://dbend.areso.pro/db_list
+Response: 
+('{"content":{"0657a2ab-d978-732f-8000-9fe9182b4fc1":["db_bcml2fx6","CIS","db_created","mysql://user_2pjytmva:pwPW01__fM4BcdpMhhod8e@cisdb1.areso.pro:3306/db_bcml2fx6","Wed, '
+ '13 Dec 2023 22:06:17 GMT"]}}\n')
+['mysql', '//user_2pjytmva', 'pwPW01__fM4BcdpMhhod8e@cisdb1.areso.pro', '3306/db_bcml2fx6']
+db_bcml2fx6
+user_2pjytmva
+cisdb1.areso.pro
+pwPW01__fM4BcdpMhhod8e
+https://dbend.areso.pro/db_list
+Response: 
+('{"content":{"0657a2ab-d978-732f-8000-9fe9182b4fc1":["db_bcml2fx6","CIS","db_created","mysql://user_2pjytmva:pwPW01__fM4BcdpMhhod8e@cisdb1.areso.pro:3306/db_bcml2fx6","Wed, '
+ '13 Dec 2023 22:06:17 GMT"]}}\n')
+['mysql', '//user_2pjytmva', 'pwPW01__fM4BcdpMhhod8e@cisdb1.areso.pro', '3306/db_bcml2fx6']
+db_bcml2fx6
+user_2pjytmva
+cisdb1.areso.pro
+pwPW01__fM4BcdpMhhod8e
+Successfully connected...
+[(1,)]

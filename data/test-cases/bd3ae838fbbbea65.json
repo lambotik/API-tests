@@ -1,12 +1,12 @@
 {
-  "uid" : "581bf2bb767cd10d",
+  "uid" : "bd3ae838fbbbea65",
   "name" : "List dbtypes",
   "fullName" : "test_first.TestGET#test_list_dbtypes",
   "historyId" : "c1ddb0ad2a5283a85532f93dc1c7d028",
   "time" : {
-    "start" : 1702328878084,
-    "stop" : 1702328878617,
-    "duration" : 533
+    "start" : 1702505145268,
+    "stop" : 1702505145625,
+    "duration" : 357
   },
   "status" : "passed",
   "flaky" : false,
@@ -17,17 +17,17 @@
     "steps" : [ {
       "name" : "Method GET",
       "time" : {
-        "start" : 1702328878084,
-        "stop" : 1702328878616,
-        "duration" : 532
+        "start" : 1702505145268,
+        "stop" : 1702505145624,
+        "duration" : 356
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Add request",
         "time" : {
-          "start" : 1702328878084,
-          "stop" : 1702328878084,
-          "duration" : 0
+          "start" : 1702505145268,
+          "stop" : 1702505145269,
+          "duration" : 1
         },
         "status" : "passed",
         "steps" : [ ],
@@ -39,16 +39,16 @@
           "name" : "method",
           "value" : "'GET'"
         } ],
-        "stepsCount" : 0,
-        "hasContent" : true,
         "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
       }, {
         "name" : "Add response",
         "time" : {
-          "start" : 1702328878616,
-          "stop" : 1702328878616,
-          "duration" : 0
+          "start" : 1702505145623,
+          "stop" : 1702505145624,
+          "duration" : 1
         },
         "status" : "passed",
         "steps" : [ ],
@@ -57,65 +57,65 @@
           "name" : "result",
           "value" : "<Response [200]>"
         } ],
-        "stepsCount" : 0,
-        "hasContent" : true,
         "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
       } ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "url",
         "value" : "'https://dbend.areso.pro/list_dbtypes'"
       } ],
-      "stepsCount" : 2,
-      "hasContent" : true,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
     }, {
       "name" : "Body: {\"3\":\"mysql8\"}\n",
       "time" : {
-        "start" : 1702328878616,
-        "stop" : 1702328878616,
+        "start" : 1702505145624,
+        "stop" : 1702505145624,
         "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 0,
-      "hasContent" : false,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "2cab8059a31999db",
+      "uid" : "e30bafc0dc4f73b9",
       "name" : "stdout",
-      "source" : "2cab8059a31999db.txt",
+      "source" : "e30bafc0dc4f73b9.txt",
       "type" : "text/plain",
       "size" : 73
     } ],
     "parameters" : [ ],
-    "stepsCount" : 4,
-    "hasContent" : true,
     "attachmentsCount" : 1,
-    "shouldDisplayMessage" : false
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 4,
+    "hasContent" : true
   },
   "afterStages" : [ ],
   "labels" : [ {
-    "name" : "suite",
-    "value" : "REQUESTS GET"
+    "name" : "epic",
+    "value" : "GET REQUESTS"
   }, {
     "name" : "subSuite",
     "value" : "GET"
   }, {
-    "name" : "epic",
-    "value" : "GET REQUESTS"
+    "name" : "suite",
+    "value" : "REQUESTS GET"
   }, {
     "name" : "host",
-    "value" : "fv-az1198-109"
+    "value" : "fv-az1153-990"
   }, {
     "name" : "thread",
-    "value" : "1890-MainThread"
+    "value" : "2029-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -142,11 +142,19 @@
         "failed" : 0,
         "broken" : 1,
         "skipped" : 0,
-        "passed" : 7,
+        "passed" : 8,
         "unknown" : 0,
-        "total" : 8
+        "total" : 9
       },
       "items" : [ {
+        "uid" : "581bf2bb767cd10d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1702328878084,
+          "stop" : 1702328878617,
+          "duration" : 533
+        }
+      }, {
         "uid" : "7899ac3c9027609",
         "status" : "passed",
         "time" : {
@@ -207,6 +215,6 @@
     },
     "tags" : [ ]
   },
-  "source" : "581bf2bb767cd10d.json",
+  "source" : "bd3ae838fbbbea65.json",
   "parameterValues" : [ ]
 }

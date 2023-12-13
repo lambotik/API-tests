@@ -1,14 +1,23 @@
 {
   "f2f3cba4290fc70b0b6b7aaf6737862e" : {
     "statistic" : {
-      "failed" : 2,
+      "failed" : 3,
       "broken" : 1,
       "skipped" : 0,
       "passed" : 1,
       "unknown" : 0,
-      "total" : 4
+      "total" : 5
     },
     "items" : [ {
+      "uid" : "3cfa467a1b2ba76b",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: Incorrect status code",
+      "time" : {
+        "start" : 1702505148254,
+        "stop" : 1702505148947,
+        "duration" : 693
+      }
+    }, {
       "uid" : "4717809aa5b771f1",
       "status" : "failed",
       "statusDetails" : "AssertionError: Incorrect status code",
@@ -50,11 +59,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 7,
+      "passed" : 8,
       "unknown" : 0,
-      "total" : 8
+      "total" : 9
     },
     "items" : [ {
+      "uid" : "86e4ec5e9e0988c6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1702505145627,
+        "stop" : 1702505145975,
+        "duration" : 348
+      }
+    }, {
       "uid" : "da7e52059f318e",
       "status" : "passed",
       "time" : {
@@ -126,11 +143,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 7,
+      "passed" : 8,
       "unknown" : 0,
-      "total" : 8
+      "total" : 9
     },
     "items" : [ {
+      "uid" : "fd3c8a6c351edf63",
+      "status" : "passed",
+      "time" : {
+        "start" : 1702505146457,
+        "stop" : 1702505146805,
+        "duration" : 348
+      }
+    }, {
       "uid" : "7fcab3399ecaa6ba",
       "status" : "passed",
       "time" : {
@@ -202,11 +227,19 @@
       "failed" : 1,
       "broken" : 0,
       "skipped" : 2,
-      "passed" : 4,
+      "passed" : 5,
       "unknown" : 0,
-      "total" : 7
+      "total" : 8
     },
     "items" : [ {
+      "uid" : "3fee1fcfd024e761",
+      "status" : "passed",
+      "time" : {
+        "start" : 1702505147145,
+        "stop" : 1702505147868,
+        "duration" : 723
+      }
+    }, {
       "uid" : "d79faa036b6c32d5",
       "status" : "passed",
       "time" : {
@@ -272,11 +305,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 1,
-      "passed" : 7,
+      "passed" : 8,
       "unknown" : 0,
-      "total" : 8
+      "total" : 9
     },
     "items" : [ {
+      "uid" : "17d380d8f7e3a8ed",
+      "status" : "passed",
+      "time" : {
+        "start" : 1702505147870,
+        "stop" : 1702505148252,
+        "duration" : 382
+      }
+    }, {
       "uid" : "baddffa3dbb1474a",
       "status" : "passed",
       "time" : {
@@ -349,11 +390,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 7,
+      "passed" : 8,
       "unknown" : 0,
-      "total" : 8
+      "total" : 9
     },
     "items" : [ {
+      "uid" : "54c84b4c74ecb09",
+      "status" : "passed",
+      "time" : {
+        "start" : 1702505144924,
+        "stop" : 1702505145267,
+        "duration" : 343
+      }
+    }, {
       "uid" : "60dd157d897ca082",
       "status" : "passed",
       "time" : {
@@ -422,14 +471,23 @@
   },
   "ba8ab87603008f9becac48ea4168e362" : {
     "statistic" : {
-      "failed" : 1,
+      "failed" : 2,
       "broken" : 0,
       "skipped" : 0,
       "passed" : 2,
       "unknown" : 0,
-      "total" : 3
+      "total" : 4
     },
     "items" : [ {
+      "uid" : "f3ccaa34540986b9",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: DB is not deleted. {\"content\":{\"0657a2ab-d978-732f-8000-9fe9182b4fc1\":[\"db_bcml2fx6\",\"CIS\",\"db_created\",\"mysql://user_2pjytmva:pwPW01__fM4BcdpMhhod8e@cisdb1.areso.pro:3306/db_bcml2fx6\",\"Wed, 13 Dec 2023 22:06:17 GMT\"]}}",
+      "time" : {
+        "start" : 1702505148979,
+        "stop" : 1702505177108,
+        "duration" : 28129
+      }
+    }, {
       "uid" : "b72b0e84e61b6d1c",
       "status" : "failed",
       "statusDetails" : "AssertionError: DB is not deleted. {\"content\":{\"065777a3-3f87-7526-8000-bf7f6ea9bb07\":[\"db_g0vtr07h\",\"CIS\",\"db_created\",\"mysql://user_ygcsgvwy:pwPW01__olbGHXLul5Bgnw@cisdb1.areso.pro:3306/db_g0vtr07h\",\"Mon, 11 Dec 2023 21:08:24 GMT\"]}}",
@@ -463,11 +521,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 7,
+      "passed" : 8,
       "unknown" : 0,
-      "total" : 8
+      "total" : 9
     },
     "items" : [ {
+      "uid" : "bd3ae838fbbbea65",
+      "status" : "passed",
+      "time" : {
+        "start" : 1702505145268,
+        "stop" : 1702505145625,
+        "duration" : 357
+      }
+    }, {
       "uid" : "581bf2bb767cd10d",
       "status" : "passed",
       "time" : {
@@ -539,11 +605,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 7,
+      "passed" : 8,
       "unknown" : 0,
-      "total" : 8
+      "total" : 9
     },
     "items" : [ {
+      "uid" : "faffb4533ef4e2f3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1702505145977,
+        "stop" : 1702505146455,
+        "duration" : 478
+      }
+    }, {
       "uid" : "85a4e45fdbe7b853",
       "status" : "passed",
       "time" : {
@@ -615,11 +689,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "bfa40bbd379b6452",
+      "status" : "passed",
+      "time" : {
+        "start" : 1702505177126,
+        "stop" : 1702505179868,
+        "duration" : 2742
+      }
+    }, {
       "uid" : "c8004bcf8b88c1a9",
       "status" : "passed",
       "time" : {
@@ -634,11 +716,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 1,
-      "passed" : 7,
+      "passed" : 8,
       "unknown" : 0,
-      "total" : 8
+      "total" : 9
     },
     "items" : [ {
+      "uid" : "dc9daf99e9563387",
+      "status" : "passed",
+      "time" : {
+        "start" : 1702505146807,
+        "stop" : 1702505147143,
+        "duration" : 336
+      }
+    }, {
       "uid" : "7998527a9c2e4080",
       "status" : "passed",
       "time" : {

@@ -1,12 +1,12 @@
 {
-  "uid" : "d79faa036b6c32d5",
+  "uid" : "3fee1fcfd024e761",
   "name" : "Post db create",
   "fullName" : "test_first.TestPOST#test_post_db_create",
   "historyId" : "1aec0f14b932a152b799443dcd6b951a",
   "time" : {
-    "start" : 1702328880784,
-    "stop" : 1702328881379,
-    "duration" : 595
+    "start" : 1702505147145,
+    "stop" : 1702505147868,
+    "duration" : 723
   },
   "status" : "passed",
   "flaky" : false,
@@ -17,16 +17,16 @@
     "steps" : [ {
       "name" : "Method POST",
       "time" : {
-        "start" : 1702328880784,
-        "stop" : 1702328881378,
-        "duration" : 594
+        "start" : 1702505147145,
+        "stop" : 1702505147867,
+        "duration" : 722
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Add request",
         "time" : {
-          "start" : 1702328880784,
-          "stop" : 1702328880784,
+          "start" : 1702505147145,
+          "stop" : 1702505147145,
           "duration" : 0
         },
         "status" : "passed",
@@ -39,16 +39,16 @@
           "name" : "method",
           "value" : "'POST'"
         } ],
-        "stepsCount" : 0,
-        "hasContent" : true,
         "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
       }, {
         "name" : "Add response",
         "time" : {
-          "start" : 1702328881377,
-          "stop" : 1702328881378,
-          "duration" : 1
+          "start" : 1702505147867,
+          "stop" : 1702505147867,
+          "duration" : 0
         },
         "status" : "passed",
         "steps" : [ ],
@@ -57,10 +57,10 @@
           "name" : "result",
           "value" : "<Response [201]>"
         } ],
-        "stepsCount" : 0,
-        "hasContent" : true,
         "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
       } ],
       "attachments" : [ ],
       "parameters" : [ {
@@ -68,60 +68,60 @@
         "value" : "'https://dbend.areso.pro/db_create'"
       }, {
         "name" : "cookie",
-        "value" : "{'sid': '1d81c869-b52b-4a7f-a749-15229589e52e'}"
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
       }, {
         "name" : "body",
         "value" : "{'dbtype': 3, 'dbversion': 5, 'env': 3, 'region': 3}"
       } ],
-      "stepsCount" : 2,
-      "hasContent" : true,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
     }, {
-      "name" : "Body: {\"db_uuid\":\"065777a3-138c-7ee6-8000-2b26ea4ada68\",\"msg\":\"your order for a new database created successfully\"}\n",
+      "name" : "Body: {\"db_uuid\":\"0657a2ab-b722-71fa-8000-f8b244964e03\",\"msg\":\"your order for a new database created successfully\"}\n",
       "time" : {
-        "start" : 1702328881378,
-        "stop" : 1702328881378,
+        "start" : 1702505147867,
+        "stop" : 1702505147867,
         "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 0,
-      "hasContent" : false,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "3547afe790e7f40c",
+      "uid" : "f39e06f300d7dcb5",
       "name" : "stdout",
-      "source" : "3547afe790e7f40c.txt",
+      "source" : "f39e06f300d7dcb5.txt",
       "type" : "text/plain",
       "size" : 201
     } ],
     "parameters" : [ ],
-    "stepsCount" : 4,
-    "hasContent" : true,
     "attachmentsCount" : 1,
-    "shouldDisplayMessage" : false
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 4,
+    "hasContent" : true
   },
   "afterStages" : [ ],
   "labels" : [ {
-    "name" : "subSuite",
-    "value" : "POST"
-  }, {
     "name" : "epic",
     "value" : "POST REQUESTS"
   }, {
     "name" : "suite",
     "value" : "REQUESTS POST"
   }, {
+    "name" : "subSuite",
+    "value" : "POST"
+  }, {
     "name" : "host",
-    "value" : "fv-az1198-109"
+    "value" : "fv-az1153-990"
   }, {
     "name" : "thread",
-    "value" : "1890-MainThread"
+    "value" : "2029-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -148,11 +148,19 @@
         "failed" : 1,
         "broken" : 0,
         "skipped" : 2,
-        "passed" : 4,
+        "passed" : 5,
         "unknown" : 0,
-        "total" : 7
+        "total" : 8
       },
       "items" : [ {
+        "uid" : "d79faa036b6c32d5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1702328880784,
+          "stop" : 1702328881379,
+          "duration" : 595
+        }
+      }, {
         "uid" : "e48e3ee1058009e4",
         "status" : "passed",
         "time" : {
@@ -207,6 +215,6 @@
     },
     "tags" : [ ]
   },
-  "source" : "d79faa036b6c32d5.json",
+  "source" : "3fee1fcfd024e761.json",
   "parameterValues" : [ ]
 }

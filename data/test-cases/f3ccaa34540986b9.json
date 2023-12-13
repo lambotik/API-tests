@@ -1,0 +1,6514 @@
+{
+  "uid" : "f3ccaa34540986b9",
+  "name" : "test_complex",
+  "fullName" : "test_first.TestPOST#test_complex",
+  "historyId" : "ba8ab87603008f9becac48ea4168e362",
+  "time" : {
+    "start" : 1702505148979,
+    "stop" : 1702505177108,
+    "duration" : 28129
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: DB is not deleted. {\"content\":{\"0657a2ab-d978-732f-8000-9fe9182b4fc1\":[\"db_bcml2fx6\",\"CIS\",\"db_created\",\"mysql://user_2pjytmva:pwPW01__fM4BcdpMhhod8e@cisdb1.areso.pro:3306/db_bcml2fx6\",\"Wed, 13 Dec 2023 22:06:17 GMT\"]}}",
+  "statusTrace" : "self = <test_first.TestPOST object at 0x7fcdba8ec940>\n\n    @allure.sub_suite('Complex')\n    def test_complex(self):\n>       API.check_full_cycle(DataMySql.sid)\n\ntest_first.py:82: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nsid = {'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}\n\n    @staticmethod\n    def check_full_cycle(sid):\n        empty_db_list = API.post_db_list(sid).text\n        result_post_db_create = API.post_db_create(sid)\n        result_post_db_list = API.post_db_list(sid)\n        json_list_db = json.loads(result_post_db_list.text)\n        first_db_uuid = list(json_list_db['content'].keys())[0]\n        while True:\n            result_post_db_delete = API.delete_db(first_db_uuid, sid)\n            print('\\nCheck Time: ', str(datetime.now().strftime(\"%d-%m-%Y %H:%M:%S\")))\n            json_delete_db = json.loads(result_post_db_delete.text)\n            print(list(json_delete_db.values())[0])\n            message = list(json_delete_db.values())[0].split(':')\n            if 'msg[18]' in message:\n                print(str(datetime.now().strftime(\"%d-%m-%Y %H:%M:%S\")))\n            elif 'msg[19]' in message:\n                print(str(datetime.now().strftime(\"%d-%m-%Y %H:%M:%S\")))\n                result_post_db_delete = API.delete_db(first_db_uuid, sid)\n                json_delete_db = json.loads(result_post_db_delete.text)\n                print(list(json_delete_db.values())[0])\n            elif 'msg[13]' in message:\n                result_post_db_delete = API.delete_db(first_db_uuid, sid)\n                json_delete_db = json.loads(result_post_db_delete.text)\n                print('json_delete_db', json_delete_db)\n                print('Finish: ', str(datetime.now().strftime(\"%d-%m-%Y %H:%M:%S\")))\n            else:\n                print('Finish: ', str(datetime.now().strftime(\"%d-%m-%Y %H:%M:%S\")))\n                break\n        cur_db_list = API.post_db_list(sid)\n        print(cur_db_list.text)\n>       assert cur_db_list.text == empty_db_list, f'DB is not deleted. {cur_db_list.text}'\nE       AssertionError: DB is not deleted. {\"content\":{\"0657a2ab-d978-732f-8000-9fe9182b4fc1\":[\"db_bcml2fx6\",\"CIS\",\"db_created\",\"mysql://user_2pjytmva:pwPW01__fM4BcdpMhhod8e@cisdb1.areso.pro:3306/db_bcml2fx6\",\"Wed, 13 Dec 2023 22:06:17 GMT\"]}}\n\nutils/request.py:188: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: DB is not deleted. {\"content\":{\"0657a2ab-d978-732f-8000-9fe9182b4fc1\":[\"db_bcml2fx6\",\"CIS\",\"db_created\",\"mysql://user_2pjytmva:pwPW01__fM4BcdpMhhod8e@cisdb1.areso.pro:3306/db_bcml2fx6\",\"Wed, 13 Dec 2023 22:06:17 GMT\"]}}",
+    "statusTrace" : "self = <test_first.TestPOST object at 0x7fcdba8ec940>\n\n    @allure.sub_suite('Complex')\n    def test_complex(self):\n>       API.check_full_cycle(DataMySql.sid)\n\ntest_first.py:82: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nsid = {'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}\n\n    @staticmethod\n    def check_full_cycle(sid):\n        empty_db_list = API.post_db_list(sid).text\n        result_post_db_create = API.post_db_create(sid)\n        result_post_db_list = API.post_db_list(sid)\n        json_list_db = json.loads(result_post_db_list.text)\n        first_db_uuid = list(json_list_db['content'].keys())[0]\n        while True:\n            result_post_db_delete = API.delete_db(first_db_uuid, sid)\n            print('\\nCheck Time: ', str(datetime.now().strftime(\"%d-%m-%Y %H:%M:%S\")))\n            json_delete_db = json.loads(result_post_db_delete.text)\n            print(list(json_delete_db.values())[0])\n            message = list(json_delete_db.values())[0].split(':')\n            if 'msg[18]' in message:\n                print(str(datetime.now().strftime(\"%d-%m-%Y %H:%M:%S\")))\n            elif 'msg[19]' in message:\n                print(str(datetime.now().strftime(\"%d-%m-%Y %H:%M:%S\")))\n                result_post_db_delete = API.delete_db(first_db_uuid, sid)\n                json_delete_db = json.loads(result_post_db_delete.text)\n                print(list(json_delete_db.values())[0])\n            elif 'msg[13]' in message:\n                result_post_db_delete = API.delete_db(first_db_uuid, sid)\n                json_delete_db = json.loads(result_post_db_delete.text)\n                print('json_delete_db', json_delete_db)\n                print('Finish: ', str(datetime.now().strftime(\"%d-%m-%Y %H:%M:%S\")))\n            else:\n                print('Finish: ', str(datetime.now().strftime(\"%d-%m-%Y %H:%M:%S\")))\n                break\n        cur_db_list = API.post_db_list(sid)\n        print(cur_db_list.text)\n>       assert cur_db_list.text == empty_db_list, f'DB is not deleted. {cur_db_list.text}'\nE       AssertionError: DB is not deleted. {\"content\":{\"0657a2ab-d978-732f-8000-9fe9182b4fc1\":[\"db_bcml2fx6\",\"CIS\",\"db_created\",\"mysql://user_2pjytmva:pwPW01__fM4BcdpMhhod8e@cisdb1.areso.pro:3306/db_bcml2fx6\",\"Wed, 13 Dec 2023 22:06:17 GMT\"]}}\n\nutils/request.py:188: AssertionError",
+    "steps" : [ {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505148979,
+        "stop" : 1702505149309,
+        "duration" : 330
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505148979,
+          "stop" : 1702505148979,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_list'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505149309,
+          "stop" : 1702505149309,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [200]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_list'"
+      }, {
+        "name" : "body",
+        "value" : "{}"
+      }, {
+        "name" : "cookie",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Body: {\"content\":{\"0657a2ab-b722-71fa-8000-f8b244964e03\":[\"\",\"CIS\",\"db_creating\",null,null]}}\n",
+      "time" : {
+        "start" : 1702505149309,
+        "stop" : 1702505149309,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505149310,
+        "stop" : 1702505149687,
+        "duration" : 377
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505149311,
+          "stop" : 1702505149311,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_create'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505149687,
+          "stop" : 1702505149687,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [201]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_create'"
+      }, {
+        "name" : "cookie",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      }, {
+        "name" : "body",
+        "value" : "{'dbtype': 3, 'dbversion': 5, 'env': 3, 'region': 3}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Body: {\"db_uuid\":\"0657a2ab-d978-732f-8000-9fe9182b4fc1\",\"msg\":\"your order for a new database created successfully\"}\n",
+      "time" : {
+        "start" : 1702505149687,
+        "stop" : 1702505149687,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505149688,
+        "stop" : 1702505150018,
+        "duration" : 330
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505149688,
+          "stop" : 1702505149688,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_list'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505150018,
+          "stop" : 1702505150018,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [200]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_list'"
+      }, {
+        "name" : "body",
+        "value" : "{}"
+      }, {
+        "name" : "cookie",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Body: {\"content\":{\"0657a2ab-b722-71fa-8000-f8b244964e03\":[\"\",\"CIS\",\"db_creating\",null,null],\"0657a2ab-d978-732f-8000-9fe9182b4fc1\":[\"\",\"CIS\",\"db_creating\",null,null]}}\n",
+      "time" : {
+        "start" : 1702505150018,
+        "stop" : 1702505150018,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505150018,
+        "stop" : 1702505150369,
+        "duration" : 351
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505150018,
+          "stop" : 1702505150019,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505150369,
+          "stop" : 1702505150369,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n",
+      "time" : {
+        "start" : 1702505150369,
+        "stop" : 1702505150369,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505150369,
+        "stop" : 1702505150723,
+        "duration" : 354
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505150369,
+          "stop" : 1702505150369,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505150723,
+          "stop" : 1702505150723,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n",
+      "time" : {
+        "start" : 1702505150723,
+        "stop" : 1702505150723,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505150724,
+        "stop" : 1702505151053,
+        "duration" : 329
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505150725,
+          "stop" : 1702505150725,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505151053,
+          "stop" : 1702505151053,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n",
+      "time" : {
+        "start" : 1702505151053,
+        "stop" : 1702505151053,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505151054,
+        "stop" : 1702505151393,
+        "duration" : 339
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505151054,
+          "stop" : 1702505151054,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505151393,
+          "stop" : 1702505151393,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n",
+      "time" : {
+        "start" : 1702505151393,
+        "stop" : 1702505151393,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505151394,
+        "stop" : 1702505151722,
+        "duration" : 328
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505151394,
+          "stop" : 1702505151394,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505151722,
+          "stop" : 1702505151722,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n",
+      "time" : {
+        "start" : 1702505151722,
+        "stop" : 1702505151722,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505151723,
+        "stop" : 1702505152066,
+        "duration" : 343
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505151723,
+          "stop" : 1702505151723,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505152066,
+          "stop" : 1702505152066,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n",
+      "time" : {
+        "start" : 1702505152066,
+        "stop" : 1702505152066,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505152067,
+        "stop" : 1702505152407,
+        "duration" : 340
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505152068,
+          "stop" : 1702505152068,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505152407,
+          "stop" : 1702505152407,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n",
+      "time" : {
+        "start" : 1702505152407,
+        "stop" : 1702505152407,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505152408,
+        "stop" : 1702505152745,
+        "duration" : 337
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505152408,
+          "stop" : 1702505152408,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505152745,
+          "stop" : 1702505152745,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n",
+      "time" : {
+        "start" : 1702505152745,
+        "stop" : 1702505152745,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505152747,
+        "stop" : 1702505153093,
+        "duration" : 346
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505152747,
+          "stop" : 1702505152747,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505153093,
+          "stop" : 1702505153093,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n",
+      "time" : {
+        "start" : 1702505153093,
+        "stop" : 1702505153093,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505153094,
+        "stop" : 1702505153424,
+        "duration" : 330
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505153094,
+          "stop" : 1702505153094,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505153424,
+          "stop" : 1702505153424,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n",
+      "time" : {
+        "start" : 1702505153424,
+        "stop" : 1702505153424,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505153426,
+        "stop" : 1702505153757,
+        "duration" : 331
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505153426,
+          "stop" : 1702505153426,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505153757,
+          "stop" : 1702505153757,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n",
+      "time" : {
+        "start" : 1702505153757,
+        "stop" : 1702505153757,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505153758,
+        "stop" : 1702505154093,
+        "duration" : 335
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505153759,
+          "stop" : 1702505153759,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505154093,
+          "stop" : 1702505154093,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n",
+      "time" : {
+        "start" : 1702505154093,
+        "stop" : 1702505154093,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505154094,
+        "stop" : 1702505154425,
+        "duration" : 331
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505154094,
+          "stop" : 1702505154094,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505154425,
+          "stop" : 1702505154425,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n",
+      "time" : {
+        "start" : 1702505154425,
+        "stop" : 1702505154425,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505154426,
+        "stop" : 1702505154759,
+        "duration" : 333
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505154426,
+          "stop" : 1702505154427,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505154759,
+          "stop" : 1702505154759,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n",
+      "time" : {
+        "start" : 1702505154759,
+        "stop" : 1702505154759,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505154760,
+        "stop" : 1702505155089,
+        "duration" : 329
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505154760,
+          "stop" : 1702505154760,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505155089,
+          "stop" : 1702505155089,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n",
+      "time" : {
+        "start" : 1702505155089,
+        "stop" : 1702505155089,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505155090,
+        "stop" : 1702505155416,
+        "duration" : 326
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505155090,
+          "stop" : 1702505155090,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505155416,
+          "stop" : 1702505155416,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n",
+      "time" : {
+        "start" : 1702505155416,
+        "stop" : 1702505155416,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505155418,
+        "stop" : 1702505155749,
+        "duration" : 331
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505155418,
+          "stop" : 1702505155418,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505155748,
+          "stop" : 1702505155749,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n",
+      "time" : {
+        "start" : 1702505155749,
+        "stop" : 1702505155749,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505155750,
+        "stop" : 1702505156082,
+        "duration" : 332
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505155750,
+          "stop" : 1702505155750,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505156082,
+          "stop" : 1702505156082,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n",
+      "time" : {
+        "start" : 1702505156082,
+        "stop" : 1702505156082,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505156084,
+        "stop" : 1702505156414,
+        "duration" : 330
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505156084,
+          "stop" : 1702505156084,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505156413,
+          "stop" : 1702505156413,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n",
+      "time" : {
+        "start" : 1702505156414,
+        "stop" : 1702505156414,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505156415,
+        "stop" : 1702505156746,
+        "duration" : 331
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505156415,
+          "stop" : 1702505156415,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505156745,
+          "stop" : 1702505156746,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n",
+      "time" : {
+        "start" : 1702505156746,
+        "stop" : 1702505156746,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505156747,
+        "stop" : 1702505157081,
+        "duration" : 334
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505156747,
+          "stop" : 1702505156747,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505157080,
+          "stop" : 1702505157081,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n",
+      "time" : {
+        "start" : 1702505157081,
+        "stop" : 1702505157081,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505157082,
+        "stop" : 1702505157421,
+        "duration" : 339
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505157082,
+          "stop" : 1702505157082,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505157421,
+          "stop" : 1702505157421,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n",
+      "time" : {
+        "start" : 1702505157421,
+        "stop" : 1702505157421,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505157422,
+        "stop" : 1702505157749,
+        "duration" : 327
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505157422,
+          "stop" : 1702505157423,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505157749,
+          "stop" : 1702505157749,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n",
+      "time" : {
+        "start" : 1702505157749,
+        "stop" : 1702505157749,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505157750,
+        "stop" : 1702505158087,
+        "duration" : 337
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505157751,
+          "stop" : 1702505157751,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505158087,
+          "stop" : 1702505158087,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n",
+      "time" : {
+        "start" : 1702505158087,
+        "stop" : 1702505158087,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505158089,
+        "stop" : 1702505158430,
+        "duration" : 341
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505158089,
+          "stop" : 1702505158089,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505158429,
+          "stop" : 1702505158430,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n",
+      "time" : {
+        "start" : 1702505158430,
+        "stop" : 1702505158430,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505158431,
+        "stop" : 1702505158768,
+        "duration" : 337
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505158431,
+          "stop" : 1702505158431,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505158767,
+          "stop" : 1702505158767,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n",
+      "time" : {
+        "start" : 1702505158768,
+        "stop" : 1702505158768,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505158769,
+        "stop" : 1702505159100,
+        "duration" : 331
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505158769,
+          "stop" : 1702505158769,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505159100,
+          "stop" : 1702505159100,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n",
+      "time" : {
+        "start" : 1702505159100,
+        "stop" : 1702505159100,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505159101,
+        "stop" : 1702505159431,
+        "duration" : 330
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505159101,
+          "stop" : 1702505159102,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505159430,
+          "stop" : 1702505159430,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n",
+      "time" : {
+        "start" : 1702505159431,
+        "stop" : 1702505159431,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505159432,
+        "stop" : 1702505159776,
+        "duration" : 344
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505159432,
+          "stop" : 1702505159432,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505159776,
+          "stop" : 1702505159776,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n",
+      "time" : {
+        "start" : 1702505159776,
+        "stop" : 1702505159776,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505159777,
+        "stop" : 1702505160106,
+        "duration" : 329
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505159777,
+          "stop" : 1702505159777,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505160106,
+          "stop" : 1702505160106,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n",
+      "time" : {
+        "start" : 1702505160106,
+        "stop" : 1702505160106,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505160107,
+        "stop" : 1702505160445,
+        "duration" : 338
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505160108,
+          "stop" : 1702505160108,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505160445,
+          "stop" : 1702505160445,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n",
+      "time" : {
+        "start" : 1702505160445,
+        "stop" : 1702505160445,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505160447,
+        "stop" : 1702505160778,
+        "duration" : 331
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505160447,
+          "stop" : 1702505160447,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505160778,
+          "stop" : 1702505160778,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n",
+      "time" : {
+        "start" : 1702505160778,
+        "stop" : 1702505160778,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505160779,
+        "stop" : 1702505161188,
+        "duration" : 409
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505160779,
+          "stop" : 1702505160780,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505161188,
+          "stop" : 1702505161188,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n",
+      "time" : {
+        "start" : 1702505161188,
+        "stop" : 1702505161188,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505161190,
+        "stop" : 1702505161584,
+        "duration" : 394
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505161190,
+          "stop" : 1702505161190,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505161584,
+          "stop" : 1702505161584,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [200]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[13]: successfully accepted request for deletion\"}\n",
+      "time" : {
+        "start" : 1702505161584,
+        "stop" : 1702505161584,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505161586,
+        "stop" : 1702505161924,
+        "duration" : 338
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505161586,
+          "stop" : 1702505161586,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505161924,
+          "stop" : 1702505161924,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505161924,
+        "stop" : 1702505161925,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505161926,
+        "stop" : 1702505162261,
+        "duration" : 335
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505161926,
+          "stop" : 1702505161926,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505162260,
+          "stop" : 1702505162261,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505162261,
+        "stop" : 1702505162261,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505162262,
+        "stop" : 1702505162594,
+        "duration" : 332
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505162262,
+          "stop" : 1702505162262,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505162594,
+          "stop" : 1702505162594,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505162594,
+        "stop" : 1702505162594,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505162595,
+        "stop" : 1702505162931,
+        "duration" : 336
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505162595,
+          "stop" : 1702505162595,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505162931,
+          "stop" : 1702505162931,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505162931,
+        "stop" : 1702505162931,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505162932,
+        "stop" : 1702505163282,
+        "duration" : 350
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505162932,
+          "stop" : 1702505162933,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505163282,
+          "stop" : 1702505163282,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505163282,
+        "stop" : 1702505163282,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505163284,
+        "stop" : 1702505163625,
+        "duration" : 341
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505163284,
+          "stop" : 1702505163284,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505163624,
+          "stop" : 1702505163625,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505163625,
+        "stop" : 1702505163625,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505163626,
+        "stop" : 1702505163964,
+        "duration" : 338
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505163626,
+          "stop" : 1702505163626,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505163964,
+          "stop" : 1702505163964,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505163964,
+        "stop" : 1702505163965,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505163966,
+        "stop" : 1702505164293,
+        "duration" : 327
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505163966,
+          "stop" : 1702505163966,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505164293,
+          "stop" : 1702505164293,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505164293,
+        "stop" : 1702505164293,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505164294,
+        "stop" : 1702505164630,
+        "duration" : 336
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505164295,
+          "stop" : 1702505164295,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505164630,
+          "stop" : 1702505164630,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505164630,
+        "stop" : 1702505164630,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505164632,
+        "stop" : 1702505164964,
+        "duration" : 332
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505164632,
+          "stop" : 1702505164632,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505164964,
+          "stop" : 1702505164964,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505164964,
+        "stop" : 1702505164964,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505164966,
+        "stop" : 1702505165298,
+        "duration" : 332
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505164966,
+          "stop" : 1702505164966,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505165297,
+          "stop" : 1702505165298,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505165298,
+        "stop" : 1702505165298,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505165299,
+        "stop" : 1702505165632,
+        "duration" : 333
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505165299,
+          "stop" : 1702505165299,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505165631,
+          "stop" : 1702505165632,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505165632,
+        "stop" : 1702505165632,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505165633,
+        "stop" : 1702505165969,
+        "duration" : 336
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505165633,
+          "stop" : 1702505165633,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505165968,
+          "stop" : 1702505165969,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505165969,
+        "stop" : 1702505165969,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505165970,
+        "stop" : 1702505166424,
+        "duration" : 454
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505165970,
+          "stop" : 1702505165970,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505166424,
+          "stop" : 1702505166424,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505166424,
+        "stop" : 1702505166424,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505166425,
+        "stop" : 1702505166756,
+        "duration" : 331
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505166426,
+          "stop" : 1702505166426,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505166755,
+          "stop" : 1702505166755,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505166756,
+        "stop" : 1702505166756,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505166757,
+        "stop" : 1702505167095,
+        "duration" : 338
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505166757,
+          "stop" : 1702505166757,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505167095,
+          "stop" : 1702505167095,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505167095,
+        "stop" : 1702505167095,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505167097,
+        "stop" : 1702505167626,
+        "duration" : 529
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505167097,
+          "stop" : 1702505167097,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505167626,
+          "stop" : 1702505167626,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505167626,
+        "stop" : 1702505167626,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505167628,
+        "stop" : 1702505167960,
+        "duration" : 332
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505167628,
+          "stop" : 1702505167628,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505167960,
+          "stop" : 1702505167960,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505167960,
+        "stop" : 1702505167960,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505167961,
+        "stop" : 1702505168291,
+        "duration" : 330
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505167961,
+          "stop" : 1702505167962,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505168291,
+          "stop" : 1702505168291,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505168291,
+        "stop" : 1702505168291,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505168293,
+        "stop" : 1702505168619,
+        "duration" : 326
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505168293,
+          "stop" : 1702505168293,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505168619,
+          "stop" : 1702505168619,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505168619,
+        "stop" : 1702505168619,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505168621,
+        "stop" : 1702505168959,
+        "duration" : 338
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505168621,
+          "stop" : 1702505168621,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505168959,
+          "stop" : 1702505168959,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505168960,
+        "stop" : 1702505168960,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505168961,
+        "stop" : 1702505169294,
+        "duration" : 333
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505168961,
+          "stop" : 1702505168961,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505169294,
+          "stop" : 1702505169294,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505169294,
+        "stop" : 1702505169294,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505169296,
+        "stop" : 1702505169633,
+        "duration" : 337
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505169296,
+          "stop" : 1702505169296,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505169633,
+          "stop" : 1702505169633,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505169633,
+        "stop" : 1702505169633,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505169634,
+        "stop" : 1702505169967,
+        "duration" : 333
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505169634,
+          "stop" : 1702505169634,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505169967,
+          "stop" : 1702505169967,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505169967,
+        "stop" : 1702505169967,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505169968,
+        "stop" : 1702505170303,
+        "duration" : 335
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505169968,
+          "stop" : 1702505169969,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505170302,
+          "stop" : 1702505170303,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505170303,
+        "stop" : 1702505170303,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505170304,
+        "stop" : 1702505170629,
+        "duration" : 325
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505170304,
+          "stop" : 1702505170304,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505170629,
+          "stop" : 1702505170629,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505170629,
+        "stop" : 1702505170629,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505170630,
+        "stop" : 1702505170957,
+        "duration" : 327
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505170630,
+          "stop" : 1702505170631,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505170957,
+          "stop" : 1702505170957,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505170957,
+        "stop" : 1702505170957,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505170958,
+        "stop" : 1702505171285,
+        "duration" : 327
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505170959,
+          "stop" : 1702505170959,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505171285,
+          "stop" : 1702505171285,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505171285,
+        "stop" : 1702505171285,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505171287,
+        "stop" : 1702505171616,
+        "duration" : 329
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505171287,
+          "stop" : 1702505171287,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505171616,
+          "stop" : 1702505171616,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505171616,
+        "stop" : 1702505171616,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505171618,
+        "stop" : 1702505171952,
+        "duration" : 334
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505171618,
+          "stop" : 1702505171618,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505171952,
+          "stop" : 1702505171952,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505171952,
+        "stop" : 1702505171952,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505171954,
+        "stop" : 1702505172287,
+        "duration" : 333
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505171954,
+          "stop" : 1702505171954,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505172287,
+          "stop" : 1702505172287,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505172287,
+        "stop" : 1702505172287,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505172288,
+        "stop" : 1702505172749,
+        "duration" : 461
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505172288,
+          "stop" : 1702505172288,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505172749,
+          "stop" : 1702505172749,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505172749,
+        "stop" : 1702505172749,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505172750,
+        "stop" : 1702505173087,
+        "duration" : 337
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505172750,
+          "stop" : 1702505172751,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505173087,
+          "stop" : 1702505173087,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505173087,
+        "stop" : 1702505173087,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505173089,
+        "stop" : 1702505173426,
+        "duration" : 337
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505173089,
+          "stop" : 1702505173089,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505173425,
+          "stop" : 1702505173426,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505173426,
+        "stop" : 1702505173426,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505173427,
+        "stop" : 1702505173759,
+        "duration" : 332
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505173427,
+          "stop" : 1702505173427,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505173759,
+          "stop" : 1702505173759,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505173759,
+        "stop" : 1702505173759,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505173761,
+        "stop" : 1702505174087,
+        "duration" : 326
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505173761,
+          "stop" : 1702505173761,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505174087,
+          "stop" : 1702505174087,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505174087,
+        "stop" : 1702505174087,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505174089,
+        "stop" : 1702505174430,
+        "duration" : 341
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505174089,
+          "stop" : 1702505174089,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505174430,
+          "stop" : 1702505174430,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505174430,
+        "stop" : 1702505174431,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505174432,
+        "stop" : 1702505174763,
+        "duration" : 331
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505174432,
+          "stop" : 1702505174432,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505174763,
+          "stop" : 1702505174763,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505174763,
+        "stop" : 1702505174763,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505174765,
+        "stop" : 1702505175092,
+        "duration" : 327
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505174765,
+          "stop" : 1702505174765,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505175091,
+          "stop" : 1702505175092,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505175092,
+        "stop" : 1702505175092,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505175093,
+        "stop" : 1702505175424,
+        "duration" : 331
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505175093,
+          "stop" : 1702505175093,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505175424,
+          "stop" : 1702505175424,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505175424,
+        "stop" : 1702505175424,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505175425,
+        "stop" : 1702505175758,
+        "duration" : 333
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505175426,
+          "stop" : 1702505175426,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505175758,
+          "stop" : 1702505175758,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505175758,
+        "stop" : 1702505175758,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505175760,
+        "stop" : 1702505176094,
+        "duration" : 334
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505175760,
+          "stop" : 1702505175760,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505176094,
+          "stop" : 1702505176094,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n",
+      "time" : {
+        "start" : 1702505176094,
+        "stop" : 1702505176094,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505176096,
+        "stop" : 1702505176429,
+        "duration" : 333
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505176096,
+          "stop" : 1702505176096,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505176429,
+          "stop" : 1702505176429,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[16]: requested database is not found\"}\n",
+      "time" : {
+        "start" : 1702505176429,
+        "stop" : 1702505176429,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505176430,
+        "stop" : 1702505176777,
+        "duration" : 347
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505176430,
+          "stop" : 1702505176430,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505176777,
+          "stop" : 1702505176777,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"0657a2ab-b722-71fa-8000-f8b244964e03\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Response body: {\"content\":\"msg[16]: requested database is not found\"}\n",
+      "time" : {
+        "start" : 1702505176777,
+        "stop" : 1702505176777,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1702505176779,
+        "stop" : 1702505177108,
+        "duration" : 329
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1702505176779,
+          "stop" : 1702505176779,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_list'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1702505177108,
+          "stop" : 1702505177108,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [200]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_list'"
+      }, {
+        "name" : "body",
+        "value" : "{}"
+      }, {
+        "name" : "cookie",
+        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Body: {\"content\":{\"0657a2ab-d978-732f-8000-9fe9182b4fc1\":[\"db_bcml2fx6\",\"CIS\",\"db_created\",\"mysql://user_2pjytmva:pwPW01__fM4BcdpMhhod8e@cisdb1.areso.pro:3306/db_bcml2fx6\",\"Wed, 13 Dec 2023 22:06:17 GMT\"]}}\n",
+      "time" : {
+        "start" : 1702505177108,
+        "stop" : 1702505177108,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "773f92219e6d4f94",
+      "name" : "stdout",
+      "source" : "773f92219e6d4f94.txt",
+      "type" : "text/plain",
+      "size" : 19260
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 328,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "subSuite",
+    "value" : "Complex"
+  }, {
+    "name" : "epic",
+    "value" : "POST REQUESTS"
+  }, {
+    "name" : "suite",
+    "value" : "REQUESTS POST"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1153-990"
+  }, {
+    "name" : "thread",
+    "value" : "2029-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_first"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 2,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "b72b0e84e61b6d1c",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: DB is not deleted. {\"content\":{\"065777a3-3f87-7526-8000-bf7f6ea9bb07\":[\"db_g0vtr07h\",\"CIS\",\"db_created\",\"mysql://user_ygcsgvwy:pwPW01__olbGHXLul5Bgnw@cisdb1.areso.pro:3306/db_g0vtr07h\",\"Mon, 11 Dec 2023 21:08:24 GMT\"]}}",
+        "time" : {
+          "start" : 1702328882996,
+          "stop" : 1702328904173,
+          "duration" : 21177
+        }
+      }, {
+        "uid" : "f81bb57d231f7f48",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1701728824545,
+          "stop" : 1701728849465,
+          "duration" : 24920
+        }
+      }, {
+        "uid" : "1256e1534219f340",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1701725998069,
+          "stop" : 1701726010016,
+          "duration" : 11947
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "f3ccaa34540986b9.json",
+  "parameterValues" : [ ]
+}
