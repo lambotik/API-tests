@@ -1,36 +1,36 @@
 {
-  "uid" : "a766bfb284bcd36a",
+  "uid" : "1d1280d9eadd61d3",
   "name" : "delete db",
   "fullName" : "test_first.TestPOST#test_delete_db",
   "historyId" : "f2f3cba4290fc70b0b6b7aaf6737862e",
   "time" : {
-    "start" : 1703083504066,
-    "stop" : 1703083504407,
-    "duration" : 341
+    "start" : 1703084234185,
+    "stop" : 1703084234534,
+    "duration" : 349
   },
   "status" : "broken",
   "statusMessage" : "IndexError: list index out of range",
-  "statusTrace" : "self = <test_first.TestPOST object at 0x7fb1866d5b40>\n\n    @allure.sub_suite('DELETE')\n    @allure.title('delete db')\n    def test_delete_db(self):\n        print('\\n\\nMethod DELETE: delete_db')\n        list_db = API.post_db_list(DataMySql.sid)\n        json_list_db = json.loads(list_db.text)\n>       first_db_uuid = list(json_list_db['content'].keys())[0]\nE       IndexError: list index out of range\n\ntest_first.py:76: IndexError",
+  "statusTrace" : "self = <test_first.TestPOST object at 0x7fef50af9b70>\n\n    @allure.sub_suite('DELETE')\n    @allure.title('delete db')\n    def test_delete_db(self):\n        print('\\n\\nMethod DELETE: delete_db')\n        list_db = API.post_db_list(DataMySql.sid)\n        json_list_db = json.loads(list_db.text)\n>       first_db_uuid = list(json_list_db['content'].keys())[0]\nE       IndexError: list index out of range\n\ntest_first.py:76: IndexError",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ ],
   "testStage" : {
     "status" : "broken",
     "statusMessage" : "IndexError: list index out of range",
-    "statusTrace" : "self = <test_first.TestPOST object at 0x7fb1866d5b40>\n\n    @allure.sub_suite('DELETE')\n    @allure.title('delete db')\n    def test_delete_db(self):\n        print('\\n\\nMethod DELETE: delete_db')\n        list_db = API.post_db_list(DataMySql.sid)\n        json_list_db = json.loads(list_db.text)\n>       first_db_uuid = list(json_list_db['content'].keys())[0]\nE       IndexError: list index out of range\n\ntest_first.py:76: IndexError",
+    "statusTrace" : "self = <test_first.TestPOST object at 0x7fef50af9b70>\n\n    @allure.sub_suite('DELETE')\n    @allure.title('delete db')\n    def test_delete_db(self):\n        print('\\n\\nMethod DELETE: delete_db')\n        list_db = API.post_db_list(DataMySql.sid)\n        json_list_db = json.loads(list_db.text)\n>       first_db_uuid = list(json_list_db['content'].keys())[0]\nE       IndexError: list index out of range\n\ntest_first.py:76: IndexError",
     "steps" : [ {
       "name" : "Method POST",
       "time" : {
-        "start" : 1703083504066,
-        "stop" : 1703083504407,
-        "duration" : 341
+        "start" : 1703084234185,
+        "stop" : 1703084234533,
+        "duration" : 348
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Add request",
         "time" : {
-          "start" : 1703083504066,
-          "stop" : 1703083504066,
+          "start" : 1703084234185,
+          "stop" : 1703084234185,
           "duration" : 0
         },
         "status" : "passed",
@@ -50,8 +50,8 @@
       }, {
         "name" : "Add response",
         "time" : {
-          "start" : 1703083504407,
-          "stop" : 1703083504407,
+          "start" : 1703084234533,
+          "stop" : 1703084234533,
           "duration" : 0
         },
         "status" : "passed",
@@ -75,7 +75,7 @@
         "value" : "{}"
       }, {
         "name" : "cookie",
-        "value" : "{'sid': '9b8e46e9-b55b-4be8-b1d2-b225d45b01ae'}"
+        "value" : "{'sid': '1caad3aa-8934-4d79-a536-2937fc5fbe9f'}"
       } ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
@@ -84,8 +84,8 @@
     }, {
       "name" : "Body: {\"content\":{}}\n",
       "time" : {
-        "start" : 1703083504407,
-        "stop" : 1703083504407,
+        "start" : 1703084234534,
+        "stop" : 1703084234534,
         "duration" : 0
       },
       "status" : "passed",
@@ -98,9 +98,9 @@
       "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "b4a388ee9d9688c7",
+      "uid" : "aa0f55529b8fbad6",
       "name" : "stdout",
-      "source" : "b4a388ee9d9688c7.txt",
+      "source" : "aa0f55529b8fbad6.txt",
       "type" : "text/plain",
       "size" : 89
     } ],
@@ -112,20 +112,20 @@
   },
   "afterStages" : [ ],
   "labels" : [ {
-    "name" : "subSuite",
-    "value" : "DELETE"
+    "name" : "epic",
+    "value" : "POST REQUESTS"
   }, {
     "name" : "suite",
     "value" : "REQUESTS POST"
   }, {
-    "name" : "epic",
-    "value" : "POST REQUESTS"
+    "name" : "subSuite",
+    "value" : "DELETE"
   }, {
     "name" : "host",
-    "value" : "fv-az1498-860"
+    "value" : "fv-az1432-133"
   }, {
     "name" : "thread",
-    "value" : "1781-MainThread"
+    "value" : "1792-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -154,13 +154,22 @@
     "history" : {
       "statistic" : {
         "failed" : 3,
-        "broken" : 2,
+        "broken" : 3,
         "skipped" : 0,
         "passed" : 1,
         "unknown" : 0,
-        "total" : 6
+        "total" : 7
       },
       "items" : [ {
+        "uid" : "a766bfb284bcd36a",
+        "status" : "broken",
+        "statusDetails" : "IndexError: list index out of range",
+        "time" : {
+          "start" : 1703083504066,
+          "stop" : 1703083504407,
+          "duration" : 341
+        }
+      }, {
         "uid" : "3cfa467a1b2ba76b",
         "status" : "failed",
         "statusDetails" : "AssertionError: Incorrect status code",
@@ -208,6 +217,6 @@
     },
     "tags" : [ ]
   },
-  "source" : "a766bfb284bcd36a.json",
+  "source" : "1d1280d9eadd61d3.json",
   "parameterValues" : [ ]
 }
