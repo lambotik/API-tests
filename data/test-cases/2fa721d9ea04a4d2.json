@@ -1,12 +1,12 @@
 {
-  "uid" : "3fee1fcfd024e761",
-  "name" : "Post db create",
-  "fullName" : "test_first.TestPOST#test_post_db_create",
-  "historyId" : "1aec0f14b932a152b799443dcd6b951a",
+  "uid" : "2fa721d9ea04a4d2",
+  "name" : "Post db list",
+  "fullName" : "test_first.TestPOST#test_post_db_list",
+  "historyId" : "8ec80f35f7e1b6a85681795adb5e6dd2",
   "time" : {
-    "start" : 1702505147145,
-    "stop" : 1702505147868,
-    "duration" : 723
+    "start" : 1703083503728,
+    "stop" : 1703083504063,
+    "duration" : 335
   },
   "status" : "passed",
   "flaky" : false,
@@ -17,16 +17,16 @@
     "steps" : [ {
       "name" : "Method POST",
       "time" : {
-        "start" : 1702505147145,
-        "stop" : 1702505147867,
-        "duration" : 722
+        "start" : 1703083503728,
+        "stop" : 1703083504062,
+        "duration" : 334
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Add request",
         "time" : {
-          "start" : 1702505147145,
-          "stop" : 1702505147145,
+          "start" : 1703083503728,
+          "stop" : 1703083503728,
           "duration" : 0
         },
         "status" : "passed",
@@ -34,7 +34,7 @@
         "attachments" : [ ],
         "parameters" : [ {
           "name" : "url",
-          "value" : "'https://dbend.areso.pro/db_create'"
+          "value" : "'https://dbend.areso.pro/db_list'"
         }, {
           "name" : "method",
           "value" : "'POST'"
@@ -46,8 +46,8 @@
       }, {
         "name" : "Add response",
         "time" : {
-          "start" : 1702505147867,
-          "stop" : 1702505147867,
+          "start" : 1703083504062,
+          "stop" : 1703083504062,
           "duration" : 0
         },
         "status" : "passed",
@@ -55,7 +55,7 @@
         "attachments" : [ ],
         "parameters" : [ {
           "name" : "result",
-          "value" : "<Response [201]>"
+          "value" : "<Response [200]>"
         } ],
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
@@ -65,23 +65,23 @@
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "url",
-        "value" : "'https://dbend.areso.pro/db_create'"
-      }, {
-        "name" : "cookie",
-        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+        "value" : "'https://dbend.areso.pro/db_list'"
       }, {
         "name" : "body",
-        "value" : "{'dbtype': 3, 'dbversion': 5, 'env': 3, 'region': 3}"
+        "value" : "{}"
+      }, {
+        "name" : "cookie",
+        "value" : "{'sid': '9b8e46e9-b55b-4be8-b1d2-b225d45b01ae'}"
       } ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
       "stepsCount" : 2,
       "hasContent" : true
     }, {
-      "name" : "Body: {\"db_uuid\":\"0657a2ab-b722-71fa-8000-f8b244964e03\",\"msg\":\"your order for a new database created successfully\"}\n",
+      "name" : "Body: {\"content\":{}}\n",
       "time" : {
-        "start" : 1702505147867,
-        "stop" : 1702505147867,
+        "start" : 1703083504062,
+        "stop" : 1703083504062,
         "duration" : 0
       },
       "status" : "passed",
@@ -94,11 +94,11 @@
       "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "f39e06f300d7dcb5",
+      "uid" : "7599b6678ac18b83",
       "name" : "stdout",
-      "source" : "f39e06f300d7dcb5.txt",
+      "source" : "7599b6678ac18b83.txt",
       "type" : "text/plain",
-      "size" : 201
+      "size" : 105
     } ],
     "parameters" : [ ],
     "attachmentsCount" : 1,
@@ -108,20 +108,20 @@
   },
   "afterStages" : [ ],
   "labels" : [ {
-    "name" : "epic",
-    "value" : "POST REQUESTS"
+    "name" : "subSuite",
+    "value" : "POST"
   }, {
     "name" : "suite",
     "value" : "REQUESTS POST"
   }, {
-    "name" : "subSuite",
-    "value" : "POST"
+    "name" : "epic",
+    "value" : "POST REQUESTS"
   }, {
     "name" : "host",
-    "value" : "fv-az1153-990"
+    "value" : "fv-az1498-860"
   }, {
     "name" : "thread",
-    "value" : "2029-MainThread"
+    "value" : "1781-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -145,76 +145,91 @@
     "categories" : [ ],
     "history" : {
       "statistic" : {
-        "failed" : 1,
+        "failed" : 0,
         "broken" : 0,
-        "skipped" : 2,
-        "passed" : 5,
+        "skipped" : 1,
+        "passed" : 9,
         "unknown" : 0,
-        "total" : 8
+        "total" : 10
       },
       "items" : [ {
-        "uid" : "d79faa036b6c32d5",
+        "uid" : "17d380d8f7e3a8ed",
         "status" : "passed",
         "time" : {
-          "start" : 1702328880784,
-          "stop" : 1702328881379,
-          "duration" : 595
+          "start" : 1702505147870,
+          "stop" : 1702505148252,
+          "duration" : 382
         }
       }, {
-        "uid" : "e48e3ee1058009e4",
+        "uid" : "baddffa3dbb1474a",
         "status" : "passed",
         "time" : {
-          "start" : 1701725996470,
-          "stop" : 1701725996980,
-          "duration" : 510
+          "start" : 1702328881381,
+          "stop" : 1702328881913,
+          "duration" : 532
         }
       }, {
-        "uid" : "895fee82e8e5cbc9",
+        "uid" : "5179d566510155fc",
         "status" : "passed",
         "time" : {
-          "start" : 1700766860821,
-          "stop" : 1700766861217,
-          "duration" : 396
+          "start" : 1701728823461,
+          "stop" : 1701728823982,
+          "duration" : 521
         }
       }, {
-        "uid" : "9356d8deff926b1a",
+        "uid" : "7db7c6e0458ce0e5",
         "status" : "passed",
         "time" : {
-          "start" : 1700513085258,
-          "stop" : 1700513086063,
-          "duration" : 805
+          "start" : 1701725996981,
+          "stop" : 1701725997325,
+          "duration" : 344
         }
       }, {
-        "uid" : "cb3a19533c885825",
-        "status" : "failed",
-        "statusDetails" : "AssertionError: Incorrect status code",
+        "uid" : "47d83e599d4f26eb",
+        "status" : "passed",
         "time" : {
-          "start" : 1700405905977,
-          "stop" : 1700405906331,
-          "duration" : 354
+          "start" : 1700766860467,
+          "stop" : 1700766860819,
+          "duration" : 352
         }
       }, {
-        "uid" : "ed7895604f3ad20e",
-        "status" : "skipped",
-        "statusDetails" : "XFAIL\n\nAssertionError: Incorrect status code",
+        "uid" : "46985f594ade37f1",
+        "status" : "passed",
         "time" : {
-          "start" : 1700405275867,
-          "stop" : 1700405276407,
-          "duration" : 540
+          "start" : 1700513084724,
+          "stop" : 1700513085257,
+          "duration" : 533
         }
       }, {
-        "uid" : "442ae901971fa25",
+        "uid" : "f900592838b27a52",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700405905625,
+          "stop" : 1700405905975,
+          "duration" : 350
+        }
+      }, {
+        "uid" : "d40a786b47d65a77",
+        "status" : "passed",
+        "statusDetails" : "XPASS",
+        "time" : {
+          "start" : 1700405275323,
+          "stop" : 1700405275866,
+          "duration" : 543
+        }
+      }, {
+        "uid" : "72da8c78dbd105f0",
         "status" : "skipped",
         "statusDetails" : "XFAIL\n\nFileNotFoundError: [Errno 2] No such file or directory: 'logs/log_2023-11-19_14-46-06.log'",
         "time" : {
-          "start" : 1700405167541,
-          "stop" : 1700405167542,
-          "duration" : 1
+          "start" : 1700405167533,
+          "stop" : 1700405167533,
+          "duration" : 0
         }
       } ]
     },
     "tags" : [ ]
   },
-  "source" : "3fee1fcfd024e761.json",
+  "source" : "2fa721d9ea04a4d2.json",
   "parameterValues" : [ ]
 }

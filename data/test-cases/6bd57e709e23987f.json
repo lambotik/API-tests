@@ -1,12 +1,12 @@
 {
-  "uid" : "17d380d8f7e3a8ed",
-  "name" : "Post db list",
-  "fullName" : "test_first.TestPOST#test_post_db_list",
-  "historyId" : "8ec80f35f7e1b6a85681795adb5e6dd2",
+  "uid" : "6bd57e709e23987f",
+  "name" : "List dbtypes",
+  "fullName" : "test_first.TestGET#test_list_dbtypes",
+  "historyId" : "c1ddb0ad2a5283a85532f93dc1c7d028",
   "time" : {
-    "start" : 1702505147870,
-    "stop" : 1702505148252,
-    "duration" : 382
+    "start" : 1703083502000,
+    "stop" : 1703083502348,
+    "duration" : 348
   },
   "status" : "passed",
   "flaky" : false,
@@ -15,18 +15,18 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "Method POST",
+      "name" : "Method GET",
       "time" : {
-        "start" : 1702505147870,
-        "stop" : 1702505148251,
-        "duration" : 381
+        "start" : 1703083502000,
+        "stop" : 1703083502347,
+        "duration" : 347
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Add request",
         "time" : {
-          "start" : 1702505147870,
-          "stop" : 1702505147870,
+          "start" : 1703083502000,
+          "stop" : 1703083502000,
           "duration" : 0
         },
         "status" : "passed",
@@ -34,10 +34,10 @@
         "attachments" : [ ],
         "parameters" : [ {
           "name" : "url",
-          "value" : "'https://dbend.areso.pro/db_list'"
+          "value" : "'https://dbend.areso.pro/list_dbtypes'"
         }, {
           "name" : "method",
-          "value" : "'POST'"
+          "value" : "'GET'"
         } ],
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
@@ -46,8 +46,8 @@
       }, {
         "name" : "Add response",
         "time" : {
-          "start" : 1702505148251,
-          "stop" : 1702505148251,
+          "start" : 1703083502347,
+          "stop" : 1703083502347,
           "duration" : 0
         },
         "status" : "passed",
@@ -65,23 +65,17 @@
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "url",
-        "value" : "'https://dbend.areso.pro/db_list'"
-      }, {
-        "name" : "body",
-        "value" : "{}"
-      }, {
-        "name" : "cookie",
-        "value" : "{'sid': 'c0826a7b-99cc-4f89-89c4-90e6c5e2803e'}"
+        "value" : "'https://dbend.areso.pro/list_dbtypes'"
       } ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
       "stepsCount" : 2,
       "hasContent" : true
     }, {
-      "name" : "Body: {\"content\":{\"0657a2ab-b722-71fa-8000-f8b244964e03\":[\"\",\"CIS\",\"db_creating\",null,null]}}\n",
+      "name" : "Body: {\"3\":\"mysql8\"}\n",
       "time" : {
-        "start" : 1702505148251,
-        "stop" : 1702505148251,
+        "start" : 1703083502347,
+        "stop" : 1703083502347,
         "duration" : 0
       },
       "status" : "passed",
@@ -94,11 +88,11 @@
       "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "d3c3f50a7ac0121b",
+      "uid" : "cdb2d6a21c674450",
       "name" : "stdout",
-      "source" : "d3c3f50a7ac0121b.txt",
+      "source" : "cdb2d6a21c674450.txt",
       "type" : "text/plain",
-      "size" : 178
+      "size" : 73
     } ],
     "parameters" : [ ],
     "attachmentsCount" : 1,
@@ -109,19 +103,19 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "epic",
-    "value" : "POST REQUESTS"
-  }, {
-    "name" : "suite",
-    "value" : "REQUESTS POST"
+    "value" : "GET REQUESTS"
   }, {
     "name" : "subSuite",
-    "value" : "POST"
+    "value" : "GET"
+  }, {
+    "name" : "suite",
+    "value" : "REQUESTS GET"
   }, {
     "name" : "host",
-    "value" : "fv-az1153-990"
+    "value" : "fv-az1498-860"
   }, {
     "name" : "thread",
-    "value" : "2029-MainThread"
+    "value" : "1781-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -146,82 +140,89 @@
     "history" : {
       "statistic" : {
         "failed" : 0,
-        "broken" : 0,
-        "skipped" : 1,
-        "passed" : 8,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 9,
         "unknown" : 0,
-        "total" : 9
+        "total" : 10
       },
       "items" : [ {
-        "uid" : "baddffa3dbb1474a",
+        "uid" : "bd3ae838fbbbea65",
         "status" : "passed",
         "time" : {
-          "start" : 1702328881381,
-          "stop" : 1702328881913,
-          "duration" : 532
+          "start" : 1702505145268,
+          "stop" : 1702505145625,
+          "duration" : 357
         }
       }, {
-        "uid" : "5179d566510155fc",
+        "uid" : "581bf2bb767cd10d",
         "status" : "passed",
         "time" : {
-          "start" : 1701728823461,
-          "stop" : 1701728823982,
-          "duration" : 521
-        }
-      }, {
-        "uid" : "7db7c6e0458ce0e5",
-        "status" : "passed",
-        "time" : {
-          "start" : 1701725996981,
-          "stop" : 1701725997325,
-          "duration" : 344
-        }
-      }, {
-        "uid" : "47d83e599d4f26eb",
-        "status" : "passed",
-        "time" : {
-          "start" : 1700766860467,
-          "stop" : 1700766860819,
-          "duration" : 352
-        }
-      }, {
-        "uid" : "46985f594ade37f1",
-        "status" : "passed",
-        "time" : {
-          "start" : 1700513084724,
-          "stop" : 1700513085257,
+          "start" : 1702328878084,
+          "stop" : 1702328878617,
           "duration" : 533
         }
       }, {
-        "uid" : "f900592838b27a52",
+        "uid" : "7899ac3c9027609",
         "status" : "passed",
         "time" : {
-          "start" : 1700405905625,
-          "stop" : 1700405905975,
-          "duration" : 350
+          "start" : 1701728820689,
+          "stop" : 1701728821208,
+          "duration" : 519
         }
       }, {
-        "uid" : "d40a786b47d65a77",
+        "uid" : "74cf5a6d89bba958",
         "status" : "passed",
-        "statusDetails" : "XPASS",
         "time" : {
-          "start" : 1700405275323,
-          "stop" : 1700405275866,
-          "duration" : 543
+          "start" : 1701725994635,
+          "stop" : 1701725994964,
+          "duration" : 329
         }
       }, {
-        "uid" : "72da8c78dbd105f0",
-        "status" : "skipped",
-        "statusDetails" : "XFAIL\n\nFileNotFoundError: [Errno 2] No such file or directory: 'logs/log_2023-11-19_14-46-06.log'",
+        "uid" : "588a110b327007a9",
+        "status" : "passed",
         "time" : {
-          "start" : 1700405167533,
-          "stop" : 1700405167533,
+          "start" : 1700766858700,
+          "stop" : 1700766859039,
+          "duration" : 339
+        }
+      }, {
+        "uid" : "74e516433d36af01",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700513081865,
+          "stop" : 1700513082428,
+          "duration" : 563
+        }
+      }, {
+        "uid" : "a5874e990eb38711",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700405903905,
+          "stop" : 1700405904244,
+          "duration" : 339
+        }
+      }, {
+        "uid" : "bb10cb4dc6a3d909",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700405272373,
+          "stop" : 1700405272922,
+          "duration" : 549
+        }
+      }, {
+        "uid" : "75a29a9c0dfbf01a",
+        "status" : "broken",
+        "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'logs/log_2023-11-19_14-46-06.log'",
+        "time" : {
+          "start" : 1700405167487,
+          "stop" : 1700405167487,
           "duration" : 0
         }
       } ]
     },
     "tags" : [ ]
   },
-  "source" : "17d380d8f7e3a8ed.json",
+  "source" : "6bd57e709e23987f.json",
   "parameterValues" : [ ]
 }

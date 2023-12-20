@@ -1,12 +1,12 @@
 {
-  "uid" : "bd3ae838fbbbea65",
-  "name" : "List dbtypes",
-  "fullName" : "test_first.TestGET#test_list_dbtypes",
-  "historyId" : "c1ddb0ad2a5283a85532f93dc1c7d028",
+  "uid" : "2a05d5038c6ab7c4",
+  "name" : "test tos",
+  "fullName" : "test_first.TestGET#test_tos",
+  "historyId" : "e9af5566d9a7836038f64e3006a6767b",
   "time" : {
-    "start" : 1702505145268,
-    "stop" : 1702505145625,
-    "duration" : 357
+    "start" : 1703083501652,
+    "stop" : 1703083501998,
+    "duration" : 346
   },
   "status" : "passed",
   "flaky" : false,
@@ -17,24 +17,24 @@
     "steps" : [ {
       "name" : "Method GET",
       "time" : {
-        "start" : 1702505145268,
-        "stop" : 1702505145624,
-        "duration" : 356
+        "start" : 1703083501652,
+        "stop" : 1703083501997,
+        "duration" : 345
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Add request",
         "time" : {
-          "start" : 1702505145268,
-          "stop" : 1702505145269,
-          "duration" : 1
+          "start" : 1703083501652,
+          "stop" : 1703083501652,
+          "duration" : 0
         },
         "status" : "passed",
         "steps" : [ ],
         "attachments" : [ ],
         "parameters" : [ {
           "name" : "url",
-          "value" : "'https://dbend.areso.pro/list_dbtypes'"
+          "value" : "'https://dbend.areso.pro/tos'"
         }, {
           "name" : "method",
           "value" : "'GET'"
@@ -46,9 +46,9 @@
       }, {
         "name" : "Add response",
         "time" : {
-          "start" : 1702505145623,
-          "stop" : 1702505145624,
-          "duration" : 1
+          "start" : 1703083501996,
+          "stop" : 1703083501996,
+          "duration" : 0
         },
         "status" : "passed",
         "steps" : [ ],
@@ -65,17 +65,17 @@
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "url",
-        "value" : "'https://dbend.areso.pro/list_dbtypes'"
+        "value" : "'https://dbend.areso.pro/tos'"
       } ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
       "stepsCount" : 2,
       "hasContent" : true
     }, {
-      "name" : "Body: {\"3\":\"mysql8\"}\n",
+      "name" : "Body: Hello. This pet-project (later Project) works AS IS, no warranty at all.\nUsing Project, you agree to that.\nYou MUST create backups of your databases for sake reasons.\nBecause I do run project on my own pocket money, \nI limit total size of the databases per 1 user as 100 MBs.\nAny account don't used more than 6 monts is subject for deletion with all databases.",
       "time" : {
-        "start" : 1702505145624,
-        "stop" : 1702505145624,
+        "start" : 1703083501997,
+        "stop" : 1703083501997,
         "duration" : 0
       },
       "status" : "passed",
@@ -88,11 +88,11 @@
       "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "e30bafc0dc4f73b9",
+      "uid" : "cda1e40efcb9b03b",
       "name" : "stdout",
-      "source" : "e30bafc0dc4f73b9.txt",
+      "source" : "cda1e40efcb9b03b.txt",
       "type" : "text/plain",
-      "size" : 73
+      "size" : 409
     } ],
     "parameters" : [ ],
     "attachmentsCount" : 1,
@@ -112,10 +112,10 @@
     "value" : "REQUESTS GET"
   }, {
     "name" : "host",
-    "value" : "fv-az1153-990"
+    "value" : "fv-az1498-860"
   }, {
     "name" : "thread",
-    "value" : "2029-MainThread"
+    "value" : "1781-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -142,79 +142,87 @@
         "failed" : 0,
         "broken" : 1,
         "skipped" : 0,
-        "passed" : 8,
+        "passed" : 9,
         "unknown" : 0,
-        "total" : 9
+        "total" : 10
       },
       "items" : [ {
-        "uid" : "581bf2bb767cd10d",
+        "uid" : "54c84b4c74ecb09",
         "status" : "passed",
         "time" : {
-          "start" : 1702328878084,
-          "stop" : 1702328878617,
-          "duration" : 533
+          "start" : 1702505144924,
+          "stop" : 1702505145267,
+          "duration" : 343
         }
       }, {
-        "uid" : "7899ac3c9027609",
+        "uid" : "60dd157d897ca082",
         "status" : "passed",
         "time" : {
-          "start" : 1701728820689,
-          "stop" : 1701728821208,
-          "duration" : 519
+          "start" : 1702328877553,
+          "stop" : 1702328878082,
+          "duration" : 529
         }
       }, {
-        "uid" : "74cf5a6d89bba958",
+        "uid" : "af4ae8d8889ebc0a",
         "status" : "passed",
         "time" : {
-          "start" : 1701725994635,
-          "stop" : 1701725994964,
-          "duration" : 329
+          "start" : 1701728820155,
+          "stop" : 1701728820687,
+          "duration" : 532
         }
       }, {
-        "uid" : "588a110b327007a9",
+        "uid" : "244c4e11606153",
         "status" : "passed",
         "time" : {
-          "start" : 1700766858700,
-          "stop" : 1700766859039,
-          "duration" : 339
+          "start" : 1701725994133,
+          "stop" : 1701725994633,
+          "duration" : 500
         }
       }, {
-        "uid" : "74e516433d36af01",
+        "uid" : "1fd4409d5d5b13d9",
         "status" : "passed",
         "time" : {
-          "start" : 1700513081865,
-          "stop" : 1700513082428,
-          "duration" : 563
+          "start" : 1700766858362,
+          "stop" : 1700766858698,
+          "duration" : 336
         }
       }, {
-        "uid" : "a5874e990eb38711",
+        "uid" : "2bcba10b110c0284",
         "status" : "passed",
         "time" : {
-          "start" : 1700405903905,
-          "stop" : 1700405904244,
-          "duration" : 339
+          "start" : 1700513081191,
+          "stop" : 1700513081863,
+          "duration" : 672
         }
       }, {
-        "uid" : "bb10cb4dc6a3d909",
+        "uid" : "a7e5cae9bfa0686a",
         "status" : "passed",
         "time" : {
-          "start" : 1700405272373,
-          "stop" : 1700405272922,
-          "duration" : 549
+          "start" : 1700405903560,
+          "stop" : 1700405903903,
+          "duration" : 343
         }
       }, {
-        "uid" : "75a29a9c0dfbf01a",
+        "uid" : "5aee94d64da8bf51",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700405271829,
+          "stop" : 1700405272371,
+          "duration" : 542
+        }
+      }, {
+        "uid" : "9fa40171d7d697be",
         "status" : "broken",
         "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'logs/log_2023-11-19_14-46-06.log'",
         "time" : {
-          "start" : 1700405167487,
-          "stop" : 1700405167487,
+          "start" : 1700405167454,
+          "stop" : 1700405167454,
           "duration" : 0
         }
       } ]
     },
     "tags" : [ ]
   },
-  "source" : "bd3ae838fbbbea65.json",
+  "source" : "2a05d5038c6ab7c4.json",
   "parameterValues" : [ ]
 }

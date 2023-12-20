@@ -1,7 +1,0 @@
-
-
-Method POST: db_create
-https://dbend.areso.pro/db_create
-Response:  {"db_uuid":"0657a2ab-b722-71fa-8000-f8b244964e03","msg":"your order for a new database created successfully"}
-
-Status code is: 201
