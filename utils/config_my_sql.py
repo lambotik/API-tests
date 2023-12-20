@@ -1,6 +1,7 @@
 import json
 import os
 
+import mysql.connector
 import requests
 from dotenv import load_dotenv
 
@@ -37,3 +38,27 @@ class DataMySql:
         password_db = json_list_db['content'][first_db_uuid][3].split(':')[2].partition('@')[0]
         print(password_db)
         return {'host': host, 'user_name': user_name, 'db_name': db_name, 'password_db': password_db}
+
+    @staticmethod
+    def connect_my_sql():
+        try:
+            connection = mysql.connector.connect(host=DataMySql().data_to_connect_my_sql()['host'],
+                                                 port=3306,
+                                                 user=DataMySql().data_to_connect_my_sql()['user_name'],
+                                                 database=DataMySql().data_to_connect_my_sql()['db_name'],
+                                                 password=DataMySql().data_to_connect_my_sql()['password_db']
+                                                 )
+            print('Successfully connected...')
+            try:
+                with connection.cursor() as cursor:
+                    cursor.execute('''
+                        select 1 from dual''')
+                    res = cursor.fetchall()
+                    print(res)
+            finally:
+                connection.close()
+
+            return connection
+        except Exception as ex:
+            print('Connection refused...')
+            print(ex)

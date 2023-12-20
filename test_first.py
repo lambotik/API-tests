@@ -106,7 +106,7 @@ class TestConnectionDB:
 
             return connection
         except Exception as ex:
-            print('Connection refused...')
+            print('Connection refused...', ex)
             print(ex)
 
 # body3 = {"dbtype": 3, "dbversion": 5, "env": 3, "region": 3}
