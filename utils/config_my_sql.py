@@ -1,6 +1,7 @@
 import json
 import os
 
+import allure
 import mysql.connector
 import requests
 from dotenv import load_dotenv
@@ -54,7 +55,8 @@ class DataMySql:
                     cursor.execute('''
                         select 1 from dual''')
                     res = cursor.fetchall()
-                    print(res)
+                    with allure.step(f'DB response {res}'):
+                        print(res)
             finally:
                 connection.close()
 
