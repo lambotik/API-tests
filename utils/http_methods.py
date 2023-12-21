@@ -16,6 +16,8 @@ class HttpMethods:
         Logger.add_request(url, method='GET')
         result = requests.get(url, headers=HttpMethods.headers, cookies=HttpMethods.cookie)
         Logger.add_response(result)
+        with allure.step(f'Response: {result.text}'):
+            pass
         return result
 
     @staticmethod
@@ -24,6 +26,8 @@ class HttpMethods:
         Logger.add_request(url, method='POST')
         result = requests.post(url, json=body, headers=HttpMethods.headers, cookies=HttpMethods.cookie)
         Logger.add_response(result)
+        with allure.step(f'Response: {result.text}'):
+            pass
         return result
 
     @staticmethod
@@ -32,6 +36,8 @@ class HttpMethods:
         Logger.add_request(url, method='POST')
         result = requests.post(url, cookies=cookie, json=body)
         Logger.add_response(result)
+        with allure.step(f'Response: {result.text}'):
+            pass
         return result
 
     @staticmethod
@@ -40,6 +46,8 @@ class HttpMethods:
         Logger.add_request(url, method='POST')
         result = requests.post(url, data=db_uuid, cookies=sid)
         Logger.add_response(result)
+        with allure.step(f'Response: {result.text}'):
+            pass
         return result
 
     @staticmethod
@@ -48,6 +56,8 @@ class HttpMethods:
         Logger.add_request(url, method='POST')
         result = requests.post(url, cookies=cookie, json=body)
         Logger.add_response(result)
+        with allure.step(f'Response: {result.text}'):
+            pass
         return result
 
     @staticmethod
@@ -56,6 +66,8 @@ class HttpMethods:
         Logger.add_request(url, method='PUT')
         result = requests.put(url, json=body, headers=HttpMethods.headers, cookies=HttpMethods.cookie)
         Logger.add_response(result)
+        with allure.step(f'Response: {result.text}'):
+            pass
         return result
 
     @staticmethod
@@ -64,4 +76,6 @@ class HttpMethods:
         Logger.add_request(url, method='DELETE')
         result = requests.delete(url, json=body, headers=HttpMethods.headers, cookies=HttpMethods.cookie)
         Logger.add_response(result)
+        with allure.step(f'Response: {result.text}'):
+            pass
         return result
