@@ -1,8 +1,0 @@
-
-
-Method POST: login
-https://dbend.areso.pro/login
-Cookies: <RequestsCookieJar[<Cookie sid=e5ebac78-dd35-418b-ae91-8f4e61a916ae for dbend.areso.pro/>]>
-Response:  <Response [200]> Sid: e5ebac78-dd35-418b-ae91-8f4e61a916ae
-Sid: e5ebac78-dd35-418b-ae91-8f4e61a916ae
-Status code is: 200

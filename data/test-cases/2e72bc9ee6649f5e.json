@@ -1,12 +1,12 @@
 {
-  "uid" : "f10cad20af6e825",
+  "uid" : "2e72bc9ee6649f5e",
   "name" : "test tos",
   "fullName" : "test_first.TestGET#test_tos",
   "historyId" : "e9af5566d9a7836038f64e3006a6767b",
   "time" : {
-    "start" : 1703187108233,
-    "stop" : 1703187108573,
-    "duration" : 340
+    "start" : 1703188193254,
+    "stop" : 1703188193628,
+    "duration" : 374
   },
   "status" : "passed",
   "flaky" : false,
@@ -17,16 +17,16 @@
     "steps" : [ {
       "name" : "Method GET",
       "time" : {
-        "start" : 1703187108233,
-        "stop" : 1703187108572,
-        "duration" : 339
+        "start" : 1703188193254,
+        "stop" : 1703188193627,
+        "duration" : 373
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Add request",
         "time" : {
-          "start" : 1703187108233,
-          "stop" : 1703187108233,
+          "start" : 1703188193254,
+          "stop" : 1703188193254,
           "duration" : 0
         },
         "status" : "passed",
@@ -41,17 +41,47 @@
         } ],
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
-        "hasContent" : true,
-        "stepsCount" : 0
+        "stepsCount" : 0,
+        "hasContent" : true
       }, {
         "name" : "Add response",
         "time" : {
-          "start" : 1703187108572,
-          "stop" : 1703187108572,
+          "start" : 1703188193627,
+          "stop" : 1703188193627,
           "duration" : 0
         },
         "status" : "passed",
-        "steps" : [ ],
+        "steps" : [ {
+          "name" : "Response code: 200\n",
+          "time" : {
+            "start" : 1703188193627,
+            "stop" : 1703188193627,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "Response text: Hello. This pet-project (later Project) works AS IS, no warranty at all.\nUsing Project, you agree to that.\nYou MUST create backups of your databases for sake reasons.\nBecause I do run project on my own pocket money, \nI limit total size of the databases per 1 user as 100 MBs.\nAny account don't used more than 6 monts is subject for deletion with all databases.\n",
+          "time" : {
+            "start" : 1703188193627,
+            "stop" : 1703188193627,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
         "attachments" : [ ],
         "parameters" : [ {
           "name" : "result",
@@ -59,23 +89,8 @@
         } ],
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
-        "hasContent" : true,
-        "stepsCount" : 0
-      }, {
-        "name" : "Response: Hello. This pet-project (later Project) works AS IS, no warranty at all.\nUsing Project, you agree to that.\nYou MUST create backups of your databases for sake reasons.\nBecause I do run project on my own pocket money, \nI limit total size of the databases per 1 user as 100 MBs.\nAny account don't used more than 6 monts is subject for deletion with all databases.",
-        "time" : {
-          "start" : 1703187108572,
-          "stop" : 1703187108572,
-          "duration" : 0
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "hasContent" : false,
-        "stepsCount" : 0
+        "stepsCount" : 2,
+        "hasContent" : true
       } ],
       "attachments" : [ ],
       "parameters" : [ {
@@ -84,13 +99,13 @@
       } ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : true,
-      "stepsCount" : 3
+      "stepsCount" : 4,
+      "hasContent" : true
     }, {
       "name" : "Body: Hello. This pet-project (later Project) works AS IS, no warranty at all.\nUsing Project, you agree to that.\nYou MUST create backups of your databases for sake reasons.\nBecause I do run project on my own pocket money, \nI limit total size of the databases per 1 user as 100 MBs.\nAny account don't used more than 6 monts is subject for deletion with all databases.",
       "time" : {
-        "start" : 1703187108572,
-        "stop" : 1703187108572,
+        "start" : 1703188193627,
+        "stop" : 1703188193627,
         "duration" : 0
       },
       "status" : "passed",
@@ -99,38 +114,38 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "6f528af370a2136d",
+      "uid" : "592a4cbaef0bc223",
       "name" : "stdout",
-      "source" : "6f528af370a2136d.txt",
+      "source" : "592a4cbaef0bc223.txt",
       "type" : "text/plain",
       "size" : 409
     } ],
     "parameters" : [ ],
     "attachmentsCount" : 1,
     "shouldDisplayMessage" : false,
-    "hasContent" : true,
-    "stepsCount" : 5
+    "stepsCount" : 6,
+    "hasContent" : true
   },
   "afterStages" : [ ],
   "labels" : [ {
+    "name" : "suite",
+    "value" : "REQUESTS GET"
+  }, {
     "name" : "epic",
     "value" : "GET REQUESTS"
   }, {
     "name" : "subSuite",
     "value" : "GET"
   }, {
-    "name" : "suite",
-    "value" : "REQUESTS GET"
-  }, {
     "name" : "host",
-    "value" : "fv-az885-848"
+    "value" : "fv-az692-848"
   }, {
     "name" : "thread",
-    "value" : "1772-MainThread"
+    "value" : "1763-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -157,11 +172,19 @@
         "failed" : 0,
         "broken" : 1,
         "skipped" : 0,
-        "passed" : 12,
+        "passed" : 13,
         "unknown" : 0,
-        "total" : 13
+        "total" : 14
       },
       "items" : [ {
+        "uid" : "f10cad20af6e825",
+        "status" : "passed",
+        "time" : {
+          "start" : 1703187108233,
+          "stop" : 1703187108573,
+          "duration" : 340
+        }
+      }, {
         "uid" : "175e422e5f10135e",
         "status" : "passed",
         "time" : {
@@ -262,6 +285,6 @@
     },
     "tags" : [ ]
   },
-  "source" : "f10cad20af6e825.json",
+  "source" : "2e72bc9ee6649f5e.json",
   "parameterValues" : [ ]
 }
