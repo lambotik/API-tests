@@ -1,5 +1,6 @@
 import json
 import os
+import time
 from datetime import datetime
 from pprint import pprint
 
@@ -160,6 +161,7 @@ class API:
 
     @staticmethod
     def check_full_cycle(sid):
+        print('\nCheck Time: ', str(datetime.now().strftime("%d-%m-%Y %H:%M:%S")))
         empty_db_list = API.post_db_list(sid).text
         API.post_db_create(sid)
         result_post_db_list = API.post_db_list(sid)
@@ -169,7 +171,6 @@ class API:
         while True:
             utils.config_my_sql.DataMySql().connect_my_sql()
             result_post_db_delete = API.delete_db(first_db_uuid, sid)
-            print('\nCheck Time: ', str(datetime.now().strftime("%d-%m-%Y %H:%M:%S")))
             json_delete_db = json.loads(result_post_db_delete.text)
             # print(list(json_delete_db.values())[0])
             message = list(json_delete_db.values())[0].split(':')
