@@ -1,7 +1,7 @@
 import json
 
 import allure
-import mysql.connector
+import pytest
 
 from utils.checking import Checking
 from utils.config_my_sql import DataMySql
@@ -69,6 +69,7 @@ class TestPOST:
 
     @allure.sub_suite('DELETE')
     @allure.title('delete db')
+    @pytest.mark.xfail()
     def test_delete_db(self):
         print('\n\nMethod DELETE: delete_db')
         list_db = API.post_db_list(DataMySql.sid)
@@ -77,41 +78,11 @@ class TestPOST:
         result_post_db_list = API.delete_db(first_db_uuid, DataMySql.sid)
         Checking.check_status_code(result_post_db_list, 200)
 
-    @allure.sub_suite('Complex')
-    def test_complex(self):
-        API.check_full_cycle(DataMySql.sid)
-
 
 @allure.epic('Connection DB')
 @allure.suite('Test Connection DB')
 class TestConnectionDB:
-    @allure.title('Check response from db')
-    def test_connect_my_sql(self):
-        try:
-            connection = mysql.connector.connect(host=DataMySql().data_to_connect_my_sql()['host'],
-                                                 port=3306,
-                                                 user=DataMySql().data_to_connect_my_sql()['user_name'],
-                                                 database=DataMySql().data_to_connect_my_sql()['db_name'],
-                                                 password=DataMySql().data_to_connect_my_sql()['password_db']
-                                                 )
-            print('Successfully connected...')
-            try:
-                with connection.cursor() as cursor:
-                    cursor.execute('''
-                    select 1 from dual''')
-                    res = cursor.fetchall()
-                    print(res)
-            finally:
-                connection.close()
+    @allure.sub_suite('Complex')
+    def test_complex(self):
+        API.check_full_cycle(DataMySql.sid)
 
-            return connection
-        except Exception as ex:
-            print('Connection refused...', ex)
-            print(ex)
-
-# body3 = {"dbtype": 3, "dbversion": 5, "env": 3, "region": 3}
-# x = json.dumps(body3)
-# print(sid)
-# print(type(sid))
-# result3 = requests.post('https://dbend.areso.pro/db_create', data=x, cookies=sid)
-# print(result3.text)

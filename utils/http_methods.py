@@ -34,16 +34,13 @@ class HttpMethods:
         Logger.add_response(result)
         return result
 
-
     @staticmethod
     @allure.step('Method POST')
     def post_for_delete_db(url, db_uuid, sid):
         Logger.add_request(url, method='POST')
-        result = requests.post(url, data=db_uuid,  cookies=sid)
+        result = requests.post(url, data=db_uuid, cookies=sid)
         Logger.add_response(result)
         return result
-
-
 
     @staticmethod
     @allure.step('Method POST')

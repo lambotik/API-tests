@@ -1,6 +1,5 @@
 import json
 import os
-import time
 from datetime import datetime
 from pprint import pprint
 
@@ -110,6 +109,7 @@ class API:
         print(post_url)
         result_post = HttpMethods.post_set_cookie(post_url, {}, sid)
         with allure.step(f'Body: {result_post.text}'):
+            pass
             print('Response: ')
             pprint(result_post.text)
         return result_post
@@ -118,11 +118,12 @@ class API:
     def post_db_create(sid: dict):
         post_resource = '/db_create'  # Resource for method
         post_url = base_url + post_resource
-        print(post_url)
         body = {"dbtype": 3, "dbversion": 5, "env": 3, "region": 3}
         result_post = HttpMethods.post_set_cookie_without_body(post_url, sid, body)
         with allure.step(f'Body: {result_post.text}'):
-            print('Response: ', result_post.text)
+            print('Url: ', post_url)
+            print(f'Status code: {result_post.status_code}')
+            print('Response body: ', result_post.text)
         return result_post
 
     @staticmethod
@@ -160,17 +161,17 @@ class API:
     @staticmethod
     def check_full_cycle(sid):
         empty_db_list = API.post_db_list(sid).text
-        result_post_db_create = API.post_db_create(sid)
+        API.post_db_create(sid)
         result_post_db_list = API.post_db_list(sid)
         json_list_db = json.loads(result_post_db_list.text)
-        utils.config_my_sql.DataMySql.connect_my_sql()
+        # utils.config_my_sql.DataMySql.connect_my_sql()
         first_db_uuid = list(json_list_db['content'].keys())[0]
         while True:
-            utils.config_my_sql.DataMySql.connect_my_sql()
+            utils.config_my_sql.DataMySql().connect_my_sql()
             result_post_db_delete = API.delete_db(first_db_uuid, sid)
             print('\nCheck Time: ', str(datetime.now().strftime("%d-%m-%Y %H:%M:%S")))
             json_delete_db = json.loads(result_post_db_delete.text)
-            print(list(json_delete_db.values())[0])
+            # print(list(json_delete_db.values())[0])
             message = list(json_delete_db.values())[0].split(':')
             if 'msg[18]' in message:
                 print(str(datetime.now().strftime("%d-%m-%Y %H:%M:%S")))
@@ -178,7 +179,7 @@ class API:
                 print(str(datetime.now().strftime("%d-%m-%Y %H:%M:%S")))
                 result_post_db_delete = API.delete_db(first_db_uuid, sid)
                 json_delete_db = json.loads(result_post_db_delete.text)
-                print(list(json_delete_db.values())[0])
+                # print(list(json_delete_db.values())[0])
             elif 'msg[13]' in message:
                 result_post_db_delete = API.delete_db(first_db_uuid, sid)
                 json_delete_db = json.loads(result_post_db_delete.text)
@@ -188,7 +189,7 @@ class API:
                 print('Finish: ', str(datetime.now().strftime("%d-%m-%Y %H:%M:%S")))
                 break
         cur_db_list = API.post_db_list(sid)
-        print(cur_db_list.text)
+        # print(cur_db_list.text)
         assert cur_db_list.text == empty_db_list, f'DB is not deleted. {cur_db_list.text}'
 
     @staticmethod
