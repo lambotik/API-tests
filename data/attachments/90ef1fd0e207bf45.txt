@@ -1,5 +1,0 @@
-https://dbend.areso.pro/db_list
-Response: 
-'{"content":{}}\n'
-Connection refused... list index out of range
-list index out of range

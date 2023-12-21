@@ -1,12 +1,12 @@
 {
-  "uid" : "c72c3ffa4b5ee477",
-  "name" : "List regions",
-  "fullName" : "test_first.TestGET#test_list_regions",
-  "historyId" : "25fbfb0d0f18e8376eb74208847ed9cc",
+  "uid" : "8f2b3a6e10fb3455",
+  "name" : "List envs",
+  "fullName" : "test_first.TestGET#test_list_envs",
+  "historyId" : "ef10d88a050f4055844725987e4aa81f",
   "time" : {
-    "start" : 1703084233029,
-    "stop" : 1703084233374,
-    "duration" : 345
+    "start" : 1703186748899,
+    "stop" : 1703186749276,
+    "duration" : 377
   },
   "status" : "passed",
   "flaky" : false,
@@ -17,16 +17,16 @@
     "steps" : [ {
       "name" : "Method GET",
       "time" : {
-        "start" : 1703084233030,
-        "stop" : 1703084233373,
-        "duration" : 343
+        "start" : 1703186748899,
+        "stop" : 1703186749275,
+        "duration" : 376
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Add request",
         "time" : {
-          "start" : 1703084233030,
-          "stop" : 1703084233030,
+          "start" : 1703186748899,
+          "stop" : 1703186748899,
           "duration" : 0
         },
         "status" : "passed",
@@ -34,7 +34,7 @@
         "attachments" : [ ],
         "parameters" : [ {
           "name" : "url",
-          "value" : "'https://dbend.areso.pro/list_regions'"
+          "value" : "'https://dbend.areso.pro/list_envs'"
         }, {
           "name" : "method",
           "value" : "'GET'"
@@ -46,8 +46,8 @@
       }, {
         "name" : "Add response",
         "time" : {
-          "start" : 1703084233373,
-          "stop" : 1703084233373,
+          "start" : 1703186749275,
+          "stop" : 1703186749275,
           "duration" : 0
         },
         "status" : "passed",
@@ -65,17 +65,17 @@
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "url",
-        "value" : "'https://dbend.areso.pro/list_regions'"
+        "value" : "'https://dbend.areso.pro/list_envs'"
       } ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
       "stepsCount" : 2,
       "hasContent" : true
     }, {
-      "name" : "Body: {\"3\":\"CIS\"}\n",
+      "name" : "Body: {\"3\":\"vm_communal\"}\n",
       "time" : {
-        "start" : 1703084233373,
-        "stop" : 1703084233373,
+        "start" : 1703186749275,
+        "stop" : 1703186749275,
         "duration" : 0
       },
       "status" : "passed",
@@ -88,11 +88,11 @@
       "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "60b139239550d4c0",
+      "uid" : "edf695a41d388220",
       "name" : "stdout",
-      "source" : "60b139239550d4c0.txt",
+      "source" : "edf695a41d388220.txt",
       "type" : "text/plain",
-      "size" : 70
+      "size" : 75
     } ],
     "parameters" : [ ],
     "attachmentsCount" : 1,
@@ -102,20 +102,20 @@
   },
   "afterStages" : [ ],
   "labels" : [ {
+    "name" : "epic",
+    "value" : "GET REQUESTS"
+  }, {
     "name" : "suite",
     "value" : "REQUESTS GET"
   }, {
     "name" : "subSuite",
     "value" : "GET"
   }, {
-    "name" : "epic",
-    "value" : "GET REQUESTS"
-  }, {
     "name" : "host",
-    "value" : "fv-az1432-133"
+    "value" : "fv-az1200-423"
   }, {
     "name" : "thread",
-    "value" : "1792-MainThread"
+    "value" : "1766-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -142,95 +142,103 @@
         "failed" : 0,
         "broken" : 1,
         "skipped" : 0,
-        "passed" : 10,
+        "passed" : 11,
         "unknown" : 0,
-        "total" : 11
+        "total" : 12
       },
       "items" : [ {
-        "uid" : "83a6719fc1512576",
+        "uid" : "2e085713575f2846",
         "status" : "passed",
         "time" : {
-          "start" : 1703083503045,
-          "stop" : 1703083503375,
-          "duration" : 330
+          "start" : 1703084232677,
+          "stop" : 1703084233028,
+          "duration" : 351
         }
       }, {
-        "uid" : "fd3c8a6c351edf63",
+        "uid" : "1de7b372bb2b2ef5",
         "status" : "passed",
         "time" : {
-          "start" : 1702505146457,
-          "stop" : 1702505146805,
-          "duration" : 348
+          "start" : 1703083502702,
+          "stop" : 1703083503043,
+          "duration" : 341
         }
       }, {
-        "uid" : "7fcab3399ecaa6ba",
+        "uid" : "faffb4533ef4e2f3",
         "status" : "passed",
         "time" : {
-          "start" : 1702328879676,
-          "stop" : 1702328880240,
-          "duration" : 564
+          "start" : 1702505145977,
+          "stop" : 1702505146455,
+          "duration" : 478
         }
       }, {
-        "uid" : "d927926bc9adbdac",
+        "uid" : "85a4e45fdbe7b853",
         "status" : "passed",
         "time" : {
-          "start" : 1701728822288,
-          "stop" : 1701728822931,
-          "duration" : 643
+          "start" : 1702328879155,
+          "stop" : 1702328879675,
+          "duration" : 520
         }
       }, {
-        "uid" : "75f5f7964d3ee547",
+        "uid" : "d5f37e24ad85974c",
         "status" : "passed",
         "time" : {
-          "start" : 1701725995671,
-          "stop" : 1701725996124,
-          "duration" : 453
+          "start" : 1701728821743,
+          "stop" : 1701728822286,
+          "duration" : 543
         }
       }, {
-        "uid" : "c0e30a9be5bb0cf1",
+        "uid" : "3d292a112fd403e6",
         "status" : "passed",
         "time" : {
-          "start" : 1700766859781,
-          "stop" : 1700766860123,
-          "duration" : 342
+          "start" : 1701725995311,
+          "stop" : 1701725995670,
+          "duration" : 359
         }
       }, {
-        "uid" : "6e60d78b1965ce91",
+        "uid" : "61f4fe7f8910255a",
         "status" : "passed",
         "time" : {
-          "start" : 1700513083514,
-          "stop" : 1700513084045,
-          "duration" : 531
+          "start" : 1700766859442,
+          "stop" : 1700766859779,
+          "duration" : 337
         }
       }, {
-        "uid" : "95f25946f152358",
+        "uid" : "98e2bc26aa623541",
         "status" : "passed",
         "time" : {
-          "start" : 1700405904941,
-          "stop" : 1700405905272,
-          "duration" : 331
+          "start" : 1700513082976,
+          "stop" : 1700513083513,
+          "duration" : 537
         }
       }, {
-        "uid" : "160c168fe91fa932",
+        "uid" : "ec309ee933e22b1d",
         "status" : "passed",
         "time" : {
-          "start" : 1700405273999,
-          "stop" : 1700405274685,
-          "duration" : 686
+          "start" : 1700405904581,
+          "stop" : 1700405904939,
+          "duration" : 358
         }
       }, {
-        "uid" : "74bc65107c9b0bb5",
+        "uid" : "1728ecbb0b8dbcc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700405273465,
+          "stop" : 1700405273997,
+          "duration" : 532
+        }
+      }, {
+        "uid" : "ad96da88eea967ef",
         "status" : "broken",
         "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'logs/log_2023-11-19_14-46-06.log'",
         "time" : {
-          "start" : 1700405167517,
-          "stop" : 1700405167518,
-          "duration" : 1
+          "start" : 1700405167503,
+          "stop" : 1700405167503,
+          "duration" : 0
         }
       } ]
     },
     "tags" : [ ]
   },
-  "source" : "c72c3ffa4b5ee477.json",
+  "source" : "8f2b3a6e10fb3455.json",
   "parameterValues" : [ ]
 }
