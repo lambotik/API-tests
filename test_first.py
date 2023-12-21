@@ -53,12 +53,12 @@ class TestPOST:
         status_code, sid = result_post
         Checking.check_status_code(status_code, 200)
 
-    # @allure.sub_suite('POST')
-    # @allure.title('Post db create')
-    # def test_post_db_create(self):
-    #     print('\n\nMethod POST: db_create')
-    #     result_post_db_list = API.post_db_create(DataMySql.sid)
-    #     Checking.check_status_code(result_post_db_list, 201)
+    @allure.sub_suite('POST')
+    @allure.title('Post db create')
+    def test_post_db_create(self):
+        print('\n\nMethod POST: db_create')
+        result_post_db_list = API.post_db_create(DataMySql.sid)
+        Checking.check_status_code(result_post_db_list, 201)
 
     @allure.sub_suite('POST')
     @allure.title('Post db list')
