@@ -2,16 +2,16 @@
   "values" : [ "master" ],
   "name" : "GIT_BRANCH"
 }, {
-  "values" : [ "a29bbdb0cb94fec40c9406d07ea563e21beb7a71" ],
+  "values" : [ "97ee67f1e822b628b0c7a20ba129f93e1041f813" ],
   "name" : "GIT_COMMIT_ID"
 }, {
-  "values" : [ "Update. added: A database connection has been inserted into test_complex." ],
+  "values" : [ "Update. added: Response to allure-report" ],
   "name" : "GIT_COMMIT_MESSAGE"
 }, {
   "values" : [ "lambotik1988@gmail.com" ],
   "name" : "GIT_COMMIT_AUTHOR_NAME"
 }, {
-  "values" : [ "2023-12-21 22:24:46 +0300" ],
+  "values" : [ "2023-12-21 22:31:00 +0300" ],
   "name" : "GIT_COMMIT_TIME"
 }, {
   "values" : [ "120.0.6099.109" ],
