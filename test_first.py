@@ -85,4 +85,3 @@ class TestConnectionDB:
     @allure.sub_suite('Complex')
     def test_complex(self):
         API.check_full_cycle(DataMySql.sid)
-

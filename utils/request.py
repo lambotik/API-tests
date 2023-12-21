@@ -1,6 +1,5 @@
 import json
 import os
-import time
 from datetime import datetime
 from pprint import pprint
 
@@ -25,8 +24,7 @@ class API:
         get_url = base_url + get_resource
         print(get_url)
         result_get = HttpMethods.get(get_url)
-        with allure.step(f'Body: {result_get.text}'):
-            print(result_get.text)
+        print(result_get.text)
         return result_get
 
     @staticmethod
@@ -35,8 +33,7 @@ class API:
         get_url = base_url + get_resource
         print(get_url)
         result_get = HttpMethods.get(get_url)
-        with allure.step(f'Body: {result_get.text}'):
-            print(result_get.text)
+        print(result_get.text)
         return result_get
 
     @staticmethod
@@ -45,8 +42,7 @@ class API:
         get_url = base_url + get_resource
         print(get_url)
         result_get = HttpMethods.get(get_url)
-        with allure.step(f'Body: {result_get.text}'):
-            print(result_get.text)
+        print(result_get.text)
         return result_get
 
     @staticmethod
@@ -55,8 +51,7 @@ class API:
         get_url = base_url + get_resource
         print(get_url)
         result_get = HttpMethods.get(get_url)
-        with allure.step(f'Body: {result_get.text}'):
-            print(result_get.text)
+        print(result_get.text)
         return result_get
 
     @staticmethod
@@ -65,8 +60,7 @@ class API:
         get_url = base_url + get_resource
         print(get_url)
         result_get = HttpMethods.get(get_url)
-        with allure.step(f'Body: {result_get.text}'):
-            print(result_get.text)
+        print(result_get.text)
         return result_get
 
     @staticmethod
@@ -81,8 +75,7 @@ class API:
         post_url = base_url + post_resource
         print(post_url)
         result_post = HttpMethods.post(post_url, json_for_create_new_user)
-        with allure.step(f'Body: {result_post.text}'):
-            print('Response body: ', result_post.text)
+        print('Response body: ', result_post.text)
         return result_post
 
     @staticmethod
@@ -95,7 +88,8 @@ class API:
         print(f'Cookies: {cookies}')
         sid = result_post.cookies.values()[0]
         with allure.step('Body: {"email":"your_email","password":"your_password"}'):
-            print('Response: ', result_post, f'Sid: {sid}')
+            pass
+        print('Response: ', result_post.text, f'Sid: {sid}')
         print(f'Sid: {sid}')
         return result_post, sid
 
@@ -109,10 +103,8 @@ class API:
         post_url = base_url + post_resource
         print(post_url)
         result_post = HttpMethods.post_set_cookie(post_url, {}, sid)
-        with allure.step(f'Body: {result_post.text}'):
-            pass
-            print('Response: ')
-            pprint(result_post.text)
+        print('Response: ')
+        pprint(result_post.text)
         return result_post
 
     @staticmethod
@@ -121,10 +113,9 @@ class API:
         post_url = base_url + post_resource
         body = {"dbtype": 3, "dbversion": 5, "env": 3, "region": 3}
         result_post = HttpMethods.post_set_cookie_without_body(post_url, sid, body)
-        with allure.step(f'Body: {result_post.text}'):
-            print('Url: ', post_url)
-            print(f'Status code: {result_post.status_code}')
-            print('Response body: ', result_post.text)
+        print('Url: ', post_url)
+        print(f'Status code: {result_post.status_code}')
+        print('Response body: ', result_post.text)
         return result_post
 
     @staticmethod
@@ -154,9 +145,8 @@ class API:
         db_uuid = {"db_uuid": f"{uuid}"}
         json_db_uuid = json.dumps(db_uuid)
         result_delete = HttpMethods.post_for_delete_db(delete_url, json_db_uuid, sid)
-        with allure.step(f'Response body: {result_delete.text}'):
-            print(f'Status code: {result_delete.status_code}')
-            print('Response body: ', result_delete.text)
+        print(f'Status code: {result_delete.status_code}')
+        print('Response body: ', result_delete.text)
         return result_delete
 
     @staticmethod
@@ -166,21 +156,18 @@ class API:
         API.post_db_create(sid)
         result_post_db_list = API.post_db_list(sid)
         json_list_db = json.loads(result_post_db_list.text)
-        # utils.config_my_sql.DataMySql.connect_my_sql()
         first_db_uuid = list(json_list_db['content'].keys())[0]
         while True:
             utils.config_my_sql.DataMySql().connect_my_sql()
             result_post_db_delete = API.delete_db(first_db_uuid, sid)
             json_delete_db = json.loads(result_post_db_delete.text)
-            # print(list(json_delete_db.values())[0])
             message = list(json_delete_db.values())[0].split(':')
             if 'msg[18]' in message:
                 print(str(datetime.now().strftime("%d-%m-%Y %H:%M:%S")))
             elif 'msg[19]' in message:
                 print(str(datetime.now().strftime("%d-%m-%Y %H:%M:%S")))
                 result_post_db_delete = API.delete_db(first_db_uuid, sid)
-                json_delete_db = json.loads(result_post_db_delete.text)
-                # print(list(json_delete_db.values())[0])
+                json.loads(result_post_db_delete.text)
             elif 'msg[13]' in message:
                 result_post_db_delete = API.delete_db(first_db_uuid, sid)
                 json_delete_db = json.loads(result_post_db_delete.text)
@@ -190,14 +177,13 @@ class API:
                 print('Finish: ', str(datetime.now().strftime("%d-%m-%Y %H:%M:%S")))
                 break
         cur_db_list = API.post_db_list(sid)
-        # print(cur_db_list.text)
         assert cur_db_list.text == empty_db_list, f'DB is not deleted. {cur_db_list.text}'
 
-    @staticmethod
-    def checking_unknown_user(user_id):
-        get_resource = 'api/unknown/'  # Resource for method GET
-        get_url = base_url + get_resource + user_id
-        print(get_url)
-        result_get = HttpMethods.get(get_url)
-        print(result_get.text)
-        return result_get
+    # @staticmethod
+    # def checking_unknown_user(user_id):
+    #     get_resource = 'api/unknown/'  # Resource for method GET
+    #     get_url = base_url + get_resource + user_id
+    #     print(get_url)
+    #     result_get = HttpMethods.get(get_url)
+    #     print(result_get.text)
+    #     return result_get
