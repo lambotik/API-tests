@@ -1,0 +1,211 @@
+
+Check Time:  21-12-2023 19:58:56
+https://dbend.areso.pro/db_list
+Response: 
+'{"content":{}}\n'
+Url:  https://dbend.areso.pro/db_create
+Status code: 201
+Response body:  {"db_uuid":"06584990-1631-73d4-8000-4823cf4c58f7","msg":"your order for a new database created successfully"}
+
+https://dbend.areso.pro/db_list
+Response: 
+'{"content":{"06584990-1631-73d4-8000-4823cf4c58f7":["","CIS","db_creating",null,null]}}\n'
+
+Connecting to DB...
+https://dbend.areso.pro/db_list
+Response: 
+'{"content":{"06584990-1631-73d4-8000-4823cf4c58f7":["","CIS","db_creating",null,null]}}\n'
+Connection refused...
+
+'NoneType' object has no attribute 'split'
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[18]: error: can't delete a db while it's creating"}
+
+21-12-2023 19:58:59
+
+Connecting to DB...
+https://dbend.areso.pro/db_list
+Response: 
+'{"content":{"06584990-1631-73d4-8000-4823cf4c58f7":["","CIS","db_creating",null,null]}}\n'
+Connection refused...
+
+'NoneType' object has no attribute 'split'
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[18]: error: can't delete a db while it's creating"}
+
+21-12-2023 19:59:00
+
+Connecting to DB...
+https://dbend.areso.pro/db_list
+Response: 
+'{"content":{"06584990-1631-73d4-8000-4823cf4c58f7":["","CIS","db_creating",null,null]}}\n'
+Connection refused...
+
+'NoneType' object has no attribute 'split'
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[18]: error: can't delete a db while it's creating"}
+
+21-12-2023 19:59:01
+
+Connecting to DB...
+https://dbend.areso.pro/db_list
+Response: 
+'{"content":{"06584990-1631-73d4-8000-4823cf4c58f7":["","CIS","db_creating",null,null]}}\n'
+Connection refused...
+
+'NoneType' object has no attribute 'split'
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[18]: error: can't delete a db while it's creating"}
+
+21-12-2023 19:59:02
+
+Connecting to DB...
+https://dbend.areso.pro/db_list
+Response: 
+'{"content":{"06584990-1631-73d4-8000-4823cf4c58f7":["","CIS","db_creating",null,null]}}\n'
+Connection refused...
+
+'NoneType' object has no attribute 'split'
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[18]: error: can't delete a db while it's creating"}
+
+21-12-2023 19:59:03
+
+Connecting to DB...
+https://dbend.areso.pro/db_list
+Response: 
+'{"content":{"06584990-1631-73d4-8000-4823cf4c58f7":["","CIS","db_creating",null,null]}}\n'
+Connection refused...
+
+'NoneType' object has no attribute 'split'
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[18]: error: can't delete a db while it's creating"}
+
+21-12-2023 19:59:04
+
+Connecting to DB...
+https://dbend.areso.pro/db_list
+Response: 
+'{"content":{"06584990-1631-73d4-8000-4823cf4c58f7":["","CIS","db_creating",null,null]}}\n'
+Connection refused...
+
+'NoneType' object has no attribute 'split'
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[18]: error: can't delete a db while it's creating"}
+
+21-12-2023 19:59:05
+
+Connecting to DB...
+https://dbend.areso.pro/db_list
+Response: 
+'{"content":{"06584990-1631-73d4-8000-4823cf4c58f7":["","CIS","db_creating",null,null]}}\n'
+Connection refused...
+
+'NoneType' object has no attribute 'split'
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[18]: error: can't delete a db while it's creating"}
+
+21-12-2023 19:59:06
+
+Connecting to DB...
+https://dbend.areso.pro/db_list
+Response: 
+'{"content":{"06584990-1631-73d4-8000-4823cf4c58f7":["","CIS","db_creating",null,null]}}\n'
+Connection refused...
+
+'NoneType' object has no attribute 'split'
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[18]: error: can't delete a db while it's creating"}
+
+21-12-2023 19:59:07
+
+Connecting to DB...
+https://dbend.areso.pro/db_list
+Response: 
+'{"content":{"06584990-1631-73d4-8000-4823cf4c58f7":["","CIS","db_creating",null,null]}}\n'
+Connection refused...
+
+'NoneType' object has no attribute 'split'
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[18]: error: can't delete a db while it's creating"}
+
+21-12-2023 19:59:08
+
+Connecting to DB...
+https://dbend.areso.pro/db_list
+Response: 
+'{"content":{"06584990-1631-73d4-8000-4823cf4c58f7":["","CIS","db_creating",null,null]}}\n'
+Connection refused...
+
+'NoneType' object has no attribute 'split'
+Url:  https://dbend.areso.pro/db_delete
+Status code: 200
+Response body:  {"content":"msg[13]: successfully accepted request for deletion"}
+
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[19]: error: can't delete a db while it's deleting"}
+
+json_delete_db {'content': "msg[19]: error: can't delete a db while it's deleting"}
+Finish:  21-12-2023 19:59:10
+
+Connecting to DB...
+https://dbend.areso.pro/db_list
+Response: 
+('{"content":{"06584990-1631-73d4-8000-4823cf4c58f7":["db_tfoj80tf","CIS","deleting","mysql://user_glvbkeft:pwPW01__6iO6x2Qshn2jBD@cisdb1.areso.pro:3306/db_tfoj80tf","Thu, '
+ '21 Dec 2023 19:59:10 GMT"]}}\n')
+Successfully connected...
+DB response [(1,)]!!!!
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[19]: error: can't delete a db while it's deleting"}
+
+21-12-2023 19:59:13
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[19]: error: can't delete a db while it's deleting"}
+
+
+Connecting to DB...
+https://dbend.areso.pro/db_list
+Response: 
+('{"content":{"06584990-1631-73d4-8000-4823cf4c58f7":["db_tfoj80tf","CIS","deleting","mysql://user_glvbkeft:pwPW01__6iO6x2Qshn2jBD@cisdb1.areso.pro:3306/db_tfoj80tf","Thu, '
+ '21 Dec 2023 19:59:10 GMT"]}}\n')
+Successfully connected...
+DB response [(1,)]!!!!
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[19]: error: can't delete a db while it's deleting"}
+
+21-12-2023 19:59:17
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[19]: error: can't delete a db while it's deleting"}
+
+
+Connecting to DB...
+https://dbend.areso.pro/db_list
+Response: 
+('{"content":{"06584990-1631-73d4-8000-4823cf4c58f7":["db_tfoj80tf","CIS","deleting","mysql://user_glvbkeft:pwPW01__6iO6x2Qshn2jBD@cisdb1.areso.pro:3306/db_tfoj80tf","Thu, '
+ '21 Dec 2023 19:59:10 GMT"]}}\n')
+Connection refused...
+
+1045 (28000): Access denied for user 'user_glvbkeft'@'52.159.137.0' (using password: YES)
+Url:  https://dbend.areso.pro/db_delete
+Status code: 400
+Response body:  {"content":"msg[16]: requested database is not found"}
+
+Finish:  21-12-2023 19:59:19
+https://dbend.areso.pro/db_list
+Response: 
+'{"content":{}}\n'
