@@ -4,117 +4,117 @@
     "name" : "test_first",
     "children" : [ {
       "name" : "test tos",
-      "uid" : "5640e1118dffe7e5",
+      "uid" : "ab18a650252a1a4",
       "parentUid" : "95a9fd7eaca78ad31c048866b144bdda",
       "status" : "passed",
       "time" : {
-        "start" : 1703188732091,
-        "stop" : 1703188732629,
-        "duration" : 538
+        "start" : 1703244843112,
+        "stop" : 1703244843504,
+        "duration" : 392
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "List dbtypes",
-      "uid" : "b38469eab0ba0be2",
+      "uid" : "ebcd4e1a65f9c041",
       "parentUid" : "95a9fd7eaca78ad31c048866b144bdda",
       "status" : "passed",
       "time" : {
-        "start" : 1703188732631,
-        "stop" : 1703188733166,
-        "duration" : 535
+        "start" : 1703244843506,
+        "stop" : 1703244843909,
+        "duration" : 403
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "List dbversions",
-      "uid" : "d269e39ddc9a499d",
+      "uid" : "ce9248f47cbe9a16",
       "parentUid" : "95a9fd7eaca78ad31c048866b144bdda",
       "status" : "passed",
       "time" : {
-        "start" : 1703188733168,
-        "stop" : 1703188733700,
-        "duration" : 532
+        "start" : 1703244843910,
+        "stop" : 1703244844283,
+        "duration" : 373
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "List envs",
-      "uid" : "2f60bb51458cbc0f",
+      "uid" : "2a221504f6575994",
       "parentUid" : "95a9fd7eaca78ad31c048866b144bdda",
       "status" : "passed",
       "time" : {
-        "start" : 1703188733701,
-        "stop" : 1703188734236,
-        "duration" : 535
+        "start" : 1703244844285,
+        "stop" : 1703244844679,
+        "duration" : 394
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "List regions",
-      "uid" : "eafc61a3faf0f534",
+      "uid" : "7e1692c4399e8151",
       "parentUid" : "95a9fd7eaca78ad31c048866b144bdda",
       "status" : "passed",
       "time" : {
-        "start" : 1703188734237,
-        "stop" : 1703188734779,
-        "duration" : 542
+        "start" : 1703244844681,
+        "stop" : 1703244845069,
+        "duration" : 388
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Post login",
-      "uid" : "d56c216fa921cfe0",
+      "uid" : "e940c02800acb44e",
       "parentUid" : "95a9fd7eaca78ad31c048866b144bdda",
       "status" : "passed",
       "time" : {
-        "start" : 1703188734781,
-        "stop" : 1703188735315,
-        "duration" : 534
+        "start" : 1703244845071,
+        "stop" : 1703244845455,
+        "duration" : 384
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Post db list",
-      "uid" : "eec1f97f2297d52c",
+      "uid" : "79401960642ced49",
       "parentUid" : "95a9fd7eaca78ad31c048866b144bdda",
       "status" : "passed",
       "time" : {
-        "start" : 1703188735317,
-        "stop" : 1703188735839,
-        "duration" : 522
+        "start" : 1703244845456,
+        "stop" : 1703244845877,
+        "duration" : 421
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "delete db",
-      "uid" : "53af9f5911ced1e8",
+      "uid" : "b353ec7122ed42b7",
       "parentUid" : "95a9fd7eaca78ad31c048866b144bdda",
       "status" : "skipped",
       "time" : {
-        "start" : 1703188735841,
-        "stop" : 1703188736397,
-        "duration" : 556
+        "start" : 1703244845879,
+        "stop" : 1703244846264,
+        "duration" : 385
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_complex",
-      "uid" : "6937ffc1dd64e54f",
+      "uid" : "e0cd9cad511f9e64",
       "parentUid" : "95a9fd7eaca78ad31c048866b144bdda",
       "status" : "passed",
       "time" : {
-        "start" : 1703188736423,
-        "stop" : 1703188760267,
-        "duration" : 23844
+        "start" : 1703244846291,
+        "stop" : 1703244872147,
+        "duration" : 25856
       },
       "flaky" : false,
       "newFailed" : false,

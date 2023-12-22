@@ -1,12 +1,12 @@
 {
-  "uid" : "2f60bb51458cbc0f",
+  "uid" : "2a221504f6575994",
   "name" : "List envs",
   "fullName" : "test_first.TestGET#test_list_envs",
   "historyId" : "ef10d88a050f4055844725987e4aa81f",
   "time" : {
-    "start" : 1703188733701,
-    "stop" : 1703188734236,
-    "duration" : 535
+    "start" : 1703244844285,
+    "stop" : 1703244844679,
+    "duration" : 394
   },
   "status" : "passed",
   "flaky" : false,
@@ -17,17 +17,17 @@
     "steps" : [ {
       "name" : "Method GET",
       "time" : {
-        "start" : 1703188733701,
-        "stop" : 1703188734235,
-        "duration" : 534
+        "start" : 1703244844285,
+        "stop" : 1703244844678,
+        "duration" : 393
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Add request",
         "time" : {
-          "start" : 1703188733701,
-          "stop" : 1703188733702,
-          "duration" : 1
+          "start" : 1703244844285,
+          "stop" : 1703244844285,
+          "duration" : 0
         },
         "status" : "passed",
         "steps" : [ ],
@@ -39,98 +39,98 @@
           "name" : "method",
           "value" : "'GET'"
         } ],
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
         "stepsCount" : 0,
-        "hasContent" : true
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
       }, {
         "name" : "Add response",
         "time" : {
-          "start" : 1703188734235,
-          "stop" : 1703188734235,
+          "start" : 1703244844678,
+          "stop" : 1703244844678,
           "duration" : 0
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "Response code: 200\n",
           "time" : {
-            "start" : 1703188734235,
-            "stop" : 1703188734235,
+            "start" : 1703244844678,
+            "stop" : 1703244844678,
             "duration" : 0
           },
           "status" : "passed",
           "steps" : [ ],
           "attachments" : [ ],
           "parameters" : [ ],
-          "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
           "stepsCount" : 0,
-          "hasContent" : false
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
         }, {
           "name" : "Response text: {\"3\":\"vm_communal\"}\n\n",
           "time" : {
-            "start" : 1703188734235,
-            "stop" : 1703188734235,
+            "start" : 1703244844678,
+            "stop" : 1703244844678,
             "duration" : 0
           },
           "status" : "passed",
           "steps" : [ ],
           "attachments" : [ ],
           "parameters" : [ ],
-          "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
           "stepsCount" : 0,
-          "hasContent" : false
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
         } ],
         "attachments" : [ ],
         "parameters" : [ {
           "name" : "result",
           "value" : "<Response [200]>"
         } ],
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
         "stepsCount" : 2,
-        "hasContent" : true
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
       } ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "url",
         "value" : "'https://dbend.areso.pro/list_envs'"
       } ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 4,
-      "hasContent" : true
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     } ],
     "attachments" : [ {
-      "uid" : "f77b5d81c55e8d7a",
+      "uid" : "e55dc62eb2eb03ec",
       "name" : "stdout",
-      "source" : "f77b5d81c55e8d7a.txt",
+      "source" : "e55dc62eb2eb03ec.txt",
       "type" : "text/plain",
       "size" : 75
     } ],
     "parameters" : [ ],
-    "attachmentsCount" : 1,
-    "shouldDisplayMessage" : false,
     "stepsCount" : 5,
-    "hasContent" : true
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
   },
   "afterStages" : [ ],
   "labels" : [ {
+    "name" : "subSuite",
+    "value" : "GET"
+  }, {
     "name" : "suite",
     "value" : "REQUESTS GET"
   }, {
     "name" : "epic",
     "value" : "GET REQUESTS"
   }, {
-    "name" : "subSuite",
-    "value" : "GET"
-  }, {
     "name" : "host",
-    "value" : "fv-az773-27"
+    "value" : "fv-az651-518"
   }, {
     "name" : "thread",
-    "value" : "1792-MainThread"
+    "value" : "1829-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -157,11 +157,19 @@
         "failed" : 0,
         "broken" : 1,
         "skipped" : 0,
-        "passed" : 14,
+        "passed" : 15,
         "unknown" : 0,
-        "total" : 15
+        "total" : 16
       },
       "items" : [ {
+        "uid" : "2f60bb51458cbc0f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1703188733701,
+          "stop" : 1703188734236,
+          "duration" : 535
+        }
+      }, {
         "uid" : "aee80ecb9d11128f",
         "status" : "passed",
         "time" : {
@@ -278,6 +286,6 @@
     },
     "tags" : [ ]
   },
-  "source" : "2f60bb51458cbc0f.json",
+  "source" : "2a221504f6575994.json",
   "parameterValues" : [ ]
 }

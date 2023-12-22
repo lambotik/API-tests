@@ -1,0 +1,4918 @@
+{
+  "uid" : "e0cd9cad511f9e64",
+  "name" : "test_complex",
+  "fullName" : "test_first.TestConnectionDB#test_complex",
+  "historyId" : "674c4b238e9a4ede495863c1dabaf488",
+  "time" : {
+    "start" : 1703244846291,
+    "stop" : 1703244872147,
+    "duration" : 25856
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244846291,
+        "stop" : 1703244846668,
+        "duration" : 377
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244846291,
+          "stop" : 1703244846291,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_list'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244846668,
+          "stop" : 1703244846668,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 200\n",
+          "time" : {
+            "start" : 1703244846668,
+            "stop" : 1703244846668,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":{}}\n\n",
+          "time" : {
+            "start" : 1703244846668,
+            "stop" : 1703244846668,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [200]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_list'"
+      }, {
+        "name" : "body",
+        "value" : "{}"
+      }, {
+        "name" : "cookie",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244846669,
+        "stop" : 1703244847393,
+        "duration" : 724
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244846669,
+          "stop" : 1703244846669,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_create'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244847393,
+          "stop" : 1703244847393,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 201\n",
+          "time" : {
+            "start" : 1703244847393,
+            "stop" : 1703244847393,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"db_uuid\":\"06585742-efdf-72e0-8000-6aaa41f6fd13\",\"msg\":\"your order for a new database created successfully\"}\n\n",
+          "time" : {
+            "start" : 1703244847393,
+            "stop" : 1703244847393,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [201]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_create'"
+      }, {
+        "name" : "cookie",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      }, {
+        "name" : "body",
+        "value" : "{'dbtype': 3, 'dbversion': 5, 'env': 3, 'region': 3}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244847394,
+        "stop" : 1703244847781,
+        "duration" : 387
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244847394,
+          "stop" : 1703244847395,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_list'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244847781,
+          "stop" : 1703244847781,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 200\n",
+          "time" : {
+            "start" : 1703244847781,
+            "stop" : 1703244847781,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":{\"06585742-efdf-72e0-8000-6aaa41f6fd13\":[\"\",\"CIS\",\"db_creating\",null,null]}}\n\n",
+          "time" : {
+            "start" : 1703244847781,
+            "stop" : 1703244847781,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [200]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_list'"
+      }, {
+        "name" : "body",
+        "value" : "{}"
+      }, {
+        "name" : "cookie",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244847781,
+        "stop" : 1703244848165,
+        "duration" : 384
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244847781,
+          "stop" : 1703244847781,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_list'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244848165,
+          "stop" : 1703244848165,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 200\n",
+          "time" : {
+            "start" : 1703244848165,
+            "stop" : 1703244848165,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":{\"06585742-efdf-72e0-8000-6aaa41f6fd13\":[\"\",\"CIS\",\"db_creating\",null,null]}}\n\n",
+          "time" : {
+            "start" : 1703244848165,
+            "stop" : 1703244848165,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [200]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_list'"
+      }, {
+        "name" : "body",
+        "value" : "{}"
+      }, {
+        "name" : "cookie",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244848166,
+        "stop" : 1703244848540,
+        "duration" : 374
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244848166,
+          "stop" : 1703244848166,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244848540,
+          "stop" : 1703244848540,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 400\n",
+          "time" : {
+            "start" : 1703244848540,
+            "stop" : 1703244848540,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n\n",
+          "time" : {
+            "start" : 1703244848540,
+            "stop" : 1703244848540,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"06585742-efdf-72e0-8000-6aaa41f6fd13\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244848540,
+        "stop" : 1703244848931,
+        "duration" : 391
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244848540,
+          "stop" : 1703244848540,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_list'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244848930,
+          "stop" : 1703244848931,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 200\n",
+          "time" : {
+            "start" : 1703244848930,
+            "stop" : 1703244848930,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":{\"06585742-efdf-72e0-8000-6aaa41f6fd13\":[\"\",\"CIS\",\"db_creating\",null,null]}}\n\n",
+          "time" : {
+            "start" : 1703244848930,
+            "stop" : 1703244848930,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [200]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_list'"
+      }, {
+        "name" : "body",
+        "value" : "{}"
+      }, {
+        "name" : "cookie",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244848931,
+        "stop" : 1703244849307,
+        "duration" : 376
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244848931,
+          "stop" : 1703244848932,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244849307,
+          "stop" : 1703244849307,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 400\n",
+          "time" : {
+            "start" : 1703244849307,
+            "stop" : 1703244849307,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n\n",
+          "time" : {
+            "start" : 1703244849307,
+            "stop" : 1703244849307,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"06585742-efdf-72e0-8000-6aaa41f6fd13\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244849308,
+        "stop" : 1703244849691,
+        "duration" : 383
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244849308,
+          "stop" : 1703244849308,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_list'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244849690,
+          "stop" : 1703244849691,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 200\n",
+          "time" : {
+            "start" : 1703244849690,
+            "stop" : 1703244849690,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":{\"06585742-efdf-72e0-8000-6aaa41f6fd13\":[\"\",\"CIS\",\"db_creating\",null,null]}}\n\n",
+          "time" : {
+            "start" : 1703244849691,
+            "stop" : 1703244849691,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [200]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_list'"
+      }, {
+        "name" : "body",
+        "value" : "{}"
+      }, {
+        "name" : "cookie",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244849691,
+        "stop" : 1703244850086,
+        "duration" : 395
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244849691,
+          "stop" : 1703244849692,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244850085,
+          "stop" : 1703244850086,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 400\n",
+          "time" : {
+            "start" : 1703244850086,
+            "stop" : 1703244850086,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n\n",
+          "time" : {
+            "start" : 1703244850086,
+            "stop" : 1703244850086,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"06585742-efdf-72e0-8000-6aaa41f6fd13\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244850087,
+        "stop" : 1703244850458,
+        "duration" : 371
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244850087,
+          "stop" : 1703244850087,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_list'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244850458,
+          "stop" : 1703244850458,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 200\n",
+          "time" : {
+            "start" : 1703244850458,
+            "stop" : 1703244850458,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":{\"06585742-efdf-72e0-8000-6aaa41f6fd13\":[\"\",\"CIS\",\"db_creating\",null,null]}}\n\n",
+          "time" : {
+            "start" : 1703244850458,
+            "stop" : 1703244850458,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [200]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_list'"
+      }, {
+        "name" : "body",
+        "value" : "{}"
+      }, {
+        "name" : "cookie",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244850459,
+        "stop" : 1703244850830,
+        "duration" : 371
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244850459,
+          "stop" : 1703244850459,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244850829,
+          "stop" : 1703244850830,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 400\n",
+          "time" : {
+            "start" : 1703244850829,
+            "stop" : 1703244850829,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n\n",
+          "time" : {
+            "start" : 1703244850829,
+            "stop" : 1703244850829,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"06585742-efdf-72e0-8000-6aaa41f6fd13\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244850831,
+        "stop" : 1703244851217,
+        "duration" : 386
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244850831,
+          "stop" : 1703244850831,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_list'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244851217,
+          "stop" : 1703244851217,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 200\n",
+          "time" : {
+            "start" : 1703244851217,
+            "stop" : 1703244851217,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":{\"06585742-efdf-72e0-8000-6aaa41f6fd13\":[\"\",\"CIS\",\"db_creating\",null,null]}}\n\n",
+          "time" : {
+            "start" : 1703244851217,
+            "stop" : 1703244851217,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [200]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_list'"
+      }, {
+        "name" : "body",
+        "value" : "{}"
+      }, {
+        "name" : "cookie",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244851218,
+        "stop" : 1703244851596,
+        "duration" : 378
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244851218,
+          "stop" : 1703244851218,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244851595,
+          "stop" : 1703244851596,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 400\n",
+          "time" : {
+            "start" : 1703244851595,
+            "stop" : 1703244851595,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n\n",
+          "time" : {
+            "start" : 1703244851595,
+            "stop" : 1703244851595,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"06585742-efdf-72e0-8000-6aaa41f6fd13\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244851597,
+        "stop" : 1703244851970,
+        "duration" : 373
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244851597,
+          "stop" : 1703244851597,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_list'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244851970,
+          "stop" : 1703244851970,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 200\n",
+          "time" : {
+            "start" : 1703244851970,
+            "stop" : 1703244851970,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":{\"06585742-efdf-72e0-8000-6aaa41f6fd13\":[\"\",\"CIS\",\"db_creating\",null,null]}}\n\n",
+          "time" : {
+            "start" : 1703244851970,
+            "stop" : 1703244851970,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [200]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_list'"
+      }, {
+        "name" : "body",
+        "value" : "{}"
+      }, {
+        "name" : "cookie",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244851971,
+        "stop" : 1703244852356,
+        "duration" : 385
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244851971,
+          "stop" : 1703244851972,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244852355,
+          "stop" : 1703244852356,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 400\n",
+          "time" : {
+            "start" : 1703244852355,
+            "stop" : 1703244852355,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n\n",
+          "time" : {
+            "start" : 1703244852356,
+            "stop" : 1703244852356,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"06585742-efdf-72e0-8000-6aaa41f6fd13\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244852357,
+        "stop" : 1703244852730,
+        "duration" : 373
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244852357,
+          "stop" : 1703244852357,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_list'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244852730,
+          "stop" : 1703244852730,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 200\n",
+          "time" : {
+            "start" : 1703244852730,
+            "stop" : 1703244852730,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":{\"06585742-efdf-72e0-8000-6aaa41f6fd13\":[\"\",\"CIS\",\"db_creating\",null,null]}}\n\n",
+          "time" : {
+            "start" : 1703244852730,
+            "stop" : 1703244852730,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [200]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_list'"
+      }, {
+        "name" : "body",
+        "value" : "{}"
+      }, {
+        "name" : "cookie",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244852731,
+        "stop" : 1703244853103,
+        "duration" : 372
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244852731,
+          "stop" : 1703244852731,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244853103,
+          "stop" : 1703244853103,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 400\n",
+          "time" : {
+            "start" : 1703244853103,
+            "stop" : 1703244853103,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n\n",
+          "time" : {
+            "start" : 1703244853103,
+            "stop" : 1703244853103,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"06585742-efdf-72e0-8000-6aaa41f6fd13\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244853105,
+        "stop" : 1703244853489,
+        "duration" : 384
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244853105,
+          "stop" : 1703244853105,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_list'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244853489,
+          "stop" : 1703244853489,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 200\n",
+          "time" : {
+            "start" : 1703244853489,
+            "stop" : 1703244853489,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":{\"06585742-efdf-72e0-8000-6aaa41f6fd13\":[\"\",\"CIS\",\"db_creating\",null,null]}}\n\n",
+          "time" : {
+            "start" : 1703244853489,
+            "stop" : 1703244853489,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [200]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_list'"
+      }, {
+        "name" : "body",
+        "value" : "{}"
+      }, {
+        "name" : "cookie",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244853490,
+        "stop" : 1703244853874,
+        "duration" : 384
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244853490,
+          "stop" : 1703244853490,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244853873,
+          "stop" : 1703244853874,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 400\n",
+          "time" : {
+            "start" : 1703244853873,
+            "stop" : 1703244853873,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n\n",
+          "time" : {
+            "start" : 1703244853874,
+            "stop" : 1703244853874,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"06585742-efdf-72e0-8000-6aaa41f6fd13\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244853875,
+        "stop" : 1703244854247,
+        "duration" : 372
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244853875,
+          "stop" : 1703244853875,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_list'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244854247,
+          "stop" : 1703244854247,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 200\n",
+          "time" : {
+            "start" : 1703244854247,
+            "stop" : 1703244854247,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":{\"06585742-efdf-72e0-8000-6aaa41f6fd13\":[\"\",\"CIS\",\"db_creating\",null,null]}}\n\n",
+          "time" : {
+            "start" : 1703244854247,
+            "stop" : 1703244854247,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [200]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_list'"
+      }, {
+        "name" : "body",
+        "value" : "{}"
+      }, {
+        "name" : "cookie",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244854248,
+        "stop" : 1703244854633,
+        "duration" : 385
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244854248,
+          "stop" : 1703244854249,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244854632,
+          "stop" : 1703244854633,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 400\n",
+          "time" : {
+            "start" : 1703244854633,
+            "stop" : 1703244854633,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n\n",
+          "time" : {
+            "start" : 1703244854633,
+            "stop" : 1703244854633,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"06585742-efdf-72e0-8000-6aaa41f6fd13\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244854634,
+        "stop" : 1703244855035,
+        "duration" : 401
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244854634,
+          "stop" : 1703244854634,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_list'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244855034,
+          "stop" : 1703244855035,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 200\n",
+          "time" : {
+            "start" : 1703244855035,
+            "stop" : 1703244855035,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":{\"06585742-efdf-72e0-8000-6aaa41f6fd13\":[\"\",\"CIS\",\"db_creating\",null,null]}}\n\n",
+          "time" : {
+            "start" : 1703244855035,
+            "stop" : 1703244855035,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [200]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_list'"
+      }, {
+        "name" : "body",
+        "value" : "{}"
+      }, {
+        "name" : "cookie",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244855036,
+        "stop" : 1703244855416,
+        "duration" : 380
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244855036,
+          "stop" : 1703244855036,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244855416,
+          "stop" : 1703244855416,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 400\n",
+          "time" : {
+            "start" : 1703244855416,
+            "stop" : 1703244855416,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n\n",
+          "time" : {
+            "start" : 1703244855416,
+            "stop" : 1703244855416,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"06585742-efdf-72e0-8000-6aaa41f6fd13\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244855417,
+        "stop" : 1703244855809,
+        "duration" : 392
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244855417,
+          "stop" : 1703244855417,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_list'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244855809,
+          "stop" : 1703244855809,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 200\n",
+          "time" : {
+            "start" : 1703244855809,
+            "stop" : 1703244855809,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":{\"06585742-efdf-72e0-8000-6aaa41f6fd13\":[\"\",\"CIS\",\"db_creating\",null,null]}}\n\n",
+          "time" : {
+            "start" : 1703244855809,
+            "stop" : 1703244855809,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [200]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_list'"
+      }, {
+        "name" : "body",
+        "value" : "{}"
+      }, {
+        "name" : "cookie",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244855810,
+        "stop" : 1703244856186,
+        "duration" : 376
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244855810,
+          "stop" : 1703244855810,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244856186,
+          "stop" : 1703244856186,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 400\n",
+          "time" : {
+            "start" : 1703244856186,
+            "stop" : 1703244856186,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n\n",
+          "time" : {
+            "start" : 1703244856186,
+            "stop" : 1703244856186,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"06585742-efdf-72e0-8000-6aaa41f6fd13\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244856187,
+        "stop" : 1703244856566,
+        "duration" : 379
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244856187,
+          "stop" : 1703244856188,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_list'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244856565,
+          "stop" : 1703244856566,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 200\n",
+          "time" : {
+            "start" : 1703244856565,
+            "stop" : 1703244856565,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":{\"06585742-efdf-72e0-8000-6aaa41f6fd13\":[\"\",\"CIS\",\"db_creating\",null,null]}}\n\n",
+          "time" : {
+            "start" : 1703244856566,
+            "stop" : 1703244856566,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [200]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_list'"
+      }, {
+        "name" : "body",
+        "value" : "{}"
+      }, {
+        "name" : "cookie",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244856567,
+        "stop" : 1703244856956,
+        "duration" : 389
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244856567,
+          "stop" : 1703244856567,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244856956,
+          "stop" : 1703244856956,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 400\n",
+          "time" : {
+            "start" : 1703244856956,
+            "stop" : 1703244856956,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n\n",
+          "time" : {
+            "start" : 1703244856956,
+            "stop" : 1703244856956,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"06585742-efdf-72e0-8000-6aaa41f6fd13\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244856958,
+        "stop" : 1703244857347,
+        "duration" : 389
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244856958,
+          "stop" : 1703244856958,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_list'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244857346,
+          "stop" : 1703244857347,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 200\n",
+          "time" : {
+            "start" : 1703244857346,
+            "stop" : 1703244857346,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":{\"06585742-efdf-72e0-8000-6aaa41f6fd13\":[\"\",\"CIS\",\"db_creating\",null,null]}}\n\n",
+          "time" : {
+            "start" : 1703244857346,
+            "stop" : 1703244857346,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [200]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_list'"
+      }, {
+        "name" : "body",
+        "value" : "{}"
+      }, {
+        "name" : "cookie",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244857348,
+        "stop" : 1703244857719,
+        "duration" : 371
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244857348,
+          "stop" : 1703244857348,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244857719,
+          "stop" : 1703244857719,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 400\n",
+          "time" : {
+            "start" : 1703244857719,
+            "stop" : 1703244857719,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n\n",
+          "time" : {
+            "start" : 1703244857719,
+            "stop" : 1703244857719,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"06585742-efdf-72e0-8000-6aaa41f6fd13\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244857720,
+        "stop" : 1703244858105,
+        "duration" : 385
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244857720,
+          "stop" : 1703244857720,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_list'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244858104,
+          "stop" : 1703244858105,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 200\n",
+          "time" : {
+            "start" : 1703244858104,
+            "stop" : 1703244858104,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":{\"06585742-efdf-72e0-8000-6aaa41f6fd13\":[\"\",\"CIS\",\"db_creating\",null,null]}}\n\n",
+          "time" : {
+            "start" : 1703244858105,
+            "stop" : 1703244858105,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [200]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_list'"
+      }, {
+        "name" : "body",
+        "value" : "{}"
+      }, {
+        "name" : "cookie",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244858106,
+        "stop" : 1703244858483,
+        "duration" : 377
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244858106,
+          "stop" : 1703244858106,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244858483,
+          "stop" : 1703244858483,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 400\n",
+          "time" : {
+            "start" : 1703244858483,
+            "stop" : 1703244858483,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n\n",
+          "time" : {
+            "start" : 1703244858483,
+            "stop" : 1703244858483,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"06585742-efdf-72e0-8000-6aaa41f6fd13\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244858485,
+        "stop" : 1703244858856,
+        "duration" : 371
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244858485,
+          "stop" : 1703244858485,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_list'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244858856,
+          "stop" : 1703244858856,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 200\n",
+          "time" : {
+            "start" : 1703244858856,
+            "stop" : 1703244858856,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":{\"06585742-efdf-72e0-8000-6aaa41f6fd13\":[\"\",\"CIS\",\"db_creating\",null,null]}}\n\n",
+          "time" : {
+            "start" : 1703244858856,
+            "stop" : 1703244858856,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [200]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_list'"
+      }, {
+        "name" : "body",
+        "value" : "{}"
+      }, {
+        "name" : "cookie",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244858857,
+        "stop" : 1703244859231,
+        "duration" : 374
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244858857,
+          "stop" : 1703244858857,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244859231,
+          "stop" : 1703244859231,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 400\n",
+          "time" : {
+            "start" : 1703244859231,
+            "stop" : 1703244859231,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n\n",
+          "time" : {
+            "start" : 1703244859231,
+            "stop" : 1703244859231,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"06585742-efdf-72e0-8000-6aaa41f6fd13\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244859233,
+        "stop" : 1703244859606,
+        "duration" : 373
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244859233,
+          "stop" : 1703244859233,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_list'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244859606,
+          "stop" : 1703244859606,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 200\n",
+          "time" : {
+            "start" : 1703244859606,
+            "stop" : 1703244859606,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":{\"06585742-efdf-72e0-8000-6aaa41f6fd13\":[\"db_u9w37kel\",\"CIS\",\"db_created\",\"mysql://user_6tsc21sv:pwPW01__a7SGkznOJTszEK@cisdb1.areso.pro:3306/db_u9w37kel\",\"Fri, 22 Dec 2023 11:34:19 GMT\"]}}\n\n",
+          "time" : {
+            "start" : 1703244859606,
+            "stop" : 1703244859606,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [200]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_list'"
+      }, {
+        "name" : "body",
+        "value" : "{}"
+      }, {
+        "name" : "cookie",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "DB response [(1,)]",
+      "time" : {
+        "start" : 1703244861198,
+        "stop" : 1703244861198,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244861199,
+        "stop" : 1703244861628,
+        "duration" : 429
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244861199,
+          "stop" : 1703244861199,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244861627,
+          "stop" : 1703244861628,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 200\n",
+          "time" : {
+            "start" : 1703244861627,
+            "stop" : 1703244861628,
+            "duration" : 1
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":\"msg[13]: successfully accepted request for deletion\"}\n\n",
+          "time" : {
+            "start" : 1703244861628,
+            "stop" : 1703244861628,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [200]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"06585742-efdf-72e0-8000-6aaa41f6fd13\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244861629,
+        "stop" : 1703244862017,
+        "duration" : 388
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244861629,
+          "stop" : 1703244861629,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244862016,
+          "stop" : 1703244862017,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 400\n",
+          "time" : {
+            "start" : 1703244862016,
+            "stop" : 1703244862016,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n\n",
+          "time" : {
+            "start" : 1703244862016,
+            "stop" : 1703244862016,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"06585742-efdf-72e0-8000-6aaa41f6fd13\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244862018,
+        "stop" : 1703244862395,
+        "duration" : 377
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244862018,
+          "stop" : 1703244862018,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_list'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244862395,
+          "stop" : 1703244862395,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 200\n",
+          "time" : {
+            "start" : 1703244862395,
+            "stop" : 1703244862395,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":{\"06585742-efdf-72e0-8000-6aaa41f6fd13\":[\"db_u9w37kel\",\"CIS\",\"deleting\",\"mysql://user_6tsc21sv:pwPW01__a7SGkznOJTszEK@cisdb1.areso.pro:3306/db_u9w37kel\",\"Fri, 22 Dec 2023 11:34:19 GMT\"]}}\n\n",
+          "time" : {
+            "start" : 1703244862395,
+            "stop" : 1703244862395,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [200]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_list'"
+      }, {
+        "name" : "body",
+        "value" : "{}"
+      }, {
+        "name" : "cookie",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "DB response [(1,)]",
+      "time" : {
+        "start" : 1703244863672,
+        "stop" : 1703244863672,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244863672,
+        "stop" : 1703244864065,
+        "duration" : 393
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244863672,
+          "stop" : 1703244863672,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244864065,
+          "stop" : 1703244864065,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 400\n",
+          "time" : {
+            "start" : 1703244864065,
+            "stop" : 1703244864065,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n\n",
+          "time" : {
+            "start" : 1703244864065,
+            "stop" : 1703244864065,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"06585742-efdf-72e0-8000-6aaa41f6fd13\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244864066,
+        "stop" : 1703244864446,
+        "duration" : 380
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244864066,
+          "stop" : 1703244864066,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244864446,
+          "stop" : 1703244864446,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 400\n",
+          "time" : {
+            "start" : 1703244864446,
+            "stop" : 1703244864446,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n\n",
+          "time" : {
+            "start" : 1703244864446,
+            "stop" : 1703244864446,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"06585742-efdf-72e0-8000-6aaa41f6fd13\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244864448,
+        "stop" : 1703244864821,
+        "duration" : 373
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244864448,
+          "stop" : 1703244864448,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_list'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244864821,
+          "stop" : 1703244864821,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 200\n",
+          "time" : {
+            "start" : 1703244864821,
+            "stop" : 1703244864821,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":{\"06585742-efdf-72e0-8000-6aaa41f6fd13\":[\"db_u9w37kel\",\"CIS\",\"deleting\",\"mysql://user_6tsc21sv:pwPW01__a7SGkznOJTszEK@cisdb1.areso.pro:3306/db_u9w37kel\",\"Fri, 22 Dec 2023 11:34:19 GMT\"]}}\n\n",
+          "time" : {
+            "start" : 1703244864821,
+            "stop" : 1703244864821,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [200]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_list'"
+      }, {
+        "name" : "body",
+        "value" : "{}"
+      }, {
+        "name" : "cookie",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "DB response [(1,)]",
+      "time" : {
+        "start" : 1703244866095,
+        "stop" : 1703244866095,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244866095,
+        "stop" : 1703244866484,
+        "duration" : 389
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244866096,
+          "stop" : 1703244866096,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244866484,
+          "stop" : 1703244866484,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 400\n",
+          "time" : {
+            "start" : 1703244866484,
+            "stop" : 1703244866484,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n\n",
+          "time" : {
+            "start" : 1703244866484,
+            "stop" : 1703244866484,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"06585742-efdf-72e0-8000-6aaa41f6fd13\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244866485,
+        "stop" : 1703244866872,
+        "duration" : 387
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244866486,
+          "stop" : 1703244866486,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244866872,
+          "stop" : 1703244866872,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 400\n",
+          "time" : {
+            "start" : 1703244866872,
+            "stop" : 1703244866872,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n\n",
+          "time" : {
+            "start" : 1703244866872,
+            "stop" : 1703244866872,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"06585742-efdf-72e0-8000-6aaa41f6fd13\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244866873,
+        "stop" : 1703244867252,
+        "duration" : 379
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244866874,
+          "stop" : 1703244866874,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_list'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244867252,
+          "stop" : 1703244867252,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 200\n",
+          "time" : {
+            "start" : 1703244867252,
+            "stop" : 1703244867252,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":{\"06585742-efdf-72e0-8000-6aaa41f6fd13\":[\"db_u9w37kel\",\"CIS\",\"deleting\",\"mysql://user_6tsc21sv:pwPW01__a7SGkznOJTszEK@cisdb1.areso.pro:3306/db_u9w37kel\",\"Fri, 22 Dec 2023 11:34:19 GMT\"]}}\n\n",
+          "time" : {
+            "start" : 1703244867252,
+            "stop" : 1703244867252,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [200]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_list'"
+      }, {
+        "name" : "body",
+        "value" : "{}"
+      }, {
+        "name" : "cookie",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "DB response [(1,)]",
+      "time" : {
+        "start" : 1703244868523,
+        "stop" : 1703244868523,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244868523,
+        "stop" : 1703244868895,
+        "duration" : 372
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244868524,
+          "stop" : 1703244868524,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244868895,
+          "stop" : 1703244868895,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 400\n",
+          "time" : {
+            "start" : 1703244868895,
+            "stop" : 1703244868895,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n\n",
+          "time" : {
+            "start" : 1703244868895,
+            "stop" : 1703244868895,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"06585742-efdf-72e0-8000-6aaa41f6fd13\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244868897,
+        "stop" : 1703244869275,
+        "duration" : 378
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244868897,
+          "stop" : 1703244868897,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244869274,
+          "stop" : 1703244869275,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 400\n",
+          "time" : {
+            "start" : 1703244869274,
+            "stop" : 1703244869274,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n\n",
+          "time" : {
+            "start" : 1703244869274,
+            "stop" : 1703244869274,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"06585742-efdf-72e0-8000-6aaa41f6fd13\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244869276,
+        "stop" : 1703244869659,
+        "duration" : 383
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244869276,
+          "stop" : 1703244869276,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_list'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244869659,
+          "stop" : 1703244869659,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 200\n",
+          "time" : {
+            "start" : 1703244869659,
+            "stop" : 1703244869659,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":{\"06585742-efdf-72e0-8000-6aaa41f6fd13\":[\"db_u9w37kel\",\"CIS\",\"deleting\",\"mysql://user_6tsc21sv:pwPW01__a7SGkznOJTszEK@cisdb1.areso.pro:3306/db_u9w37kel\",\"Fri, 22 Dec 2023 11:34:19 GMT\"]}}\n\n",
+          "time" : {
+            "start" : 1703244869659,
+            "stop" : 1703244869659,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [200]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_list'"
+      }, {
+        "name" : "body",
+        "value" : "{}"
+      }, {
+        "name" : "cookie",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244870230,
+        "stop" : 1703244870614,
+        "duration" : 384
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244870230,
+          "stop" : 1703244870230,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244870614,
+          "stop" : 1703244870614,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 400\n",
+          "time" : {
+            "start" : 1703244870614,
+            "stop" : 1703244870614,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n\n",
+          "time" : {
+            "start" : 1703244870614,
+            "stop" : 1703244870614,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"06585742-efdf-72e0-8000-6aaa41f6fd13\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244870615,
+        "stop" : 1703244871006,
+        "duration" : 391
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244870615,
+          "stop" : 1703244870616,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244871006,
+          "stop" : 1703244871006,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 400\n",
+          "time" : {
+            "start" : 1703244871006,
+            "stop" : 1703244871006,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":\"msg[19]: error: can't delete a db while it's deleting\"}\n\n",
+          "time" : {
+            "start" : 1703244871006,
+            "stop" : 1703244871006,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"06585742-efdf-72e0-8000-6aaa41f6fd13\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244871007,
+        "stop" : 1703244871380,
+        "duration" : 373
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244871007,
+          "stop" : 1703244871008,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_list'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244871380,
+          "stop" : 1703244871380,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 200\n",
+          "time" : {
+            "start" : 1703244871380,
+            "stop" : 1703244871380,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":{}}\n\n",
+          "time" : {
+            "start" : 1703244871380,
+            "stop" : 1703244871380,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [200]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_list'"
+      }, {
+        "name" : "body",
+        "value" : "{}"
+      }, {
+        "name" : "cookie",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244871381,
+        "stop" : 1703244871753,
+        "duration" : 372
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244871381,
+          "stop" : 1703244871381,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_delete'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244871753,
+          "stop" : 1703244871753,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 400\n",
+          "time" : {
+            "start" : 1703244871753,
+            "stop" : 1703244871753,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":\"msg[16]: requested database is not found\"}\n\n",
+          "time" : {
+            "start" : 1703244871753,
+            "stop" : 1703244871753,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [400]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_delete'"
+      }, {
+        "name" : "db_uuid",
+        "value" : "'{\"db_uuid\": \"06585742-efdf-72e0-8000-6aaa41f6fd13\"}'"
+      }, {
+        "name" : "sid",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Method POST",
+      "time" : {
+        "start" : 1703244871754,
+        "stop" : 1703244872144,
+        "duration" : 390
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703244871754,
+          "stop" : 1703244871754,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/db_list'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703244872144,
+          "stop" : 1703244872144,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 200\n",
+          "time" : {
+            "start" : 1703244872144,
+            "stop" : 1703244872144,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Response text: {\"content\":{}}\n\n",
+          "time" : {
+            "start" : 1703244872144,
+            "stop" : 1703244872144,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [200]>"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "'https://dbend.areso.pro/db_list'"
+      }, {
+        "name" : "body",
+        "value" : "{}"
+      }, {
+        "name" : "cookie",
+        "value" : "{'sid': '91d9d05a-da9e-4b64-a239-3901b2a73569'}"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "6ab471e7fe5f54e4",
+      "name" : "stdout",
+      "source" : "6ab471e7fe5f54e4.txt",
+      "type" : "text/plain",
+      "size" : 9767
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 259,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Connection DB"
+  }, {
+    "name" : "suite",
+    "value" : "Test Connection DB"
+  }, {
+    "name" : "subSuite",
+    "value" : "Complex"
+  }, {
+    "name" : "host",
+    "value" : "fv-az651-518"
+  }, {
+    "name" : "thread",
+    "value" : "1829-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_first"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "6937ffc1dd64e54f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1703188736423,
+          "stop" : 1703188760267,
+          "duration" : 23844
+        }
+      }, {
+        "uid" : "93198863804c85e1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1703188196397,
+          "stop" : 1703188222449,
+          "duration" : 26052
+        }
+      }, {
+        "uid" : "8401b35f8dedc646",
+        "status" : "passed",
+        "time" : {
+          "start" : 1703187111129,
+          "stop" : 1703187134410,
+          "duration" : 23281
+        }
+      }, {
+        "uid" : "6fe7a28797d189dc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1703186750875,
+          "stop" : 1703186773608,
+          "duration" : 22733
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "e0cd9cad511f9e64.json",
+  "parameterValues" : [ ]
+}
