@@ -1,5 +1,26 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: DB is not deleted. {\"content\":{\"06587343-3d39-79c5-8000-954c71b9cc73\":[\"db_74253wwn\",\"CIS\",\"db_created\",\"mysql://user_eil9g1xl:pwPW01__opeWpd1JDmSM5F@cisdb1.areso.pro:3306/db_74253wwn\",\"Sat, 23 Dec 2023 19:26:09 GMT\"]}}",
+      "children" : [ {
+        "name" : "test_complex",
+        "uid" : "c756769f2f1ec631",
+        "parentUid" : "34c29d3dbcf1e2abc9a85522778ec5bf",
+        "status" : "failed",
+        "time" : {
+          "start" : 1703359539207,
+          "stop" : 1703359572789,
+          "duration" : 33582
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "34c29d3dbcf1e2abc9a85522778ec5bf"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
   "name" : "categories"
 }

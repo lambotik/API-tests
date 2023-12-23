@@ -1,12 +1,12 @@
 {
-  "uid" : "e940c02800acb44e",
+  "uid" : "ea6450057eef8fe2",
   "name" : "Post login",
   "fullName" : "test_first.TestPOST#test_post_login",
   "historyId" : "1fd6fb68fa1472ef9c72aabb3bafa2fc",
   "time" : {
-    "start" : 1703244845071,
-    "stop" : 1703244845455,
-    "duration" : 384
+    "start" : 1703359536868,
+    "stop" : 1703359537197,
+    "duration" : 329
   },
   "status" : "passed",
   "flaky" : false,
@@ -15,102 +15,123 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "Add request",
+      "name" : "Method POST",
       "time" : {
-        "start" : 1703244845071,
-        "stop" : 1703244845071,
-        "duration" : 0
+        "start" : 1703359536868,
+        "stop" : 1703359537196,
+        "duration" : 328
       },
       "status" : "passed",
-      "steps" : [ ],
+      "steps" : [ {
+        "name" : "Add request",
+        "time" : {
+          "start" : 1703359536868,
+          "stop" : 1703359536869,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'https://dbend.areso.pro/login'"
+        }, {
+          "name" : "method",
+          "value" : "'POST'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Add response",
+        "time" : {
+          "start" : 1703359537196,
+          "stop" : 1703359537196,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response code: 200\n",
+          "time" : {
+            "start" : 1703359537196,
+            "stop" : 1703359537196,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "Response text: msg[6]: login successful\n",
+          "time" : {
+            "start" : 1703359537196,
+            "stop" : 1703359537196,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "result",
+          "value" : "<Response [200]>"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 2,
+        "hasContent" : true
+      } ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "url",
         "value" : "'https://dbend.areso.pro/login'"
       }, {
-        "name" : "method",
-        "value" : "'POST'"
+        "name" : "body",
+        "value" : "{'email': 'lambotik1988@gmail.com', 'password': 'M@il3261415'}"
       } ],
-      "stepsCount" : 0,
-      "hasContent" : true,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    }, {
-      "name" : "Add response",
-      "time" : {
-        "start" : 1703244845453,
-        "stop" : 1703244845453,
-        "duration" : 0
-      },
-      "status" : "passed",
-      "steps" : [ {
-        "name" : "Response code: 200\n",
-        "time" : {
-          "start" : 1703244845453,
-          "stop" : 1703244845453,
-          "duration" : 0
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "stepsCount" : 0,
-        "hasContent" : false,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
-      }, {
-        "name" : "Response text: msg[6]: login successful\n",
-        "time" : {
-          "start" : 1703244845453,
-          "stop" : 1703244845453,
-          "duration" : 0
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "stepsCount" : 0,
-        "hasContent" : false,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
-      } ],
-      "attachments" : [ ],
-      "parameters" : [ {
-        "name" : "result",
-        "value" : "<Response [200]>"
-      } ],
-      "stepsCount" : 2,
-      "hasContent" : true,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 4,
+      "hasContent" : true
     }, {
       "name" : "Body: {\"email\":\"your_email\",\"password\":\"your_password\"}",
       "time" : {
-        "start" : 1703244845454,
-        "stop" : 1703244845454,
-        "duration" : 0
+        "start" : 1703359537196,
+        "stop" : 1703359537197,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 0,
-      "hasContent" : false,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "c64119cf99da868c",
+      "uid" : "abb92d322f54a24f",
       "name" : "stdout",
-      "source" : "c64119cf99da868c.txt",
+      "source" : "abb92d322f54a24f.txt",
       "type" : "text/plain",
       "size" : 292
     } ],
     "parameters" : [ ],
-    "stepsCount" : 5,
-    "hasContent" : true,
     "attachmentsCount" : 1,
-    "shouldDisplayMessage" : false
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 6,
+    "hasContent" : true
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -124,10 +145,10 @@
     "value" : "REQUESTS POST"
   }, {
     "name" : "host",
-    "value" : "fv-az651-518"
+    "value" : "fv-az1542-577"
   }, {
     "name" : "thread",
-    "value" : "1829-MainThread"
+    "value" : "1889-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -154,11 +175,19 @@
         "failed" : 0,
         "broken" : 0,
         "skipped" : 1,
-        "passed" : 15,
+        "passed" : 16,
         "unknown" : 0,
-        "total" : 16
+        "total" : 17
       },
       "items" : [ {
+        "uid" : "e940c02800acb44e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1703244845071,
+          "stop" : 1703244845455,
+          "duration" : 384
+        }
+      }, {
         "uid" : "d56c216fa921cfe0",
         "status" : "passed",
         "time" : {
@@ -284,6 +313,6 @@
     },
     "tags" : [ ]
   },
-  "source" : "e940c02800acb44e.json",
+  "source" : "ea6450057eef8fe2.json",
   "parameterValues" : [ ]
 }

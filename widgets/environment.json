@@ -2,18 +2,15 @@
   "values" : [ "master" ],
   "name" : "GIT_BRANCH"
 }, {
-  "values" : [ "c4acc712cad678f6e5aa812080b33d3a23c79e63" ],
+  "values" : [ "b2649a89fe71d847481a1e2909c578d02460f1b1" ],
   "name" : "GIT_COMMIT_ID"
 }, {
-  "values" : [ "Update. added: Response to allure-report" ],
+  "values" : [ "Delete .idea/.gitignore" ],
   "name" : "GIT_COMMIT_MESSAGE"
 }, {
-  "values" : [ "lambotik1988@gmail.com" ],
+  "values" : [ "91555504+lambotik@users.noreply.github.com" ],
   "name" : "GIT_COMMIT_AUTHOR_NAME"
 }, {
-  "values" : [ "2023-12-21 22:58:20 +0300" ],
+  "values" : [ "2023-12-22 14:32:47 +0300" ],
   "name" : "GIT_COMMIT_TIME"
-}, {
-  "values" : [ "120.0.6099.109" ],
-  "name" : "CHROME_VERSION"
 } ]
