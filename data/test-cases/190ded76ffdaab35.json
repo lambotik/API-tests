@@ -1,12 +1,12 @@
 {
-  "uid" : "a0f4e770933ca656",
+  "uid" : "190ded76ffdaab35",
   "name" : "Post db create",
   "fullName" : "test_first.TestPOST#test_post_db_create",
   "historyId" : "1aec0f14b932a152b799443dcd6b951a",
   "time" : {
-    "start" : 1703359537199,
-    "stop" : 1703359538098,
-    "duration" : 899
+    "start" : 1703807978490,
+    "stop" : 1703807979067,
+    "duration" : 577
   },
   "status" : "passed",
   "flaky" : false,
@@ -17,17 +17,17 @@
     "steps" : [ {
       "name" : "Method POST",
       "time" : {
-        "start" : 1703359537199,
-        "stop" : 1703359538097,
-        "duration" : 898
+        "start" : 1703807978490,
+        "stop" : 1703807979066,
+        "duration" : 576
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Add request",
         "time" : {
-          "start" : 1703359537199,
-          "stop" : 1703359537199,
-          "duration" : 0
+          "start" : 1703807978490,
+          "stop" : 1703807978491,
+          "duration" : 1
         },
         "status" : "passed",
         "steps" : [ ],
@@ -46,16 +46,16 @@
       }, {
         "name" : "Add response",
         "time" : {
-          "start" : 1703359538097,
-          "stop" : 1703359538097,
+          "start" : 1703807979066,
+          "stop" : 1703807979066,
           "duration" : 0
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "Response code: 201\n",
           "time" : {
-            "start" : 1703359538097,
-            "stop" : 1703359538097,
+            "start" : 1703807979066,
+            "stop" : 1703807979066,
             "duration" : 0
           },
           "status" : "passed",
@@ -67,10 +67,10 @@
           "stepsCount" : 0,
           "hasContent" : false
         }, {
-          "name" : "Response text: {\"db_uuid\":\"06587343-1b9e-7fa1-8000-71f7b2674300\",\"msg\":\"your order for a new database created successfully\"}\n\n",
+          "name" : "Response text: {\"db_uuid\":\"0658e0be-af02-75ee-8000-132f81c45386\",\"msg\":\"your order for a new database created successfully\"}\n\n",
           "time" : {
-            "start" : 1703359538097,
-            "stop" : 1703359538097,
+            "start" : 1703807979066,
+            "stop" : 1703807979066,
             "duration" : 0
           },
           "status" : "passed",
@@ -98,7 +98,7 @@
         "value" : "'https://dbend.areso.pro/db_create'"
       }, {
         "name" : "cookie",
-        "value" : "{'sid': 'f9a28cc9-6632-4974-a337-271e9439cc95'}"
+        "value" : "{'sid': '385444c2-4f0f-42f8-abbc-f50e10faa691'}"
       }, {
         "name" : "body",
         "value" : "{'dbtype': 3, 'dbversion': 5, 'env': 3, 'region': 3}"
@@ -109,9 +109,9 @@
       "hasContent" : true
     } ],
     "attachments" : [ {
-      "uid" : "5b644bbb65dc9be4",
+      "uid" : "77f5df78de9db951",
       "name" : "stdout",
-      "source" : "5b644bbb65dc9be4.txt",
+      "source" : "77f5df78de9db951.txt",
       "type" : "text/plain",
       "size" : 229
     } ],
@@ -123,20 +123,20 @@
   },
   "afterStages" : [ ],
   "labels" : [ {
-    "name" : "subSuite",
-    "value" : "POST"
+    "name" : "suite",
+    "value" : "REQUESTS POST"
   }, {
     "name" : "epic",
     "value" : "POST REQUESTS"
   }, {
-    "name" : "suite",
-    "value" : "REQUESTS POST"
+    "name" : "subSuite",
+    "value" : "POST"
   }, {
     "name" : "host",
-    "value" : "fv-az1542-577"
+    "value" : "fv-az1052-424"
   }, {
     "name" : "thread",
-    "value" : "1889-MainThread"
+    "value" : "1804-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -163,11 +163,19 @@
         "failed" : 1,
         "broken" : 0,
         "skipped" : 2,
-        "passed" : 6,
+        "passed" : 7,
         "unknown" : 0,
-        "total" : 9
+        "total" : 10
       },
       "items" : [ {
+        "uid" : "a0f4e770933ca656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1703359537199,
+          "stop" : 1703359538098,
+          "duration" : 899
+        }
+      }, {
         "uid" : "3fee1fcfd024e761",
         "status" : "passed",
         "time" : {
@@ -238,6 +246,6 @@
     },
     "tags" : [ ]
   },
-  "source" : "a0f4e770933ca656.json",
+  "source" : "190ded76ffdaab35.json",
   "parameterValues" : [ ]
 }

@@ -1,7 +1,0 @@
-
-
-Method POST: db_list
-https://dbend.areso.pro/db_list
-Response: 
-'{"content":{"06587343-1b9e-7fa1-8000-71f7b2674300":["","CIS","db_creating",null,null]}}\n'
-Status code is: 200

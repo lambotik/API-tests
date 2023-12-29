@@ -1,36 +1,34 @@
 {
-  "uid" : "5ecfa93841f4210",
+  "uid" : "2bd033f8c55fc2f3",
   "name" : "delete db",
   "fullName" : "test_first.TestPOST#test_delete_db",
   "historyId" : "f2f3cba4290fc70b0b6b7aaf6737862e",
   "time" : {
-    "start" : 1703359538480,
-    "stop" : 1703359539176,
-    "duration" : 696
+    "start" : 1703807979588,
+    "stop" : 1703807980710,
+    "duration" : 1122
   },
-  "status" : "skipped",
-  "statusMessage" : "XFAIL\n\nAssertionError: Incorrect status code",
-  "statusTrace" : "self = <test_first.TestPOST object at 0x7f6d27b36290>\n\n    @allure.sub_suite('DELETE')\n    @allure.title('delete db')\n    @pytest.mark.xfail()\n    def test_delete_db(self):\n        print('\\n\\nMethod DELETE: delete_db')\n        list_db = API.post_db_list(DataMySql.sid)\n        json_list_db = json.loads(list_db.text)\n        first_db_uuid = list(json_list_db['content'].keys())[0]\n        result_post_db_list = API.delete_db(first_db_uuid, DataMySql.sid)\n>       Checking.check_status_code(result_post_db_list, 200)\n\ntest_first.py:79: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nresult = <Response [400]>, status_code = 200\n\n    @staticmethod\n    def check_status_code(result: requests.models.Response, status_code: int):\n        \"\"\"\n        Method check status code\n        :param result: Response JSON\n        :param status_code:\n        :return: int\n        \"\"\"\n>       assert status_code == result.status_code, 'Incorrect status code'\nE       AssertionError: Incorrect status code\n\nutils/checking.py:17: AssertionError",
+  "status" : "passed",
+  "statusMessage" : "XPASS",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ ],
   "testStage" : {
-    "status" : "skipped",
-    "statusMessage" : "XFAIL\n\nAssertionError: Incorrect status code",
-    "statusTrace" : "self = <test_first.TestPOST object at 0x7f6d27b36290>\n\n    @allure.sub_suite('DELETE')\n    @allure.title('delete db')\n    @pytest.mark.xfail()\n    def test_delete_db(self):\n        print('\\n\\nMethod DELETE: delete_db')\n        list_db = API.post_db_list(DataMySql.sid)\n        json_list_db = json.loads(list_db.text)\n        first_db_uuid = list(json_list_db['content'].keys())[0]\n        result_post_db_list = API.delete_db(first_db_uuid, DataMySql.sid)\n>       Checking.check_status_code(result_post_db_list, 200)\n\ntest_first.py:79: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nresult = <Response [400]>, status_code = 200\n\n    @staticmethod\n    def check_status_code(result: requests.models.Response, status_code: int):\n        \"\"\"\n        Method check status code\n        :param result: Response JSON\n        :param status_code:\n        :return: int\n        \"\"\"\n>       assert status_code == result.status_code, 'Incorrect status code'\nE       AssertionError: Incorrect status code\n\nutils/checking.py:17: AssertionError",
+    "status" : "passed",
+    "statusMessage" : "XPASS",
     "steps" : [ {
       "name" : "Method POST",
       "time" : {
-        "start" : 1703359538481,
-        "stop" : 1703359538832,
-        "duration" : 351
+        "start" : 1703807979588,
+        "stop" : 1703807980122,
+        "duration" : 534
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Add request",
         "time" : {
-          "start" : 1703359538481,
-          "stop" : 1703359538481,
+          "start" : 1703807979588,
+          "stop" : 1703807979588,
           "duration" : 0
         },
         "status" : "passed",
@@ -50,16 +48,16 @@
       }, {
         "name" : "Add response",
         "time" : {
-          "start" : 1703359538831,
-          "stop" : 1703359538832,
+          "start" : 1703807980121,
+          "stop" : 1703807980122,
           "duration" : 1
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "Response code: 200\n",
           "time" : {
-            "start" : 1703359538831,
-            "stop" : 1703359538831,
+            "start" : 1703807980121,
+            "stop" : 1703807980121,
             "duration" : 0
           },
           "status" : "passed",
@@ -71,10 +69,10 @@
           "stepsCount" : 0,
           "hasContent" : false
         }, {
-          "name" : "Response text: {\"content\":{\"06587343-1b9e-7fa1-8000-71f7b2674300\":[\"\",\"CIS\",\"db_creating\",null,null]}}\n\n",
+          "name" : "Response text: {\"content\":{\"0658e093-fd3f-7982-8000-bb6156e8a71e\":[\"db_hlf79jwk\",\"CIS\",\"db_created\",\"mysql://user_ou23jnp8:pwPW01__Xz0BQuqVVibT8P@cisdb1.areso.pro:3306/db_hlf79jwk\",\"Thu, 28 Dec 2023 23:48:36 GMT\"],\"0658e0a5-d288-7788-8000-cba95ace8cba\":[\"db_xh2tm6vp\",\"CIS\",\"db_created\",\"mysql://user_sbcus2za:pwPW01__vs6k50nlTZ3G8T@cisdb1.areso.pro:3306/db_xh2tm6vp\",\"Thu, 28 Dec 2023 23:53:14 GMT\"],\"0658e0a5-fed6-715f-8000-d37adf8bbbbf\":[\"db_j5sckqab\",\"CIS\",\"db_created\",\"mysql://user_pi2jvi12:pwPW01__bYKPvR9inemPzd@cisdb1.areso.pro:3306/db_j5sckqab\",\"Thu, 28 Dec 2023 23:53:23 GMT\"],\"0658e0be-af02-75ee-8000-132f81c45386\":[\"\",\"CIS\",\"db_creating\",null,null]}}\n\n",
           "time" : {
-            "start" : 1703359538832,
-            "stop" : 1703359538832,
+            "start" : 1703807980121,
+            "stop" : 1703807980121,
             "duration" : 0
           },
           "status" : "passed",
@@ -105,7 +103,7 @@
         "value" : "{}"
       }, {
         "name" : "cookie",
-        "value" : "{'sid': 'f9a28cc9-6632-4974-a337-271e9439cc95'}"
+        "value" : "{'sid': '385444c2-4f0f-42f8-abbc-f50e10faa691'}"
       } ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
@@ -114,17 +112,17 @@
     }, {
       "name" : "Method POST",
       "time" : {
-        "start" : 1703359538832,
-        "stop" : 1703359539176,
-        "duration" : 344
+        "start" : 1703807980122,
+        "stop" : 1703807980708,
+        "duration" : 586
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Add request",
         "time" : {
-          "start" : 1703359538832,
-          "stop" : 1703359538833,
-          "duration" : 1
+          "start" : 1703807980122,
+          "stop" : 1703807980122,
+          "duration" : 0
         },
         "status" : "passed",
         "steps" : [ ],
@@ -143,16 +141,16 @@
       }, {
         "name" : "Add response",
         "time" : {
-          "start" : 1703359539176,
-          "stop" : 1703359539176,
-          "duration" : 0
+          "start" : 1703807980707,
+          "stop" : 1703807980708,
+          "duration" : 1
         },
         "status" : "passed",
         "steps" : [ {
-          "name" : "Response code: 400\n",
+          "name" : "Response code: 200\n",
           "time" : {
-            "start" : 1703359539176,
-            "stop" : 1703359539176,
+            "start" : 1703807980708,
+            "stop" : 1703807980708,
             "duration" : 0
           },
           "status" : "passed",
@@ -164,10 +162,10 @@
           "stepsCount" : 0,
           "hasContent" : false
         }, {
-          "name" : "Response text: {\"content\":\"msg[18]: error: can't delete a db while it's creating\"}\n\n",
+          "name" : "Response text: {\"content\":\"msg[13]: successfully accepted request for deletion\"}\n\n",
           "time" : {
-            "start" : 1703359539176,
-            "stop" : 1703359539176,
+            "start" : 1703807980708,
+            "stop" : 1703807980708,
             "duration" : 0
           },
           "status" : "passed",
@@ -182,7 +180,7 @@
         "attachments" : [ ],
         "parameters" : [ {
           "name" : "result",
-          "value" : "<Response [400]>"
+          "value" : "<Response [200]>"
         } ],
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
@@ -195,10 +193,10 @@
         "value" : "'https://dbend.areso.pro/db_delete'"
       }, {
         "name" : "db_uuid",
-        "value" : "'{\"db_uuid\": \"06587343-1b9e-7fa1-8000-71f7b2674300\"}'"
+        "value" : "'{\"db_uuid\": \"0658e093-fd3f-7982-8000-bb6156e8a71e\"}'"
       }, {
         "name" : "sid",
-        "value" : "{'sid': 'f9a28cc9-6632-4974-a337-271e9439cc95'}"
+        "value" : "{'sid': '385444c2-4f0f-42f8-abbc-f50e10faa691'}"
       } ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
@@ -206,11 +204,11 @@
       "hasContent" : true
     } ],
     "attachments" : [ {
-      "uid" : "20ba20d0a29dc229",
+      "uid" : "85325e88eeb59e73",
       "name" : "stdout",
-      "source" : "20ba20d0a29dc229.txt",
+      "source" : "85325e88eeb59e73.txt",
       "type" : "text/plain",
-      "size" : 304
+      "size" : 909
     } ],
     "parameters" : [ ],
     "attachmentsCount" : 1,
@@ -220,23 +218,23 @@
   },
   "afterStages" : [ ],
   "labels" : [ {
+    "name" : "suite",
+    "value" : "REQUESTS POST"
+  }, {
     "name" : "subSuite",
     "value" : "DELETE"
   }, {
     "name" : "epic",
     "value" : "POST REQUESTS"
   }, {
-    "name" : "suite",
-    "value" : "REQUESTS POST"
-  }, {
     "name" : "tag",
     "value" : "@pytest.mark.xfail"
   }, {
     "name" : "host",
-    "value" : "fv-az1542-577"
+    "value" : "fv-az1052-424"
   }, {
     "name" : "thread",
-    "value" : "1889-MainThread"
+    "value" : "1804-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -263,11 +261,20 @@
         "failed" : 3,
         "broken" : 3,
         "skipped" : 6,
-        "passed" : 1,
+        "passed" : 2,
         "unknown" : 0,
-        "total" : 13
+        "total" : 14
       },
       "items" : [ {
+        "uid" : "5ecfa93841f4210",
+        "status" : "skipped",
+        "statusDetails" : "XFAIL\n\nAssertionError: Incorrect status code",
+        "time" : {
+          "start" : 1703359538480,
+          "stop" : 1703359539176,
+          "duration" : 696
+        }
+      }, {
         "uid" : "b353ec7122ed42b7",
         "status" : "skipped",
         "statusDetails" : "XFAIL\n\nIndexError: list index out of range",
@@ -378,6 +385,6 @@
     },
     "tags" : [ "@pytest.mark.xfail" ]
   },
-  "source" : "5ecfa93841f4210.json",
+  "source" : "2bd033f8c55fc2f3.json",
   "parameterValues" : [ ]
 }
